@@ -1,0 +1,31 @@
+.nav-header{
+display: flex;
+width: 1440px;
+padding: 0px 100px;
+justify-content: space-between;
+align-items: center;
+}
+
+nav img {
+ width: 226px;
+height: 60px;
+flex-shrink: 0;
+}
+
+.list-nav-header{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+text-decoration: none;
+}
+
+.nav-item{
+ color: #000;
+font-family: "Space Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+
+}
