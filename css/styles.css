@@ -1,52 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Variáveis CSS para cores e tamanhos */
 :root {
-    /* Variáveis CSS para cores e tamanhos */
-    
-    /* Cor de fundo geral do site */
     --background-color: #f3f3f3;
-    
-    /* Cor padrão do texto */
+    /* Cor de fundo geral do site */
     --text-color: #191A23;
-    
-    /* Cor de fundo do botão */
+    /* Cor padrão do texto */
     --button-background: #f3f3f3;
-    
-    /* Cor da borda do botão */
+    /* Cor de fundo do botão */
     --button-border-color: #e30613;
-    
-    /* Cor de fundo do botão ao passar o mouse */
+    /* Cor da borda do botão */
     --button-hover-background: #e30613;
-    
-    /* Cor do texto do botão ao passar o mouse */
+    /* Cor de fundo do botão ao passar o mouse */
     --button-hover-text: #fff;
-    
-    /* Espaçamento grande entre os itens (por exemplo, em desktops) */
+    /* Cor do texto do botão ao passar o mouse */
     --gap-large: 40px;
-    
-    /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
+    /* Espaçamento grande entre os itens (por exemplo, em desktops) */
     --gap-small: 20px;
-    
-    /* Tamanho da fonte padrão */
+    /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
     --font-size: 20px;
-    
-    /* Raio da borda para bordas arredondadas */
+    /* Tamanho da fonte padrão */
     --border-radius: 10px;
-    
-    /* Velocidade da transição de cor para suavizar mudanças */
+    /* Raio da borda para bordas arredondadas */
     --transition-speed: 0.3s;
+    /* Velocidade da transição de cor para suavizar mudanças */
 }
 
-body {
-    padding: 0;
-    margin: 40px;
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
 
 * {
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lading-page {
+    display: flex;
+    width: 1440px;
+    height: 771px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 85px;
+    flex-shrink: 0;
 }
 
 /* Barra de navegação */
+.navigation-bar {
+    margin-top: 60px;
+    display: flex;
+    width: 1440px;
+    padding: 0px 125px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-header {
     display: flex;
     width: 100%;
@@ -54,20 +61,23 @@ body {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Padding adicionado para garantir que a barra não encoste nas bordas */
+    padding: 0 20px;
+    /* Padding adicionado para garantir que a barra não encoste nas bordas */
 }
 
 nav img {
     width: 226px;
     height: 60px;
-    flex-shrink: 0; /* Impede que a imagem encolha */
+    flex-shrink: 0;
+    /* Impede que a imagem encolha */
 }
 
 .list-nav-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--gap-large); /* Espaço fixo de 40px entre os itens de navegação */
+    gap: var(--gap-large);
+    /* Espaço fixo de 40px entre os itens de navegação */
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -79,42 +89,146 @@ nav img {
     font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* Altura da linha para o texto */
+    line-height: 28px;
+    /* Altura da linha para o texto */
 }
 
 /* Botão de entre em contato */
 .button-nav-header {
-    border-radius: var(--border-radius); /* Raio da borda arredondada do botão */
+    border-radius: var(--border-radius);
+    /* Raio da borda arredondada do botão */
     width: 120px;
     height: 60px;
     font-size: var(--font-size);
-    background-color: var(--button-background); /* Cor de fundo do botão */
-    border: 2px solid var(--button-border-color); /* Cor e espessura da borda do botão */
-    color: var(--text-color); /* Cor do texto no botão */
+    background-color: var(--button-background);
+    /* Cor de fundo do botão */
+    border: 2px solid var(--button-border-color);
+    /* Cor e espessura da borda do botão */
+    color: var(--text-color);
+    /* Cor do texto no botão */
     text-align: center;
-    line-height: 60px; /* Alinha verticalmente o texto dentro do botão */
-    transition: background-color var(--transition-speed), color var(--transition-speed); /* Transição suave para mudanças de cor */
+    line-height: 60px;
+    /* Alinha verticalmente o texto dentro do botão */
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    /* Transição suave para mudanças de cor */
+    font-family: "Space Grotesk";
 }
 
 .button-nav-header:hover {
-    background-color: var(--button-hover-background); /* Cor de fundo do botão ao passar o mouse */
-    color: var(--button-hover-text); /* Cor do texto do botão ao passar o mouse */
+    background-color: var(--button-hover-background);
+    /* Cor de fundo do botão ao passar o mouse */
+    color: var(--button-hover-text);
+    /* Cor do texto do botão ao passar o mouse */
+}
+
+.nav-link:hover{
+    color: #e30613;
 }
 
 /* Regras de mídia para dispositivos móveis */
 @media (max-width: 768px) {
     .nav-header {
         flex-direction: column;
-        padding: 0 10px; /* Reduz o padding para telas menores */
+        padding: 0 10px;
+        /* Reduz o padding para telas menores */
     }
 
     .list-nav-header {
         flex-direction: column;
-        gap: var(--gap-small); /* Reduz o espaçamento entre itens da lista em dispositivos móveis */
+        gap: var(--gap-small);
+        /* Reduz o espaçamento entre itens da lista em dispositivos móveis */
     }
 
     nav img {
-        width: 180px; /* Reduz o tamanho da imagem */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 180px;
+        /* Reduz o tamanho da imagem */
+        height: auto;
+        /* Mantém a proporção da imagem */
     }
+}
+
+/* ---------main-----------*/
+
+.main {
+    display: flex;
+    width: 1440px;
+    height: 475px;
+    padding: 0px 150px;
+    align-items: flex-start;
+    gap: 180px;
+    flex-shrink: 0;
+}
+
+.main-content {
+    display: flex;
+    width: 660px;
+    height: 330px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    flex-shrink: 0;
+}
+
+.section-title {
+    margin-top: 25px;
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 61px;
+    font-weight: 500;
+    align-self: stretch;
+}
+
+.section-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 650px;
+}
+
+.button {
+    padding: 20px 35px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 14px;
+    background: var(--button-border-color);
+    color: var(--button-background);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.button:hover {
+    background-color: var(--text-color);
+    color: #e30613;
+    font-style: bold;
+}
+
+
+.main-img {
+    width: 480px;
+    height: 480px;
+    flex-shrink: 0;
+}
+/* -------------logotipos------------*/
+
+.logotipos {
+    display: flex;
+    width: 1440px;
+    padding: 0px 125px;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logotipo {
+    width: 120px;
+    height: 50px;
+    flex-shrink: 0;
+    filter: grayscale(100%);
 }
