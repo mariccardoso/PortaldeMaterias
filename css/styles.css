@@ -230,5 +230,4 @@ nav img {
     width: 120px;
     height: 50px;
     flex-shrink: 0;
-    filter: grayscale(100%);
 }
