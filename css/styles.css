@@ -150,7 +150,7 @@ nav img {
     height: 475px;
     padding: 0px 150px;
     align-items: flex-start;
-    gap: 180px;
+    gap: 200px;
     flex-shrink: 0;
 }
 
@@ -180,7 +180,7 @@ nav img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 650px;
+    width: 700px;
 }
 
 .button {
