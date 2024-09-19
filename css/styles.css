@@ -1,20 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 /* Variáveis CSS para cores e tamanhos */
 :root {
-    --background-color: #f3f3f3;
-    /* Cor de fundo geral do site */
-    --text-color: #191A23;
-    /* Cor padrão do texto */
-    --button-background: #f3f3f3;
-    /* Cor de fundo do botão */
-    --button-border-color: #e30613;
-    /* Cor da borda do botão */
-    --button-hover-background: #e30613;
-    /* Cor de fundo do botão ao passar o mouse */
-    --button-hover-text: #fff;
-    /* Cor do texto do botão ao passar o mouse */
+    --grey: #f3f3f3;
+    /* Branco padrão */
+    --vermelho: #e30613;
+    /* Vermelho padrão*/
+    --dark: #191A23;
+    /*Preto 01 padrão*/
+    --black: #000
+    /*Preto 02 padrão*/
     --gap-large: 40px;
     /* Espaçamento grande entre os itens (por exemplo, em desktops) */
     --gap-small: 20px;
@@ -76,7 +71,7 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--gap-large);
+    gap: 40px;
     /* Espaço fixo de 40px entre os itens de navegação */
     list-style-type: none;
     padding: 0;
@@ -84,7 +79,7 @@ nav img {
 }
 
 .nav-link {
-    color: var(--text-color);
+    color: var(--dark);
     font-family: "Space Grotesk", sans-serif;
     font-size: var(--font-size);
     font-style: normal;
@@ -100,11 +95,11 @@ nav img {
     width: 120px;
     height: 60px;
     font-size: var(--font-size);
-    background-color: var(--button-background);
+    background-color: #fff;
     /* Cor de fundo do botão */
-    border: 2px solid var(--button-border-color);
+    border: 2px solid var(--vermelho);
     /* Cor e espessura da borda do botão */
-    color: var(--text-color);
+    color: var(--dark);
     /* Cor do texto no botão */
     text-align: center;
     line-height: 60px;
@@ -115,9 +110,9 @@ nav img {
 }
 
 .button-nav-header:hover {
-    background-color: var(--button-hover-background);
+    background-color: var(--vermelho);
     /* Cor de fundo do botão ao passar o mouse */
-    color: var(--button-hover-text);
+    color: #fff;
     /* Cor do texto do botão ao passar o mouse */
 }
 
@@ -171,7 +166,7 @@ nav img {
 
 .section-title {
     margin-top: 25px;
-    color: var(--text-color);
+    color: var(--dark);
     font-family: Montserrat;
     font-size: 61px;
     font-weight: 500;
@@ -193,8 +188,8 @@ nav img {
     align-items: flex-start;
     gap: 10px;
     border-radius: 14px;
-    background: var(--button-border-color);
-    color: var(--button-background);
+    background: var(--vermelho);
+    color: var(--grey);
     text-align: center;
     font-family: "Space Grotesk";
     font-size: 20px;
@@ -204,7 +199,7 @@ nav img {
 }
 
 .button:hover {
-    background-color: var(--text-color);
+    background-color: var(--dark);
     color: #e30613;
     font-style: bold;
 }
