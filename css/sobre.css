@@ -3,136 +3,243 @@
 
 /* Variáveis CSS para cores e tamanhos */
 :root {
-    --grey: #f3f3f3;
-    /* Branco padrão */
+    --grey: #fff;
     --vermelho: #e30613;
-    /* Vermelho padrão*/
     --dark: #191A23;
-    /*Preto 01 padrão*/
-    --black: #000
-    /*Preto 02 padrão*/
+    --black: #000;
     --gap-large: 40px;
-    /* Espaçamento grande entre os itens (por exemplo, em desktops) */
     --gap-small: 20px;
-    /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
     --font-size: 20px;
-    /* Tamanho da fonte padrão */
     --border-radius: 10px;
-    /* Raio da borda para bordas arredondadas */
     --transition-speed: 0.3s;
-    /* Velocidade da transição de cor para suavizar mudanças */
 }
 
-
+/* Estilos gerais */
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
-.landing-page{
+/* Barra de navegação */
+.navigation-bar {
+    display: flex;
+    height: 200px;
+    width: 1440px;
+    padding: 0px 125px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+}
+
+.nav-header {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav img {
+    width: 226px;
+    height: 60px;
+    flex-shrink: 0;
+    /* Impede que a imagem encolha */
+}
+
+.list-nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* Espaço fixo de 40px entre os itens de navegação */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    color: var(--dark);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: var(--font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* Altura da linha para o texto */
+}
+
+/* Botão de entre em contato */
+.button-nav-header {
+    border-radius: var(--border-radius);
+    /* Raio da borda arredondada do botão */
+    width: 120px;
+    height: 60px;
+    font-size: var(--font-size);
+    background-color: #fff;
+    /* Cor de fundo do botão */
+    border: 2px solid var(--vermelho);
+    /* Cor e espessura da borda do botão */
+    color: var(--dark);
+    /* Cor do texto no botão */
+    text-align: center;
+    line-height: 60px;
+    /* Alinha verticalmente o texto dentro do botão */
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    /* Transição suave para mudanças de cor */
+    font-family: "Space Grotesk";
+}
+
+.button-nav-header:hover {
+    background-color: var(--vermelho);
+    /* Cor de fundo do botão ao passar o mouse */
+    color: #fff;
+    /* Cor do texto do botão ao passar o mouse */
+}
+
+.nav-link:hover{
+    color: #e30613;
+}
+
+/* Configurações da Main */
+.landing-page {
     margin-right: 120px;
 }
 
-.introduction{
+/* Introdução */
+.introduction {
     display: flex;
-    width: 1440px;
+    width: 1400px;
     padding: 0px 100px;
     align-items: flex-start;
-    gap: 40px;
+    gap: var(--gap-large);
+    margin-top: 200px;
 }
 
-.title-sobrenos{
-    color: var(--Grey, #F3F3F3);
-
-    /* h2 */
+.title-sobrenos {
+    color: var(--grey);
     font-family: "Montserrat";
     font-size: 30px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    border-radius: 7px;
-background: var(--Vermelho, #E30613);
-border-radius: 7px;
-background: var(--Vermelho, #E30613);
+    text-align: center;
+    background: var(--vermelho);
+    border-radius: var(--border-radius);
+    width: 500px;
+    height: 40px;
+    text-align: center;
 }
 
-.site-text{
+.site-text {
     color: #000;
-
-    /* p */
     font-family: Montserrat;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
-.team-members{
+/* Equipe */
+.team-members {
     display: inline-flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-large);
+    margin-top: 80px;
 }
 
-.top-cards{
+.top-cards {
     display: flex;
-padding: 0px 100px;
-align-items: flex-start;
-gap: 40px;
+    padding: 0px 100px;
+    align-items: flex-start;
+    gap: var(--gap-large);
 }
 
-.card{
+.card {
     display: flex;
-width: 387px;
-height: 331px;
-padding: 40px 35px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-border-radius: 45px;
-border: 1px solid #191A23;
-background: #FFF;
-box-shadow: 0px 5px 0px 0px #191A23;
+    width: 350px;
+    height: 380px;
+    padding: 40px 35px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-small);
+    border-radius: 45px;
+    border: 1px solid var(--dark);
+    background: #FFF;
+    box-shadow: 0px 5px 0px 0px var(--dark);
 }
 
-.member-name{
+/* Nome e descrição dos membros */
+.member-name {
     color: #000;
-
-/* h4 */
-font-family: Montserrat;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin: 10px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
 }
 
-.member-position, .member-description{
+.member-position, .member-description {
     color: #000;
-
-/* p */
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin: 10px
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
 }
 
-
-.person{
+/* Membros */
+.person {
     display: flex;
     align-items: flex-start;
     gap: -67px;
     align-self: stretch;
 }
-.cards{
+
+.cards {
     display: flex;
     padding: 0px 100px;
     margin-left: 200px;
     align-items: flex-start;
-    gap: 40px;
-
+    gap: var(--gap-large);
 }
 
+/* Rodapé */
+.site-footer {
+    background-color: var(--grey);
+    color: var(--dark);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+    margin: 20px;
+}
+
+.author-name,
+.author-email {
+    margin-bottom: 5px;
+}
+
+.email-link {
+    color: inherit; /* Herda a cor do texto ao redor */
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+.footer-hr {
+    width: 80%; /* Ajusta a largura da linha */
+    height: 1px; /* Define a espessura da linha */
+    background-color: var(--dark); /* Define a cor da linha */
+    margin: 20px auto; /* Centraliza e adiciona espaçamento */
+}
+
+.copy-info {
+    font-size: 0.9em;
+    color: var(--dark);
+    margin-top: 10px;
+}
