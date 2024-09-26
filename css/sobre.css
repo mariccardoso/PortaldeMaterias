@@ -31,8 +31,10 @@
     align-items: center;
     position: fixed;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
-    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Fundo branco com transparência */
+    backdrop-filter: blur(10px);
+    /* Efeito de desfoque */
 }
 
 .nav-header {
@@ -101,7 +103,7 @@ nav img {
     /* Cor do texto do botão ao passar o mouse */
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #e30613;
 }
 
@@ -145,7 +147,7 @@ nav img {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--gap-large);
+    gap: 100px;
     margin-top: 80px;
 }
 
@@ -153,7 +155,15 @@ nav img {
     display: flex;
     padding: 0px 100px;
     align-items: flex-start;
-    gap: var(--gap-large);
+    gap: 100px;
+}
+
+.cards {
+    display: flex;
+    padding: 0px 100px;
+    margin-left: 200px;
+    align-items: flex-start;
+    gap: 100px;
 }
 
 .card {
@@ -163,7 +173,6 @@ nav img {
     padding: 40px 35px;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--gap-small);
     border-radius: 45px;
     border: 1px solid var(--dark);
     background: #FFF;
@@ -179,7 +188,8 @@ nav img {
     margin: 10px;
 }
 
-.member-position, .member-description {
+.member-position,
+.member-description {
     color: #000;
     font-family: Montserrat;
     font-size: 18px;
@@ -193,53 +203,4 @@ nav img {
     align-items: flex-start;
     gap: -67px;
     align-self: stretch;
-}
-
-.cards {
-    display: flex;
-    padding: 0px 100px;
-    margin-left: 200px;
-    align-items: flex-start;
-    gap: var(--gap-large);
-}
-
-/* Rodapé */
-.site-footer {
-    background-color: var(--grey);
-    color: var(--dark);
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-}
-
-.contact-info {
-    margin-bottom: 10px;
-    margin: 20px;
-}
-
-.author-name,
-.author-email {
-    margin-bottom: 5px;
-}
-
-.email-link {
-    color: inherit; /* Herda a cor do texto ao redor */
-    text-decoration: none;
-}
-
-.email-link:hover {
-    text-decoration: underline;
-}
-
-.footer-hr {
-    width: 80%; /* Ajusta a largura da linha */
-    height: 1px; /* Define a espessura da linha */
-    background-color: var(--dark); /* Define a cor da linha */
-    margin: 20px auto; /* Centraliza e adiciona espaçamento */
-}
-
-.copy-info {
-    font-size: 0.9em;
-    color: var(--dark);
-    margin-top: 10px;
 }
