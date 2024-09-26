@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicas</title>
-
     <link rel="stylesheet" href="../assets/css/dica.css">
-
     <link rel="shortcut icon" type="imagex/png" href="https://www.sp.senai.br/favicon.ico">
-
 </head>
 
 <body>
-    <main class="lading-page">
+    <!-- Área principal da página -->
+    <main class="landing-page">
         <header class="navigation-bar">
             <nav class="nav-header" aria-label="Navegação principal">
                 <a href="https://www.sp.senai.br/" target="_blank">
@@ -32,11 +30,25 @@
         </header>
     </main>
 
+    <!-- Cards de notícias -->
+    <article class="container">
+        <section class="noticia" id="noticia1">
+            <header class="titulo">
+                <h2>
+                    <span class="numero">01</span> 
+                    <span class="texto-titulo">Título da Notícia</span>
+                </h2>
+                <button class="icone" id="icone1" aria-expanded="false" aria-controls="conteudo1">+</button>
+            </header>
+            <div class="conteudo" id="conteudo1" hidden>
+                <p>
+                    Este é o conteúdo da notícia. Ele aparece quando o botão é clicado e o botão muda de cor.
+                </p>
+            </div>
+        </section>
+        <!-- Repita a estrutura para mais notícias -->
+    </article>
 
-
-
-
-
-    
+    <script src="../assets/js/dica.js"></script>
 </body>
 </html>

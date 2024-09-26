@@ -1,38 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 /* Variáveis CSS para cores e tamanhos */
 :root {
-    --grey: #fff;
+    --grey: #f3f3f3;
+    /* Branco padrão */
     --vermelho: #e30613;
+    /* Vermelho padrão*/
     --dark: #191A23;
-    --black: #000;
+    /*Preto 01 padrão*/
+    --black: #000
+    /*Preto 02 padrão*/
     --gap-large: 40px;
+    /* Espaçamento grande entre os itens (por exemplo, em desktops) */
     --gap-small: 20px;
+    /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
     --font-size: 20px;
+    /* Tamanho da fonte padrão */
     --border-radius: 10px;
+    /* Raio da borda para bordas arredondadas */
     --transition-speed: 0.3s;
+    /* Velocidade da transição de cor para suavizar mudanças */
 }
 
-/* Estilos gerais */
+
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
+.lading-page {
+    display: flex;
+    width: 1440px;
+    height: 771px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 85px;
+    flex-shrink: 0;
+}
+
 /* Barra de navegação */
 .navigation-bar {
+    margin-top: 60px;
     display: flex;
-    height: 200px;
     width: 1440px;
     padding: 0px 125px;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
-    backdrop-filter: blur(10px); /* Efeito de desfoque */
 }
 
 .nav-header {
@@ -43,6 +57,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    /* Padding adicionado para garantir que a barra não encoste nas bordas */
 }
 
 nav img {
@@ -105,7 +120,65 @@ nav img {
     color: #e30613;
 }
 
-/* Configurações da Main */
-.landing-page {
-    margin-right: 120px;
+/* Cards de notícias */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.noticia {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.numero {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.texto-titulo {
+    margin-left: 10px;
+}
+
+.icone {
+    font-size: 24px;
+    background-color: #ccc;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.conteudo {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.noticia.ativa {
+    background-color: #e53935; /* Cor vermelha quando ativo */
+    color: white;
+    transform: scale(1.05);
+}
+
+.noticia.ativa .icone {
+    background-color: white;
+    color: #e53935;
+}
+
+.noticia.ativa .conteudo {
+    display: block;
 }
