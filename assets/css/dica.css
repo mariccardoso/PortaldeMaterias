@@ -9,8 +9,8 @@
     --dark: #191A23;
     /*Preto 01 padrão*/
     --black: #000
-    /*Preto 02 padrão*/
-    --gap-large: 40px;
+        /*Preto 02 padrão*/
+        --gap-large: 40px;
     /* Espaçamento grande entre os itens (por exemplo, em desktops) */
     --gap-small: 20px;
     /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
@@ -116,7 +116,7 @@ nav img {
     /* Cor do texto do botão ao passar o mouse */
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #e30613;
 }
 
@@ -150,8 +150,7 @@ nav img {
     font-weight: 400;
 }
 
-
-/* Cards de notícias */
+/* Cards de dicas */
 .container {
     width: 80%;
     margin-top: 80px;
@@ -221,7 +220,6 @@ line-height: normal;
     line-height: normal;
 }
 
-
 .dica.ativa {
     border-radius: 45px;
     border: 1px solid #191A23;
@@ -243,4 +241,3 @@ line-height: normal;
     display: block;
     gap: 30px;
 }
-
