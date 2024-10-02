@@ -150,7 +150,7 @@ nav img {
     font-weight: 400;
 }
 
-/* Cards de notícias */
+/* Cards de dicas */
 .container {
     width: 80%;
     margin-top: 80px;
@@ -169,7 +169,6 @@ nav img {
     background: var(--Grey, #F3F3F3);
     box-shadow: 0px 5px 0px 0px #191A23;
 }
-
 .titulo {
     display: flex;
     justify-content: space-between;
@@ -177,7 +176,6 @@ nav img {
     font-size: 20px;
     cursor: pointer;
     width: 100%;
-
 }
 
 .numero {
@@ -222,10 +220,6 @@ line-height: normal;
     line-height: normal;
 }
 
-
-
-
-
 .dica.ativa {
     border-radius: 45px;
     border: 1px solid #191A23;
@@ -247,5 +241,3 @@ line-height: normal;
     display: block;
     gap: 30px;
 }
-
-
