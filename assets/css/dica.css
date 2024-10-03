@@ -4,20 +4,28 @@
 :root {
     --grey: #f3f3f3;
     /* Branco padrão */
+
     --vermelho: #e30613;
     /* Vermelho padrão*/
+
     --dark: #191A23;
     /*Preto 01 padrão*/
+
     --black: #000
-        /*Preto 02 padrão*/
-        --gap-large: 40px;
+     /*Preto 02 padrão*/
+
+    --gap-large: 2.5rem;
     /* Espaçamento grande entre os itens (por exemplo, em desktops) */
-    --gap-small: 20px;
+
+    --gap-small: 1.2rem;
     /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
-    --font-size: 20px;
+
+    --font-size: 1.2rem;
     /* Tamanho da fonte padrão */
-    --border-radius: 10px;
+
+    --border-radius: 10rem;
     /* Raio da borda para bordas arredondadas */
+
     --transition-speed: 0.3s;
     /* Velocidade da transição de cor para suavizar mudanças */
 }
@@ -160,7 +168,7 @@ nav img {
 .dica {
     display: flex;
     width: 100%;
-    padding: 2.56rem 3.75rem; /* 41px 60px convertidos para rem */
+    padding: 2.5rem 3.75rem; /* 40px 60px convertidos para rem */
     flex-direction: column;
     align-items: flex-start;
     gap: 0.625rem; /* 10px convertidos para rem */
