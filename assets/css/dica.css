@@ -12,7 +12,7 @@
     /*Preto 01 padrão*/
 
     --black: #000
-     /*Preto 02 padrão*/
+    /*Preto 02 padrão*/
 
     --gap-large: 2.5rem;
     /* Espaçamento grande entre os itens (por exemplo, em desktops) */
@@ -37,162 +37,72 @@
     padding: 0;
 }
 
-.lading-page {
+.container{
+    width: 100%;
     display: flex;
-    width: 1440px;
-    height: 771px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 85px;
-    flex-shrink: 0;
-}
-
-/* Barra de navegação */
-.navigation-bar {
-    margin-top: 60px;
-    display: flex;
-    width: 1440px;
-    padding: 0px 125px;
-    justify-content: space-between;
     align-items: center;
 }
 
-.nav-header {
-    display: flex;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    /* Padding adicionado para garantir que a barra não encoste nas bordas */
-}
-
-nav img {
-    width: 226px;
-    height: 60px;
-    flex-shrink: 0;
-    /* Impede que a imagem encolha */
-}
-
-.list-nav-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    /* Espaço fixo de 40px entre os itens de navegação */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-link {
-    color: var(--dark);
-    font-family: "Space Grotesk", sans-serif;
-    font-size: var(--font-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    /* Altura da linha para o texto */
-}
-
-/* Botão de entre em contato */
-.button-nav-header {
-    border-radius: var(--border-radius);
-    /* Raio da borda arredondada do botão */
-    width: 120px;
-    height: 60px;
-    font-size: var(--font-size);
-    background-color: #fff;
-    /* Cor de fundo do botão */
-    border: 2px solid var(--vermelho);
-    /* Cor e espessura da borda do botão */
-    color: var(--dark);
-    /* Cor do texto no botão */
-    text-align: center;
-    line-height: 60px;
-    /* Alinha verticalmente o texto dentro do botão */
-    transition: background-color var(--transition-speed), color var(--transition-speed);
-    /* Transição suave para mudanças de cor */
-    font-family: "Space Grotesk";
-}
-
-.button-nav-header:hover {
-    background-color: var(--vermelho);
-    /* Cor de fundo do botão ao passar o mouse */
-    color: #fff;
-    /* Cor do texto do botão ao passar o mouse */
-}
-
-.nav-link:hover {
-    color: #e30613;
-}
-
-/* Introdução */
 .introduction {
+    width: 60%; /* pedir ajuda para o thigas*/
     display: flex;
-    width: 100%;
-    max-width: 87.5rem; /* 1400px convertidos para rem */
-    padding: 0 6.25rem; /* 100px convertidos para rem */
-    align-items: flex-start;
-    gap: 3.13rem; /* 50px convertidos para rem */
-    margin: 6.25rem 4rem; /* 100px convertidos para rem */
+    gap: 5rem;
+    margin-left: 8rem;
 }
 
-.title-dica {
+.title-dica{
     color: var(--grey);
     font-family: "Montserrat";
-    font-size: 1.875rem; /* 30px convertidos para rem */
+    font-size: 2rem; 
     font-weight: 500;
     text-align: center;
     background: var(--vermelho);
     border-radius: var(--border-radius);
-    width: 18.75rem; /* 300px convertidos para rem */
-    height: 2.5rem; /* 40px convertidos para rem */
+    margin-bottom: 3rem;
 }
 
-.site-text {
+.text-dica {
     color: #000;
     font-family: Montserrat;
-    font-size: 1.125rem; /* 18px convertidos para rem */
-    font-weight: 400;
 }
 
-/* Cards de dicas */
-.container {
-    width: 80%;
-    margin-top: 5rem; /* 80px convertidos para rem */
-    margin: 0 6rem;
-}
 
-.dica {
+.dica{
     display: flex;
-    width: 100%;
-    padding: 2.5rem 3.75rem; /* 40px 60px convertidos para rem */
+    width: 60%;
+    background-color: #e30613;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.625rem; /* 10px convertidos para rem */
-    border-radius: 2.81rem; /* 45px convertidos para rem */
+    gap: 0.65rem;
+    margin-top: 2rem;
+    padding: 2.5rem 3.75rem;
+
+
+    /*stlyes*/
     border: 0.0625rem solid #191A23; /* 1px convertidos para rem */
     background: var(--grey);
     box-shadow: 0 0.31rem 0 0 #191A23; /* 5px convertidos para rem */
-    margin-top: 2rem;
+    border-radius: 2.81rem; /* 45px convertidos para rem */
 }
 
 .titulo {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /*stlyes*/
     font-size: 1.25rem; /* 20px convertidos para rem */
     cursor: pointer;
-    width: 100%;
+    
 }
 
 .numero {
     color: #000;
     font-family: "Space Grotesk";
-    font-size: 3.75rem; /* 60px convertidos para rem */
-    font-weight: 500;
+    font-size: 2rem; /* 60px convertidos para rem */
+    font-weight: bolder;
 }
 
 .texto-titulo {
@@ -200,33 +110,30 @@ nav img {
     color: #000;
     font-family: "Space Grotesk";
     font-size: 1.875rem; /* 30px convertidos para rem */
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .icone {
     font-size: 1.5rem; /* 24px convertidos para rem */
     background-color: #faf6f6;
     border-radius: 50%;
-    padding: 0.313rem 0.625rem; /* 5px 10px convertidos para rem */
+    padding: 0.30rem 0.60rem; /* 5px 10px convertidos para rem */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color var(--transition-speed) ease;
 }
 
 .conteudo {
-    display: none;
-    margin-top: 0.625rem; /* 10px convertidos para rem */
     font-size: 1rem; /* 16px convertidos para rem */
     color: var(--grey);
     font-family: Montserrat;
     font-size: 1.125rem; /* 18px convertidos para rem */
-    font-weight: 400;
 }
 
 .dica.ativa {
     border-radius: 2.81rem;
-    border: 0.0625rem solid #191A23;
+    border: 0.06rem solid #191A23;
     background: var(--vermelho);
-    box-shadow: 0 0.31rem 0 0 #191A23;
+    box-shadow: 0 0.3rem 0 0 #191A23;
     color: var(--grey);
 }
 
@@ -241,30 +148,5 @@ nav img {
 
 .dica.ativa .conteudo {
     display: block;
-    gap: 1.875rem; /* 30px convertidos para rem */
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .navigation-bar {
-        padding: 0 2rem;
-    }
-
-    .button-nav-header {
-        width: 6rem; /* Ajuste no tamanho do botão */
-        height: 3rem;
-        font-size: 1rem; /* Fonte menor */
-        line-height: 3rem;
-    }
-
-    .list-nav-header {
-        gap: 1.5rem; /* Menor espaço entre os links */
-    }
-
-    .introduction {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 2rem;
-        margin: 4rem 0;
-    }
+    gap: 1.8rem; /* 30px convertidos para rem */
 }
