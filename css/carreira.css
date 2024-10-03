@@ -109,3 +109,133 @@ nav img {
 .landing-page {
     margin-right: 120px;
 }
+
+.title-text {
+    display: flex;
+    width: 1400px;
+    padding: 0px 100px;
+    align-items: flex-start;
+    gap: var(--gap-large);
+    margin-top: 200px;
+}
+
+.title-carrers {
+    color: var(--grey);
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    background: var(--vermelho);
+    border-radius: var(--border-radius);
+    width: 400px;
+    height: 40px;
+    margin-bottom: 65px;
+}
+
+.text-information {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*carreiras*/
+.section-carrers {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+article {
+    border-radius: 35px;
+    padding: 20px;
+    position: relative;
+}
+
+.card-red {
+    background-color: #e30613;
+    color: black;
+    font-family: "Montserrat";
+    margin-bottom: 15px;
+    width: 28%;
+    height: 188px;
+    border: 2px solid var(--black);
+    box-shadow: 0px 5px 0px 0px var(--dark);
+}
+
+.card-white {
+    background-color: #F3F3F3;
+    color: black;
+    font-family: "Montserrat";
+    width: 28%;
+    height: 188px;
+    border: 2px solid var(--black);
+    box-shadow: 0px 5px 0px 0px var(--dark);
+}
+
+.card-black {
+    background-color: #191A23;
+    color: black;
+    font-family: "Montserrat";
+    /*align-items: flex-start;
+    gap: 100px;*/
+    width: 28%;
+    height: 188px;
+    border: 2px solid var(--black);
+    box-shadow: 0px 5px 0px 0px var(--dark);
+}
+
+/*Estilização do h2 e do Paaragrafo nos cartões brancos*/
+.h2-carrer-white{
+    margin-top: 0;
+    background: var(--vermelho);
+    border-radius: var(--border-radius);
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.p-title-white {
+    margin-top: 0;
+    background: var(--vermelho);
+    border-radius: var(--border-radius);
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*Estilização do h2 e do Paaragrafo nos cartões pretos e cartões vermelhos*/
+.h2-carrer-black-red {
+    margin-top: 0;
+    background: var(--grey);
+    border-radius: var(--border-radius);
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.p-title-black-red {
+    margin-top: 0;
+    background: var(--grey);
+    border-radius: var(--border-radius);
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+article img {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    right: 20px;
+}
