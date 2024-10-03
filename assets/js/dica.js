@@ -17,3 +17,13 @@ icone2.addEventListener('click', function() {
     // Alterna a classe 'ativa' para expandir e mudar a cor
     dica2.classList.toggle('ativa');
 });
+
+// Seleciona o botão e o conteúdo da notícia
+const dica3 = document.getElementById('dica3');
+const icone3 = document.getElementById('dica3');
+
+// Adiciona o evento de clique no ícone
+icone3.addEventListener('click', function() {
+    // Alterna a classe 'ativa' para expandir e mudar a cor
+    dica3.classList.toggle('ativa');
+});
