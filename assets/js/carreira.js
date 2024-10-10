@@ -71,7 +71,7 @@ document.getElementById("cardBlack2").addEventListener("mouseleave", function() 
 // Função para passar o mouse para o cardWhite
 function funçãoPassarMouseWhite2() {
     const card2 = document.getElementById("cardWhite2");
-    card2.innerHTML = "Desenvolvedores criam e mantêm sistemas que automatizam processos industriais, melhorando a eficiência e precisão nas operações. Eles trabalham com a programação de softwares e a integração de sistemas para otimização. Na indústria química, sistemas automatizados são essenciais para controlar reações, processos produtivos e garantir a precisão nas dosagens e misturas de substâncias."; // Muda o texto
+    card2.innerHTML = " O Técnico em Alimentos é responsável por desenvolver e melhorar produtos alimentícios, controlar a qualidade e garantir que os processos de produção sejam seguros e eficientes. A química dos alimentos é fundamental para este campo, já que envolve o entendimento das reações químicas durante o processamento de alimentos, preservação, e controle de contaminantes.";// Muda o texto
     card2.style.color = "black"; // Muda a cor do texto para branco
 }
 
@@ -81,6 +81,6 @@ document.getElementById("cardWhite2").addEventListener("mouseenter", funçãoPas
 // Se você quiser reverter ao passar o mouse para fora
 document.getElementById("cardWhite2").addEventListener("mouseleave", function() {
     const card2 = document.getElementById("cardWhite2");
-    card2.innerHTML = "teste"; // Muda o texto de volta
+    card2.innerHTML = "Técnico em Processos de Produção de Alimentos (Alimentos)"; // Muda o texto de volta
     card2.style.color = "initial"; // Restaura a cor original
 });
