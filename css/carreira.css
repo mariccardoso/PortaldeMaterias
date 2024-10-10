@@ -196,9 +196,9 @@ article {
 }
 
 /*Estilização do h2 e do Paaragrafo nos cartões brancos*/
-.h5-carrer-white{
+.p-carrer-white{
     border-radius: var(--border-radius);
-    width: 165px;
+    /* width: 165px; */
     height: 40px;
     text-align: center;
     display: flex;
@@ -207,7 +207,7 @@ article {
     justify-content: center;
     align-items: center;
     color: whitesmoke;
-    text-align: left;
+    text-align: justify;
 }
 
 .p-title-white {
@@ -222,7 +222,7 @@ article {
 }
 
 /*Estilização do h2 e do Paaragrafo nos cartões pretos e cartões vermelhos*/
-.h5-carrer-black-red {
+.p-carrer-black-red {
     margin-top: 0;
     background: var(--grey);
     border-radius: var(--border-radius);
@@ -230,7 +230,7 @@ article {
     height: 40px;
     font-weight: 500;
     font-size: 2rem;
-    text-align: center;
+    text-align: justify;
 }
 
 
@@ -251,7 +251,7 @@ article img {
     height: 80%;;
 }
 
-.h4-carrer-red {
+.p-carrer-red {
     color: var(--vermelho);
 }
 
@@ -261,20 +261,14 @@ article img {
     height: 80%;
 }
 
-.h5-carrer-black{
+.p-carrer-black{
     border-radius: var(--border-radius);
-    width: 165px;
+    /* width: 165px; */
     height: 40px;
     text-align: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
     color: rgb(0, 0, 0);
-    text-align: left;
-}
-
-.cards{
-    
+    text-align: justify;
 }
