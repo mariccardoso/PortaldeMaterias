@@ -54,7 +54,7 @@ document.getElementById("cardRed").addEventListener("mouseleave", function() {
 // Função para passar o mouse para o cardBlack2
 function funçãoPassarMouseBlack2() {
     const card = document.getElementById("cardBlack2");
-    card.innerHTML = "Desenvolvedores criam e mantêm sistemas que automatizam processos industriais, melhorando a eficiência e precisão nas operações. Eles trabalham com a programação de softwares e a integração de sistemas para otimização. Na indústria química, sistemas automatizados são essenciais para controlar reações, processos produtivos e garantir a precisão nas dosagens e misturas de substâncias."; // Muda o texto
+    card.innerHTML = "O Técnico em Qualidade atua na implementação e controle de processos para garantir que produtos e serviços atendam aos padrões de qualidade exigidos. Eles realizam auditorias, testam produtos e monitoram a conformidade com normas técnicas e regulatórias. Os profissionais dessa área podem atuar em indústrias químicas, alimentícias ou farmacêuticas, onde o controle de qualidade é fundamental para garantir a segurança e a eficácia dos produtos."; // Muda o texto
     card.style.color = "white"; // Muda a cor do texto para branco
 }
 
@@ -64,7 +64,7 @@ document.getElementById("cardBlack2").addEventListener("mouseenter", funçãoPas
 // Se você quiser reverter ao passar o mouse para fora
 document.getElementById("cardBlack2").addEventListener("mouseleave", function() {
     const card = document.getElementById("cardBlack2");
-    card.innerHTML = "teste"; // Muda o texto de volta
+    card.innerHTML = "Técnico em Qualidade (Administração)"; // Muda o texto de volta
     card2.style.color = "initial"; // Restaura a cor original
 });
 
