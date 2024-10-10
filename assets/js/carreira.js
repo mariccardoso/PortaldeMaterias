@@ -19,7 +19,7 @@ document.getElementById("cardBlack").addEventListener("mouseleave", function() {
 // Função para passar o mouse para o cardWhite
 function funçãoPassarMouseWhite() {
     const card2 = document.getElementById("cardWhite");
-    card2.innerHTML = "Desenvolvedores criam e mantêm sistemas que automatizam processos industriais, melhorando a eficiência e precisão nas operações. Eles trabalham com a programação de softwares e a integração de sistemas para otimização. Na indústria química, sistemas automatizados são essenciais para controlar reações, processos produtivos e garantir a precisão nas dosagens e misturas de substâncias."; // Muda o texto
+    card2.innerHTML = "O Técnico em Manutenção Industrial é responsável pela instalação, manutenção e conserto de máquinas e equipamentos industriais. Ele garante que o maquinário funcione de forma eficiente e segura. Na indústria química, muitos processos envolvem o uso de maquinários complexos, como misturadores, reatores e tubulações, que precisam de manutenção constante para evitar contaminações ou falhas no processo produtivo."; // Muda o texto
     card2.style.color = "black"; // Muda a cor do texto para branco
 }
 
@@ -29,7 +29,7 @@ document.getElementById("cardWhite").addEventListener("mouseenter", funçãoPass
 // Se você quiser reverter ao passar o mouse para fora
 document.getElementById("cardWhite").addEventListener("mouseleave", function() {
     const card2 = document.getElementById("cardWhite");
-    card2.innerHTML = "teste"; // Muda o texto de volta
+    card2.innerHTML = "Técnico em Manutenção Industrial (Mecânica)"; // Muda o texto de volta
     card2.style.color = "initial"; // Restaura a cor original
 });
 
@@ -37,7 +37,7 @@ document.getElementById("cardWhite").addEventListener("mouseleave", function() {
 // Função para passar o mouse para o cardRed
 function funçãoPassarMouseRed() {
     const card3 = document.getElementById("cardRed");
-    card3.innerHTML = "Desenvolvedores criam e mantêm sistemas que automatizam processos industriais, melhorando a eficiência e precisão nas operações. Eles trabalham com a programação de softwares e a integração de sistemas para otimização. Na indústria química, sistemas automatizados são essenciais para controlar reações, processos produtivos e garantir a precisão nas dosagens e misturas de substâncias."; // Muda o texto
+    card3.innerHTML = "Este profissional realiza a instalação, manutenção e reparo de sistemas eletroeletrônicos, garantindo que máquinas e equipamentos funcionem corretamente. Em indústrias químicas, muitos processos dependem de equipamentos eletrônicos para monitoramento de temperatura, pressão e outros parâmetros, essenciais para garantir a segurança e qualidade da produção."; // Muda o texto
     card3.style.color = "black"; // Muda a cor do texto para branco
 }
 
@@ -47,7 +47,7 @@ document.getElementById("cardRed").addEventListener("mouseenter", funçãoPassar
 // Se você quiser reverter ao passar o mouse para fora
 document.getElementById("cardRed").addEventListener("mouseleave", function() {
     const card3 = document.getElementById("cardRed");
-    card3.innerHTML = "teste"; // Muda o texto de volta
+    card3.innerHTML = "Técnico em Manutenção de Equipamentos Eletroeletrônicos (Eletroeletrônica)"; // Muda o texto de volta
     card3.style.color = "initial"; // Restaura a cor original
 });
 
