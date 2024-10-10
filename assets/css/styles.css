@@ -29,63 +29,128 @@
     padding: 0;
 }
 
-.lading-page {
-    display: flex;
-    width: 1440px;
-    height: 771px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 85px;
-    flex-shrink: 0;
-}
 
-/* Barra de navegação */
-.navigation-bar {
-    margin-top: 60px;
+.container-header{
     display: flex;
-    width: 1440px;
-    padding: 0px 125px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-header {
-    display: flex;
+    flex-direction: row;
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    /* Padding adicionado para garantir que a barra não encoste nas bordas */
-}
-
-nav img {
-    width: 226px;
-    height: 60px;
-    flex-shrink: 0;
-    /* Impede que a imagem encolha */
-}
-
-.list-nav-header {
-    display: flex;
+    align-content: center;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    /* Espaço fixo de 40px entre os itens de navegação */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    height: 7rem;
+    margin-bottom: 5rem;
+
 }
 
-.nav-link {
-    color: var(--dark);
+.header-img{
+    width: 20%;
+}
+
+.nav-header ul{
+    gap: 2rem;
+    text-decoration: none;
+    list-style-type: none;
     font-family: "Space Grotesk", sans-serif;
     font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    /* Altura da linha para o texto */
+}
+.nav-header ul li{
+    color: #000
+}
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 65%;
+}
+
+.button-nav-header:hover {
+    background-color: var(--vermelho);
+    /* Cor de fundo do botão ao passar o mouse */
+    color: #fff;
+    /* Cor do texto do botão ao passar o mouse */
+}
+
+.nav-link:hover{
+    color: #e30613;
+}
+
+.container-main{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-text{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.container-img{
+    display: flex;
+    width: 42%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 20px 35px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 14px;
+    background: var(--vermelho);
+    color: var(--grey);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.section-title {
+    margin-top: 25px;
+    color: var(--dark);
+    font-family: Montserrat;
+    font-size: 61px;
+    font-weight: 500;
+    align-self: stretch;
+}
+
+.section-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 700px;
+}
+
+.logotipos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 9rem;
 }
 
 /* Botão de entre em contato */
@@ -109,120 +174,27 @@ nav img {
     font-family: "Space Grotesk";
 }
 
-.button-nav-header:hover {
-    background-color: var(--vermelho);
-    /* Cor de fundo do botão ao passar o mouse */
-    color: #fff;
-    /* Cor do texto do botão ao passar o mouse */
-}
-
-.nav-link:hover{
-    color: #e30613;
-}
-
-/* Regras de mídia para dispositivos móveis */
-@media (max-width: 768px) {
-    .nav-header {
-        flex-direction: column;
-        padding: 0 10px;
-        /* Reduz o padding para telas menores */
-    }
-
-    .list-nav-header {
-        flex-direction: column;
-        gap: var(--gap-small);
-        /* Reduz o espaçamento entre itens da lista em dispositivos móveis */
-    }
-
-    nav img {
-        width: 180px;
-        /* Reduz o tamanho da imagem */
-        height: auto;
-        /* Mantém a proporção da imagem */
-    }
-}
-
-/* ---------main-----------*/
-
-.main {
+.list-nav-header{
+    width: 100%;
     display: flex;
-    width: 1440px;
-    height: 475px;
-    padding: 0px 150px;
-    align-items: flex-start;
-    gap: 200px;
-    flex-shrink: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;    
+    height: 80%;
 }
 
-.main-content {
-    display: flex;
-    width: 660px;
-    height: 330px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 35px;
-    flex-shrink: 0;
-}
-
-.section-title {
-    margin-top: 25px;
+.button-all{
+    gap: 2rem;
+    text-decoration: none;
+    list-style-type: none;
     color: var(--dark);
-    font-family: Montserrat;
-    font-size: 61px;
-    font-weight: 500;
-    align-self: stretch;
-}
-
-.section-text {
-    color: #000;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 700px;
-}
-
-.button {
-    padding: 20px 35px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 14px;
-    background: var(--vermelho);
-    color: var(--grey);
-    text-align: center;
-    font-family: "Space Grotesk";
-    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-}
-
-.button:hover {
-    background-color: var(--dark);
-    color: #e30613;
-    font-style: bold;
-}
-
-
-.main-img {
-    width: 480px;
-    height: 480px;
-    flex-shrink: 0;
-}
-/* -------------logotipos------------*/
-
-.logotipos {
     display: flex;
-    width: 1440px;
-    padding: 0px 125px;
-    gap: 50px;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
-.logotipo {
-    width: 120px;
-    height: 50px;
-    flex-shrink: 0;
-}

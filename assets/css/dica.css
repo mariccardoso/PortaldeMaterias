@@ -1,111 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 /* Variáveis CSS para cores e tamanhos */
 :root {
-    --grey: #fff;
+    --grey: #f3f3f3;
+    /* Branco padrão */
+
     --vermelho: #e30613;
+    /* Vermelho padrão*/
+
     --dark: #191A23;
-    --black: #000;
-    --gap-large: 40px;
-    --gap-small: 20px;
-    --font-size: 20px;
-    --border-radius: 10px;
+    /*Preto 01 padrão*/
+
+    --black: #000
+    /*Preto 02 padrão*/
+
+    --gap-large: 2.5rem;
+    /* Espaçamento grande entre os itens (por exemplo, em desktops) */
+
+    --gap-small: 1.2rem;
+    /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
+
+    --font-size: 1.2rem;
+    /* Tamanho da fonte padrão */
+
+    --border-radius: 10rem;
+    /* Raio da borda para bordas arredondadas */
+
     --transition-speed: 0.3s;
+    /* Velocidade da transição de cor para suavizar mudanças */
 }
 
-/* Estilos gerais */
+
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
-/* Barra de navegação */
-.navigation-bar {
-    display: flex;
-    height: 200px;
-    width: 1440px;
-    padding: 0px 125px;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
-    backdrop-filter: blur(10px); /* Efeito de desfoque */
-}
-
-.nav-header {
-    display: flex;
+.container{
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction {
+    width: 60%; /* pedir ajuda para o thigas*/
+    display: flex;
+    gap: 5rem;
+    margin-left: 8rem;
+}
+
+.title-dica{
+    color: var(--grey);
+    font-family: "Montserrat";
+    font-size: 2rem; 
+    font-weight: 500;
+    text-align: center;
+    background: var(--vermelho);
+    border-radius: var(--border-radius);
+    margin-bottom: 3rem;
+}
+
+.text-dica {
+    color: #000;
+    font-family: Montserrat;
+}
+
+
+.dica{
+    display: flex;
+    width: 60%;
+    background-color: #e30613;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+    margin-top: 2rem;
+    padding: 2.5rem 3.75rem;
+
+
+    /*stlyes*/
+    border: 0.0625rem solid #191A23; /* 1px convertidos para rem */
+    background: var(--grey);
+    box-shadow: 0 0.31rem 0 0 #191A23; /* 5px convertidos para rem */
+    border-radius: 2.81rem; /* 45px convertidos para rem */
+}
+
+.titulo {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+
+    /*stlyes*/
+    font-size: 1.25rem; /* 20px convertidos para rem */
+    cursor: pointer;
+    
 }
 
-nav img {
-    width: 226px;
-    height: 60px;
-    flex-shrink: 0;
-    /* Impede que a imagem encolha */
-}
-
-.list-nav-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    /* Espaço fixo de 40px entre os itens de navegação */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-link {
-    color: var(--dark);
-    font-family: "Space Grotesk", sans-serif;
-    font-size: var(--font-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    /* Altura da linha para o texto */
-}
-
-/* Botão de entre em contato */
-.button-nav-header {
-    border-radius: var(--border-radius);
-    /* Raio da borda arredondada do botão */
-    width: 120px;
-    height: 60px;
-    font-size: var(--font-size);
-    background-color: #fff;
-    /* Cor de fundo do botão */
-    border: 2px solid var(--vermelho);
-    /* Cor e espessura da borda do botão */
-    color: var(--dark);
-    /* Cor do texto no botão */
-    text-align: center;
-    line-height: 60px;
-    /* Alinha verticalmente o texto dentro do botão */
-    transition: background-color var(--transition-speed), color var(--transition-speed);
-    /* Transição suave para mudanças de cor */
+.numero {
+    color: #000;
     font-family: "Space Grotesk";
+    font-size: 2rem; /* 60px convertidos para rem */
+    font-weight: bolder;
 }
 
-.button-nav-header:hover {
-    background-color: var(--vermelho);
-    /* Cor de fundo do botão ao passar o mouse */
-    color: #fff;
-    /* Cor do texto do botão ao passar o mouse */
+.texto-titulo {
+    margin-left: 0.625rem; /* 10px convertidos para rem */
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 1.875rem; /* 30px convertidos para rem */
+    font-weight: bold;
 }
 
-.nav-link:hover{
-    color: #e30613;
+.icone {
+    font-size: 1.5rem; /* 24px convertidos para rem */
+    background-color: #faf6f6;
+    border-radius: 50%;
+    padding: 0.30rem 0.60rem; /* 5px 10px convertidos para rem */
+    cursor: pointer;
+    transition: background-color var(--transition-speed) ease;
 }
 
-/* Configurações da Main */
-.landing-page {
-    margin-right: 120px;
+.conteudo {
+    font-size: 1rem; /* 16px convertidos para rem */
+    color: var(--grey);
+    font-family: Montserrat;
+    font-size: 1.125rem; /* 18px convertidos para rem */
+}
+
+.dica.ativa {
+    border-radius: 2.81rem;
+    border: 0.06rem solid #191A23;
+    background: var(--vermelho);
+    box-shadow: 0 0.3rem 0 0 #191A23;
+    color: var(--grey);
+}
+
+.dica.ativa .texto-titulo, .dica.ativa .numero {
+    color: var(--grey);
+}
+
+.dica.ativa .icone {
+    background-color: white;
+    color: #e53935;
+}
+
+.dica.ativa .conteudo {
+    display: block;
+    gap: 1.8rem; /* 30px convertidos para rem */
 }
