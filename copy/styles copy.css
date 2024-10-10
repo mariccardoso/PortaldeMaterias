@@ -22,13 +22,70 @@
     /* Velocidade da transição de cor para suavizar mudanças */
 }
 
+
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
+.lading-page {
+    display: flex;
+    width: 1440px;
+    height: 771px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 85px;
+    flex-shrink: 0;
+}
 
+/* Barra de navegação */
+.navigation-bar {
+    margin-top: 60px;
+    display: flex;
+    width: 1440px;
+    padding: 0px 125px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Padding adicionado para garantir que a barra não encoste nas bordas */
+}
+
+nav img {
+    width: 226px;
+    height: 60px;
+    flex-shrink: 0;
+    /* Impede que a imagem encolha */
+}
+
+.list-nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* Espaço fixo de 40px entre os itens de navegação */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    color: var(--dark);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: var(--font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* Altura da linha para o texto */
 }
 
 /* Botão de entre em contato */
@@ -50,6 +107,17 @@
     transition: background-color var(--transition-speed), color var(--transition-speed);
     /* Transição suave para mudanças de cor */
     font-family: "Space Grotesk";
+}
+
+.button-nav-header:hover {
+    background-color: var(--vermelho);
+    /* Cor de fundo do botão ao passar o mouse */
+    color: #fff;
+    /* Cor do texto do botão ao passar o mouse */
+}
+
+.nav-link:hover{
+    color: #e30613;
 }
 
 /* Regras de mídia para dispositivos móveis */
@@ -158,28 +226,3 @@
     height: 50px;
     flex-shrink: 0;
 }
-
-.list-nav-header{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;    
-    height: 80%;
-}
-
-.button-all{
-    gap: 2rem;
-    text-decoration: none;
-    list-style-type: none;
-    color: var(--dark);
-    font-family: "Space Grotesk", sans-serif;
-    font-size: var(--font-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    display: flex;
-}
-
