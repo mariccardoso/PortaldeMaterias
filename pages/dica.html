@@ -12,28 +12,32 @@
 </head>
 
 <body>
-    <header class="navigation-bar">
-        <nav class="nav-header" aria-label="Navegação principal">
-            <a href="https://www.sp.senai.br/" target="_blank">
-                <img src="/assets/img/logo-senai.png" alt="Logo do SENAI" class="img-header">
-            </a>
-            <ul class="list-nav-header">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="../pages/carreira.html" class="nav-link">Carreiras</a></li>
-                <li class="nav-item"><a href="../pages/dica.html" class="nav-link">Dicas</a></li>
-                <li class="nav-item"><a href="../pages/sobre.html" class="nav-link">Sobre nós</a></li>
-                <li class="nav-item"><a href="../pages/noticia.html" class="nav-link">Notícias</a></li>
-                <li class="nav-item"><a href="../pages/simulado.html" class="nav-link">Simulados</a></li>
-                <li class="nav-item"><a href="../pages/entevista.html" class="nav-link">Entrevistas</a></li>
-                <label href="../pages/contato.html" class="button-nav-header">Contato</label>
-            </ul>
-        </nav>
+    <header>
+        <div class="container-header">
+            <div class="header-img">
+                <a href="https://www.sp.senai.br/" target="_blank">
+                    <img src="./../assets/img/logo-senai.png" alt="Logo do SENAI" class="img-header">
+                </a>
+            </div>
+            <div class="nav-header" aria-label="Navegação principal">
+                <ul class="list-nav-header">
+                    <div class="button-all">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="pages/carreira.html" class="nav-link">Carreiras</a></li>
+                        <li class="nav-item"><a href="pages/dica.html" class="nav-link">Dicas</a></li>
+                        <li class="nav-item"><a href="pages/sobre.html" class="nav-link">Sobre nós</a></li>
+                        <li class="nav-item"><a href="pages/noticia.html" class="nav-link">Notícias</a></li>
+                        <li class="nav-item"><a href="pages/simulado.html" class="nav-link">Simulados</a></li>
+                        <li class="nav-item"><a href="pages/entevista.html" class="nav-link">Entrevistas</a></li>
+                    </div>
+                    <div class="button-div-contato">
+                        <label href="./pages/contato.html" class="button-nav-header">Contato</label>
+                    </div>        
+                </ul>
+            </div>
+        </div>
     </header>
-
-
-
-
-    
+  
     <!-- Cards de dicas -->
     <article class="container">
         <section class="introduction">
@@ -55,7 +59,9 @@
                     Por exemplo, algumas pessoas começam a estudar e ficam nervosas demais por não saber como fazer ou tiver esquecido, podendo fazer a pessoa desistir, agora ver um documentário de confiança vai te manter calmo e atento aos mínimos detalhes,
                      sem contar que vc vai estudar de uma forma bem divertida e fora do jeito comum e enjoativo de sempre, te preparando para a prática.
                 </p>
-                <video controls src= "../assets/media/entrevista1.MOV" class="entrevistas" poster="../assets/media/capa-entrevista01.png"></video>
+                <div class="iframe-dev">
+                    <iframe class="entrevistas"  src="https://www.youtube.com/embed/4AebxocF0Kw?autoplay=1&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
@@ -75,8 +81,9 @@
                     -Estudando a tabela periódica 
                     -Ver efeitos e reações químicas de elementos que provavelmente cairão nas questões.
                 </p>
-
-                <video controls src= "../assets/media/entrevista1.MOV" class="entrevistas" poster="../assets/media/capa-entrevista02.png"></video>
+                <div class="iframe-dev">
+                    <iframe class="entrevistas"  src="https://www.youtube.com/embed/4AebxocF0Kw?autoplay=1&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
@@ -93,6 +100,9 @@
                     Divirta-se com as fórmulas ao estudar, por exemplo, criar palavras chaves divertidas, para mostrar que não é um monstro de 7 cabeças estudar. Alguns exemplos de palavras chaves: mosquITO teimOSO, te mATO, te pICO, te mETO no vIDRICO.
                     Isso é uma forma descontraída de estudar e pode ajudar as pessoas com TDAH a entender e saber o conteúdo com mais facilidade.
                 </p>
+                <div class="iframe-dev">
+                    <iframe class="entrevistas"  src="https://www.youtube.com/embed/4AebxocF0Kw?autoplay=1&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
@@ -108,6 +118,9 @@
                 <p>
                     Umas das dicas mais utéis que existe, fazer provas de vestibulares anteriores, como se fosse um treineiro, só que em casa. Isso te ajuda muito a ter uma base do que pode cair na prova, com isso, é mais fácil de estudar, sem contar que fazendo as contas, será muito melhor para aumentar sua auto-confiança, o que é bem útil em um vestibular.
                 </p>
+                <div class="iframe-dev">
+                    <iframe class="entrevistas"  src="https://www.youtube.com/embed/4AebxocF0Kw?autoplay=1&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
@@ -123,6 +136,9 @@
                 <p>
                     Outra dica muito útil, você fazer um resumo sobre o que vc estudou, como se fosse um mapa mental, só que sobre algo específico. Como aprender sobre a Primeira Guerra, vc faz um resumo sobre o que VOCÊ entendeu sobre o assunto. Aproveitando o assunto, outra forma de estudar é com mapas mentais, eles ajudam muito a fixar o conteúdo na sua cabeça e te tranquilizar, por isso indico muito.
                 </p>
+                <div class="iframe-dev">
+                    <iframe class="entrevistas"  src="https://www.youtube.com/embed/4AebxocF0Kw?autoplay=1&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
         <!-- Repita a estrutura para mais notícias -->

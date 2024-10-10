@@ -134,15 +134,20 @@
 
 .conteudo .entrevistas{
     display: flex;
-    width: 60%;
+    width: 100%;
+    height: 100%;
 }
-
+.iframe-dev{
+    width: 60%;
+    min-height: 25rem;
+}
 .dica.ativa {
     border-radius: 2.81rem;
     border: 0.06rem solid #191A23;
     background: var(--vermelho);
     box-shadow: 0 0.3rem 0 0 #191A23;
     color: var(--grey);
+    height: 100%;
 }
 
 .dica.ativa .texto-titulo, .dica.ativa .numero {
