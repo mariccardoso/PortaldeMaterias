@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Variáveis CSS para cores e tamanhos */
+:root {
+    --grey: #fff;
+    --vermelho: #e30613;
+    --dark: #191A23;
+    --black: #000;
+    --gap-large: 40px;
+    --gap-small: 20px;
+    --font-size: 20px;
+    --border-radius: 10px;
+    --transition-speed: 0.3s;
+}
+
+/* Estilos gerais */
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegação */
+.navigation-bar {
+    display: flex;
+    height: 200px;
+    width: 1440px;
+    padding: 0px 125px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    z-index: 1000; /* Adicione essa linha */
+}
+
+.nav-header {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav img {
+    width: 226px;
+    height: 60px;
+    flex-shrink: 0;
+    /* Impede que a imagem encolha */
+}
+
+.list-nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* Espaço fixo de 40px entre os itens de navegação */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    color: var(--dark);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: var(--font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* Altura da linha para o texto */
+}
+
+/* Botão de entre em contato */
+.button-nav-header {
+    border-radius: var(--border-radius);
+    /* Raio da borda arredondada do botão */
+    width: 120px;
+    height: 60px;
+    font-size: var(--font-size);
+    background-color: #fff;
+    /* Cor de fundo do botão */
+    border: 2px solid var(--vermelho);
+    /* Cor e espessura da borda do botão */
+    color: var(--dark);
+    /* Cor do texto no botão */
+    text-align: center;
+    line-height: 60px;
+    /* Alinha verticalmente o texto dentro do botão */
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    /* Transição suave para mudanças de cor */
+    font-family: "Space Grotesk";
+}
+
+.button-nav-header:hover {
+    background-color: var(--vermelho);
+    /* Cor de fundo do botão ao passar o mouse */
+    color: #fff;
+    /* Cor do texto do botão ao passar o mouse */
+}
+
+.nav-link:hover{
+    color: #e30613;
+}
+
+/* Configurações da Main */
+.landing-page {
+    margin-right: 120px;
+}
+
+.title-text {
+    display: flex;
+    width: 1400px;
+    padding: 0px 100px;
+    align-items: flex-start;
+    gap: var(--gap-large);
+    margin-top: 200px;
+}
+
+.title-carrers {
+    color: var(--grey);
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    background: var(--vermelho);
+    border-radius: var(--border-radius);
+    width: 400px;
+    height: 40px;
+    margin-bottom: 65px;
+}
+
+.text-information {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*carreiras*/
+.section-carrers {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+article {
+    border-radius: 35px;
+    padding: 20px;
+    position: relative;
+}
+
+.card-red {
+    background-color: #e30613;
+    color: black;
+    font-family: "Montserrat";
+    width: 65%;
+    height: 188px;
+    border: 2px solid var(--black);
+    box-shadow: 0px 5px 0px 0px var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.card-white {
+    background-color: #F3F3F3;
+    color: black;
+    font-family: "Montserrat";
+    width: 65%;
+    height: 188px;
+    border: 2px solid var(--black);
+    box-shadow: 0px 5px 0px 0px var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.card-black {
+    background-color: #191A23;
+    color: black;
+    font-family: "Montserrat";
+    width: 65%;
+    height: 188px;
+    border: 2px solid var(--black);
+    box-shadow: 0px 5px 0px 0px var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+/*Estilização do h2 e do Paaragrafo nos cartões brancos*/
+.h5-carrer-white{
+    border-radius: var(--border-radius);
+    width: 165px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.p-title-white {
+    margin-top: 0;
+    background: var(--vermelho);
+    border-radius: var(--border-radius);
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*Estilização do h2 e do Paaragrafo nos cartões pretos e cartões vermelhos*/
+.h5-carrer-black-red {
+    margin-top: 0;
+    background: var(--grey);
+    border-radius: var(--border-radius);
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+article img {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    right: 20px;
+}
+
+.main-container {
+    gap: 3px;
+}
+
+.divisor-card-black {
+    background-color: #fff;
+    width: 2px;
+    height: 80%;;
+}
+
+.h4-carrer-red {
+    color: var(--vermelho);
+}
+
+.divisor-card-white {
+    background-color:#000;
+    width: 2px;
+    height: 80%;
+}
+
+.h5-carrer-black{
+    border-radius: var(--border-radius);
+    width: 165px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+.cards{
+    
+}
