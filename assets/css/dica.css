@@ -2,39 +2,26 @@
 
 /* Variáveis CSS para cores e tamanhos */
 :root {
-    --grey: #f3f3f3;
-    /* Branco padrão */
-
+    --grey: #fff;
     --vermelho: #e30613;
-    /* Vermelho padrão*/
-
     --dark: #191A23;
-    /*Preto 01 padrão*/
-
-    --black: #000
-    /*Preto 02 padrão*/
-
-    --gap-large: 2.5rem;
-    /* Espaçamento grande entre os itens (por exemplo, em desktops) */
-
-    --gap-small: 1.2rem;
-    /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
-
-    --font-size: 1.2rem;
-    /* Tamanho da fonte padrão */
-
-    --border-radius: 10rem;
-    /* Raio da borda para bordas arredondadas */
-
+    --black: #000;
+    --gap-large: 40px;
+    --gap-small: 20px;
+    --font-size: 20px;
+    --border-radius: 10px;
     --transition-speed: 0.3s;
-    /* Velocidade da transição de cor para suavizar mudanças */
 }
-
 
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
+}
+
+/* Configurações da Main */
+.landing-page {
+    margin-right: 120px;
 }
 
 .container{
