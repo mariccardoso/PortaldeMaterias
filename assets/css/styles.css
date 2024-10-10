@@ -8,7 +8,7 @@
     /* Vermelho padrão*/
     --dark: #191A23;
     /*Preto 01 padrão*/
-    --black: #000
+    --black: #000;
     /*Preto 02 padrão*/
     --gap-large: 40px;
     /* Espaçamento grande entre os itens (por exemplo, em desktops) */
@@ -28,72 +28,50 @@
     padding: 0;
 }
 
-
-}
-
-/* Botão de entre em contato */
-.button-nav-header {
-    border-radius: var(--border-radius);
-    /* Raio da borda arredondada do botão */
-    width: 120px;
-    height: 60px;
-    font-size: var(--font-size);
-    background-color: #fff;
-    /* Cor de fundo do botão */
-    border: 2px solid var(--vermelho);
-    /* Cor e espessura da borda do botão */
-    color: var(--dark);
-    /* Cor do texto no botão */
-    text-align: center;
-    line-height: 60px;
-    /* Alinha verticalmente o texto dentro do botão */
-    transition: background-color var(--transition-speed), color var(--transition-speed);
-    /* Transição suave para mudanças de cor */
-    font-family: "Space Grotesk";
-}
-
-/* Regras de mídia para dispositivos móveis */
-@media (max-width: 768px) {
-    .nav-header {
-        flex-direction: column;
-        padding: 0 10px;
-        /* Reduz o padding para telas menores */
-    }
-
-    .list-nav-header {
-        flex-direction: column;
-        gap: var(--gap-small);
-        /* Reduz o espaçamento entre itens da lista em dispositivos móveis */
-    }
-
-    nav img {
-        width: 180px;
-        /* Reduz o tamanho da imagem */
-        height: auto;
-        /* Mantém a proporção da imagem */
-    }
-}
-
-/* ---------main-----------*/
-
-.main {
+.container-main {
     display: flex;
-    width: 1440px;
-    height: 475px;
-    padding: 0px 150px;
-    align-items: flex-start;
-    gap: 200px;
-    flex-shrink: 0;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.main-content {
+.container-text {
+    width: 42%;
     display: flex;
-    width: 660px;
-    height: 330px;
     flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: flex-start;
-    gap: 35px;
-    flex-shrink: 0;
+    gap: 2rem;
+}
+
+.container-img {
+    display: flex;
+    width: 42%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 20px 35px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 14px;
+    background: var(--vermelho);
+    color: var(--grey);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 .section-title {
@@ -115,71 +93,13 @@
     width: 700px;
 }
 
-.button {
-    padding: 20px 35px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 14px;
-    background: var(--vermelho);
-    color: var(--grey);
-    text-align: center;
-    font-family: "Space Grotesk";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-}
-
-.button:hover {
-    background-color: var(--dark);
-    color: #e30613;
-    font-style: bold;
-}
-
-
-.main-img {
-    width: 480px;
-    height: 480px;
-    flex-shrink: 0;
-}
-/* -------------logotipos------------*/
-
 .logotipos {
     display: flex;
-    width: 1440px;
-    padding: 0px 125px;
-    gap: 50px;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.logotipo {
-    width: 120px;
-    height: 50px;
-    flex-shrink: 0;
-}
-
-.list-nav-header{
-    width: 100%;
-    display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    align-items: center;    
-    height: 80%;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 7rem;
 }
-
-.button-all{
-    gap: 2rem;
-    text-decoration: none;
-    list-style-type: none;
-    color: var(--dark);
-    font-family: "Space Grotesk", sans-serif;
-    font-size: var(--font-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    display: flex;
-}
-
