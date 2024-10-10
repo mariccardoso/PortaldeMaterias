@@ -11,7 +11,7 @@ document.getElementById("cardBlack").addEventListener("mouseenter", funçãoPass
 // Se você quiser reverter ao passar o mouse para fora
 document.getElementById("cardBlack").addEventListener("mouseleave", function() {
     const card = document.getElementById("cardBlack");
-    card.innerHTML = "teste"; // Muda o texto de volta
+    card.innerHTML = "Desenvolvedor de Software para Automação de Processos Industriais (Desenvolvimento de Sistemas)"; // Muda o texto de volta
     card2.style.color = "initial"; // Restaura a cor original
 });
 
