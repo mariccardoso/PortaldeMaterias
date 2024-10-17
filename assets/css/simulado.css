@@ -25,3 +25,156 @@
 .landing-page {
     margin-right: 120px;
 }
+
+.container-main {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Estilos Imagem - Container */ 
+.container-img {
+    display: flex;
+    width: 45%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img img {
+    height: 27rem;
+} 
+
+/*Estrutura conteúdo de texto*/
+.container-text {
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+/* Estilos de textos*/
+.button {
+    padding: 20px 35px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 14px;
+    background: var(--vermelho);
+    color: var(--grey);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.section-title {
+    margin-top: 25px;
+    color: var(--dark);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 500;
+    align-self: stretch;
+}
+
+.section-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 700px;
+}
+
+
+/*Estruturação simulado section*/
+
+.simulado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    gap: 3rem;
+}
+
+.simulado-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.simulado-title {
+    color: var(--dark);
+    text-align: center;
+    font-family: "Space Grotesk";
+}
+
+.simulado-text {
+    color: var(--dark);
+    text-align: center;
+    font-family: "Space Grotesk";
+}
+
+/*---------------------------cards----------*/
+
+/*Estrutura da section card*/
+
+.cards {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -6rem;
+}
+
+.img-card {
+    border-radius: 5%;
+    width: 30rem;
+}
+
+.subcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    /*styles*/
+    border-radius: 5%;
+    background-color: #e9e9e9;
+    box-shadow: 0px 8px 16px 0px rgba(137, 141, 145, 0.4);
+}
+
+.subcard-text {
+    color: var(--dark);
+    text-align: center;
+    font-family: "Space Grotesk";
+}
+
+.button-card {
+    color: #e30613;
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-weight: 600;
+}
