@@ -115,30 +115,31 @@ nav img {
 /* Introdução */
 .introduction {
     display: flex;
-    width: 1400px;
-    padding: 0px 100px;
-    align-items: flex-start;
+    width: 96%;
     gap: var(--gap-large);
-    margin-top: 200px;
+    margin-top: 14rem;
+    align-items: center;
+    padding-left: 4%;
 }
 
+
 .title-sobrenos {
+    display: flex;
     color: var(--grey);
     font-family: "Montserrat";
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: 500;
     text-align: center;
     background: var(--vermelho);
     border-radius: var(--border-radius);
-    width: 500px;
-    height: 40px;
-    text-align: center;
+    width: 25%;
+    justify-content: center;
 }
 
 .site-text {
     color: #000;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
@@ -147,30 +148,29 @@ nav img {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 100px;
+    gap: 2rem;
     margin-top: 80px;
 }
 
 .top-cards {
     display: flex;
-    padding: 0px 100px;
-    align-items: flex-start;
-    gap: 100px;
+    padding: 0rem 5rem;
+    gap: 5rem;
 }
 
-.cards {
+.teste {
     display: flex;
-    padding: 0px 100px;
-    margin-left: 200px;
-    align-items: flex-start;
-    gap: 100px;
+    gap: 5rem;
+    width: 60%;
+    padding: 0 0 0 20%;
 }
+
+
 
 .card {
     display: flex;
-    width: 350px;
-    height: 380px;
-    padding: 40px 35px;
+    width: 100%;
+    padding: 2rem 2rem;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 45px;
