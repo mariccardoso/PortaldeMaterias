@@ -25,3 +25,24 @@
 .landing-page {
     margin-right: 120px;
 }
+
+.container-main {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos Imagem - Container */ 
+.container-img {
+    display: flex;
+    width: 42%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
