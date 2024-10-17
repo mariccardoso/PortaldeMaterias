@@ -97,6 +97,8 @@
     line-height: normal;
     width: 700px;
 }
+
+
 /*Estruturação simulado section*/
 
 .simulado {
@@ -125,3 +127,13 @@
     font-family: "Space Grotesk";
 }
 
+/*---------------------------cards----------*/
+
+/*Estrutura da section card*/
+
+.cards {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
