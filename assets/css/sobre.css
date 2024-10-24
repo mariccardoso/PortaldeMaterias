@@ -19,22 +19,21 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Barra de navegação */
 .navigation-bar {
     display: flex;
     height: 200px;
-    width: 1440px;
-    padding: 0px 125px;
+    width: 100%;
+    padding: 0 20px;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     background-color: rgba(255, 255, 255, 0.5);
-    /* Fundo branco com transparência */
     backdrop-filter: blur(10px);
-    /* Efeito de desfoque */
 }
 
 .nav-header {
@@ -48,18 +47,16 @@
 }
 
 nav img {
-    width: 226px;
-    height: 60px;
+    width: 150px;
+    height: auto;
     flex-shrink: 0;
-    /* Impede que a imagem encolha */
 }
 
 .list-nav-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    /* Espaço fixo de 40px entre os itens de navegação */
+    gap: 20px;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -72,49 +69,39 @@ nav img {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    /* Altura da linha para o texto */
 }
 
-/* Botão de entre em contato */
 .button-nav-header {
     border-radius: var(--border-radius);
-    /* Raio da borda arredondada do botão */
     width: 120px;
-    height: 60px;
+    height: 40px;
     font-size: var(--font-size);
     background-color: #fff;
-    /* Cor de fundo do botão */
     border: 2px solid var(--vermelho);
-    /* Cor e espessura da borda do botão */
     color: var(--dark);
-    /* Cor do texto no botão */
     text-align: center;
-    line-height: 60px;
-    /* Alinha verticalmente o texto dentro do botão */
+    line-height: 40px;
     transition: background-color var(--transition-speed), color var(--transition-speed);
-    /* Transição suave para mudanças de cor */
     font-family: "Space Grotesk";
 }
 
 .button-nav-header:hover {
     background-color: var(--vermelho);
-    /* Cor de fundo do botão ao passar o mouse */
     color: #fff;
-    /* Cor do texto do botão ao passar o mouse */
 }
 
 .nav-link:hover {
     color: #e30613;
 }
 
-/* Configurações da Main */
 .landing-page {
-    margin-right: 120px;
+    margin-right: 20px;
+    padding-top: 220px;
 }
 
-/* Introdução */
 .introduction {
     display: flex;
+    flex-direction: column;
     width: 96%;
     gap: var(--gap-large);
     margin-top: 14rem;
@@ -122,9 +109,7 @@ nav img {
     padding-left: 4%;
 }
 
-
 .title-sobrenos {
-    display: flex;
     color: var(--grey);
     font-family: "Montserrat";
     font-size: 1.8rem;
@@ -132,8 +117,10 @@ nav img {
     text-align: center;
     background: var(--vermelho);
     border-radius: var(--border-radius);
-    width: 25%;
+    width: 100%;
+    max-width: 300px;
     justify-content: center;
+    padding: 10px;
 }
 
 .site-text {
@@ -141,36 +128,30 @@ nav img {
     font-family: Montserrat;
     font-size: 1.2rem;
     font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
 }
 
-/* Equipe */
 .team-members {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
     margin-top: 80px;
 }
 
-.top-cards {
+.top-cards, .button-cards {
     display: flex;
-    padding: 0rem 5rem;
-    gap: 5rem;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 20px;
 }
-
-.teste {
-    display: flex;
-    gap: 5rem;
-    width: 60%;
-    padding: 0 0 0 20%;
-}
-
-
 
 .card {
     display: flex;
     width: 100%;
-    padding: 2rem 2rem;
+    padding: 2rem;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 45px;
@@ -179,13 +160,12 @@ nav img {
     box-shadow: 0px 5px 0px 0px var(--dark);
 }
 
-/* Nome e descrição dos membros */
 .member-name {
     color: #000;
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 500;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .member-position,
@@ -194,13 +174,73 @@ nav img {
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
-    margin: 10px;
+    margin: 10px 0;
 }
 
-/* Membros */
 .person {
     display: flex;
     align-items: flex-start;
     gap: -67px;
     align-self: stretch;
+}
+
+.member-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .navigation-bar {
+        padding: 0 40px;
+    }
+
+    .list-nav-header {
+        gap: 30px;
+    }
+
+    .button-nav-header {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .introduction {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .title-sobrenos {
+        width: 25%;
+    }
+
+    .top-cards, .button-cards {
+        flex-direction: row;
+        gap: 5rem;
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navigation-bar {
+        padding: 0 125px;
+    }
+
+    .list-nav-header {
+        gap: 40px;
+    }
+
+    .button-nav-header {
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .title-sobrenos {
+        width: 20%;
+    }
+
+    .top-cards, .button-cards {
+        gap: 5rem;
+        padding: 0 10rem;
+    }
 }
