@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 75rem;
+    margin: auto;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+div#quiz-form {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.banner-site {
+    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../img/banner-simulado.jpg');
+}
+
+.container-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    margin: 4rem 0;
+    align-items: center;
+}
+
+
+.container-title h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #9a1915;
+}
+
+.option {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.correct {
+    background-color: #c8e6c9; /* Verde claro */
+}
+.wrong {
+    background-color: #ffcdd2; /* Vermelho claro */
+}
+
+.divisor-section {
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+}
+
+hr.divisor {
+    width: 22rem; 
+    border: 0; 
+    height: 4px;
+    background-color: #9A1915; 
+    margin: 0;  
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #D71920;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9A1915;
+}

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questões - Tema 02</title>
 
     <link rel="stylesheet" href="../../assets/css/header.css">
-    <link rel="stylesheet" href="../../assets/css/simulado_tema2.css">
+    <link rel="stylesheet" href="../../assets/css/simulado_temas.css">
 
     <link rel="shortcut icon" type="imagex/png" href="https://www.sp.senai.br/favicon.ico">
 </head>
+
 <body>
     <main class="lading-page">
         <header>
@@ -37,9 +39,120 @@
                 </div>
             </div>
         </header>
+
+        <section class="container">
+            <article class="container-title">
+                <h1> SIMULADO - TEMA 01</h1>
+            </article>
+        
+            <div id="quiz-form">
+                <div class="question" data-correct="1">
+                    <article class="question-title">
+                        <h2>QUESTÃO 1</h2>
+                    </article>
+        
+                    <section class="divisor-section">
+                        <hr class="divisor">
+                    </section>
+        
+                    <h2>(FONTE DA QUESTÃO)</h2>
+        
+                    <h3 class="h3-questions">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem similique alias quam possimus eveniet non minus corporis nihil velit fugit harum, praesentium consequatur magni inventore aliquam vero ratione dignissimos at.</h3>
+                    <label class="option">
+                        <input type="radio" name="answer1" value="0"> a) Descrição da questão A
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="answer1" value="1"> b) Descrição da questão B <!------Marcar valor 1 nas alternativas corretas-->
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="answer1" value="0"> c) Descrição da questão C 
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="answer1" value="0"> d) Descrição da questão D 
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="answer1" value="0"> e) Descrição da questão E 
+                    </label>
+                </div>
+        
+                <div class="question" data-correct="1">
+                    <article class="question-title">
+                        <h2>QUESTÃO 2</h2>
+                    </article>
+        
+                    <section class="divisor-section">
+                        <hr class="divisor">
+                    </section>
+        
+                    <h2>(FONTE DA QUESTÃO)</h2>
+        
+                    <h3 class="h3-questions">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem similique alias quam possimus eveniet non minus corporis nihil velit fugit harum, praesentium consequatur magni inventore aliquam vero ratione dignissimos at.</h3>
+                    <label class="option">
+                        <input type="radio" name="answer2" value="1"> a) Descrição da questão A <!------Marcar valor 1 nas alternativas corretas-->
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="answer2" value="0"> b) Descrição da questão B 
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="answer2" value="0"> c) Descrição da questão C 
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="answer2" value="0"> d) Descrição da questão D 
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="answer2" value="0"> e) Descrição da questão E 
+                    </label>
+                </div>
+        
+                <!-- Repetir a estrutura para mais questões -->
+        
+                <button type="button" id="submit">Enviar</button>
+            </div>
+            <p id="result"></p>
+        </section>
+
+        <script>
+                    document.getElementById('submit').addEventListener('click', function() {
+            const questions = document.querySelectorAll('.question');
+            let correctAnswers = 0;
+        
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name="answer${index + 1}"]:checked`);
+                const options = question.querySelectorAll('label');
+        
+                // Verifica se uma opção foi selecionada
+                if (selectedOption) {
+                    options.forEach(option => {
+                        const input = option.querySelector('input');
+                        
+                        // Se a resposta estiver correta (value="1")
+                        if (input.value === "1") {
+                            option.classList.add('correct'); // Adiciona cor verde
+                        } else {
+                            option.classList.remove('correct');
+                        }
+        
+                        // Se o usuário escolheu a opção errada
+                        if (input.checked && input.value === "0") {
+                            option.classList.add('wrong'); // Adiciona cor vermelha para a errada selecionada
+                        } else {
+                            option.classList.remove('wrong');
+                        }
+                    });
+        
+                    // Conta se a resposta selecionada foi correta
+                    if (selectedOption.value === "1") {
+                        correctAnswers++;
+                    }
+                }
+            });
+        
+            const totalQuestions = questions.length;
+            const result = document.getElementById('result');
+            result.textContent = `Você acertou ${correctAnswers} de ${totalQuestions} questões.`;
+        });
+        </script>
+        
     </main>
-
-
-    <script href="../../assets/js/simulado_tema2.js"></script>
 </body>
 </html>
