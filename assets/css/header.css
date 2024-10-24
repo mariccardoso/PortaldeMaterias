@@ -17,61 +17,44 @@
     padding: 0;
 }
 
-.container-header {
-    display: flex;
-    flex-direction: row;
+
+
+/* Estrutura da Header*/
+header{
+    padding: 1.5rem;
     width: 100%;
-    align-content: center;
-    justify-content: center;
+position: relative;
+    display: flex;
     align-items: center;
-    height: 7rem;
-    margin-bottom: 3rem;
+    justify-content: space-around;
+    z-index: 100;
+    transition: .3s;
+    background: whitesmoke;
+    box-shadow: 0px 23px 26px -10px rgba(0,0,0,0.1);
 }
 
-.header-img {
-    width: 20%;
+/* Meu nome (Logo)*/
+header .logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
 }
 
-.nav-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 65%;
-}
 
-.button-div-contato {
-    border-radius: var(--border-radius);
-    width: 120px;
-    height: 60px;
-    font-size: var(--font-size);
-    background-color: #fff;
-    border: 2px solid var(--vermelho);
-    color: var(--dark);
-    text-align: center;
-    line-height: 60px;
-    transition: background-color var(--transition-speed), color var(--transition-speed);
-    font-family: "Space Grotesk";
-}
-
-.list-nav-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;    
-    height: 80%;
-    gap: 2rem;
-}
-
-.button-all {
-    gap: 2rem;
+/*Barra de Navegação*/
+ul.navlist{
     display: flex;
 }
 
-.nav-header ul li a{
-    gap: 2rem;
+.navlist li{
+    margin: 0 1rem; 
+}
+
+.navlist li a{
+    display: inline-flex; /* Alinha os itens em linha */
+    font-weight: 600;
     text-decoration: none;
     color: var(--dark);
     font-family: "Space Grotesk", sans-serif;
@@ -80,105 +63,125 @@
     font-weight: 400;
     line-height: 28px;
     list-style-type: none;
+
 }
 
-.hamburger {
-    display: none; /* Hide by default */
-    cursor: pointer;
-    font-size: 24px;
+/*Estilos para quando passar o mouse e quando o script tiver ativo*/
+.navlist li a:hover,.navlist li a.active{
+    background: var(--gradient-color-bg);
+    background-clip: text;
 }
 
-.container-header {
+
+/* Estios para os itens da direita*/
+.right-header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Alinhamento vertical */
+    justify-content: end; /* Alinhamento horizontal */
+    grid-gap: .8rem;
 }
 
-.nav-header {
-    position: relative;
+.btn{
+    background: var(--vermelho);
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all .3s ease;
+    font-family: "Space Grotesk", sans-serif;
 }
 
-.hamburger {
-    display: none; /* Oculta por padrão */
-    cursor: pointer;
-    font-size: 24px;
+.btn:hover,.btn-box .d-CV:hover{
+    box-shadow: var(--hover-box-shadow);
 }
 
-.list-nav-header {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+
+/* ================ Estilos para o menu Hamburguer (responsividade)========================*/
+.menu-icon{ 
+    position: relative; 
+    display: block; /* Exibe em bloco */
+    width: 30px;
+    height: 30px;
+    cursor: pointer; /* Muda o cursor */
+    /* background: blue; */
 }
 
-.nav-item {
-    margin: 0 10px;
+.menu-icon .bar,
+.menu-icon::after,
+.menu-icon::before{
+    content: "";
+    display: none; /* Oculta */
+    width: 100%;
+    height: 4px;
+    border-radius: 3px; /* Borda arredondada */
+    background: #000;
+    margin: 6px 0; /* Margem */
+    transition: .4s;
 }
 
-.nav-link {
-    text-decoration: none;
-    color: #000;
+.menu-icon.active::before{
+    transform: rotate(-45deg) translate(-6px , 6px); /* Rotaciona */
 }
 
-/* Estilos responsivos */
-@media (max-width: 1420px) {
-    .hamburger {
-        display: block; /* Mostra o ícone do hamburger */
+.menu-icon.active::after{
+    transform: rotate(45deg)translate(-8px , -8px); /* Rotaciona */
+}
+
+.menu-icon.active .bar{ 
+    opacity: 0;
+}
+
+
+@media(max-width:991px){
+    header,section,footer{
+        padding-left: 3%;
+        padding-right: 3%;
     }
+}
 
-    .list-nav-header {
-        display: none; /* Oculta os itens do menu inicialmente */
-        flex-direction: column; /* Empilha os itens verticalmente */
+@media(max-width:1220px){
+    .proposal{
+        display: none;
+    }
+    .menu-icon .bar,.menu-icon::after,.menu-icon::before{
+        display: block;
+    }
+    ul.navlist{
         position: absolute;
-        top: 100%;
-        left: 0;
-        background: white; /* Cor de fundo do dropdown */
-        width: 100vw; /* Largura total */
-        box-shadow: 0px 23px 26px -10px rgba(0,0,0,0.1);
-        border-bottom-right-radius: 1rem;        
-        border-bottom-left-radius: 1rem;
-        
-    }
-
-    .list-nav-header.active {
-        display: flex;
-        background-color: white;
-        height: 10rem;
+        top: -1000px;
+        transition: all .3s ease;
         width: 100%;
+        text-align: center;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 23px 26px -10px rgba(0,0,0,0.1);
+        border-bottom-right-radius: 1rem;        
+        border-bottom-left-radius: 1rem;
+        background: whitesmoke;
     }
-    .container-header{
-        margin: 0 !important;
-        display: flex;
-        flex-direction: column;
-        /* padding-top: 2rem; */
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        margin: 1rem;
+    ul.navlist a{
+        font-size: 1.5rem;
+        margin: 2rem 0;
     }
-
-    .container-img-menu {
-        display: flex;
-        flex-direction: row;
-        width:100%;
+    .navlist.active{
+        top: 100%;
     }
-    .header-img {
-        width: 95%;
+    .overlay{
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background: rgba(0,0,0,0.5);
+        z-index: 8;
+        opacity: 0;
+        transform: .3s;
+        pointer-events: none;
     }
-
-    .nav-header{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-
 }
+
