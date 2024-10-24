@@ -111,3 +111,11 @@ button {
 button:hover {
     background-color: var(--vermelho);
 }
+
+.p-question {
+    margin: 10px;
+}
+
+.img-questions {
+    margin: 10px;
+}
