@@ -81,3 +81,104 @@
     line-height: 28px;
     list-style-type: none;
 }
+
+.hamburger {
+    display: none; /* Hide by default */
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header {
+    position: relative;
+}
+
+.hamburger {
+    display: none; /* Oculta por padrão */
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.list-nav-header {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1420px) {
+    .hamburger {
+        display: block; /* Mostra o ícone do hamburger */
+    }
+
+    .list-nav-header {
+        display: none; /* Oculta os itens do menu inicialmente */
+        flex-direction: column; /* Empilha os itens verticalmente */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white; /* Cor de fundo do dropdown */
+        width: 100vw; /* Largura total */
+        box-shadow: 0px 23px 26px -10px rgba(0,0,0,0.1);
+        border-bottom-right-radius: 1rem;        
+        border-bottom-left-radius: 1rem;
+        
+    }
+
+    .list-nav-header.active {
+        display: flex;
+        background-color: white;
+        height: 10rem;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-header{
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+        /* padding-top: 2rem; */
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .container-img-menu {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+    }
+    .header-img {
+        width: 95%;
+    }
+
+    .nav-header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+}
