@@ -1,8 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Variáveis CSS para cores e tamanhos */
+:root {
+    --grey: #fff;
+    --vermelho: #e30613;
+    --dark: #191A23;
+    --black: #000;
+    --gap-large: 40px;
+    --gap-small: 20px;
+    --font-size: 20px;
+    --border-radius: 10px;
+    --transition-speed: 0.3s;
+}
+
+/* Estilos gerais */
 * {
+    text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
+/* Estilos container */
 .container {
     display: flex;
     max-width: 75rem;
@@ -12,19 +31,27 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat";
     margin-bottom: 3rem;
     align-items: center;
 }
 
+/* Estilos de introdução */
 div#quiz-form {
     display: flex;
     gap: 5rem;
     flex-direction: column;
 }
 
-.banner-site {
-    background-image: linear-gradient(to Left, rgba(0, 0, 0, 0.848), rgba(0, 0, 0, 0.634)), url('../img/banner-simulado.jpg');
+.title-dica {
+    color: var(--grey);
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    background: var(--vermelho);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .container-title {
@@ -39,7 +66,7 @@ div#quiz-form {
 .container-title h1 {
     font-size: 2rem;
     font-weight: 900;
-    color: #9a1915;
+    color: var(--vermelho);
 }
 
 .option {
@@ -67,14 +94,14 @@ hr.divisor {
     width: 22rem; 
     border: 0; 
     height: 4px;
-    background-color: #9A1915; 
+    background-color: var(--vermelho); 
     margin: 0;  
 }
 
 button {
     font-size: 1.2rem;
     padding: 10px 20px;
-    background-color: #D71920;
+    background-color: var(--vermelho);
     color: white;
     border: none;
     border-radius: 5px;
@@ -82,5 +109,5 @@ button {
 }
 
 button:hover {
-    background-color: #9A1915;
+    background-color: var(--vermelho);
 }
