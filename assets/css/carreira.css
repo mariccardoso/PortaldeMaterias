@@ -23,19 +23,27 @@
 
 /* Configurações da Main */
 .landing-page {
-    margin-right: 120px;
+    margin-right: 100vh;
 }
 
 .title-text {
     display: flex;
-    width: 1400px;
-    padding: 0px 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-introduction {
+    display: flex;
+    padding: 0px 10vh;
     align-items: flex-start;
     gap: var(--gap-large);
-    margin-top: 200px;
+    margin-top: 3vh;
 }
 
 .title-carrers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--white);
     font-family: "Montserrat";
     font-size: 30px;
@@ -43,99 +51,104 @@
     text-align: center;
     background: var(--vermelho);
     border-radius: var(--border-radius);
-    width: 400px;
-    height: 40px;
-    margin-bottom: 65px;
+    width: 35vh;
+    height: 4vh;
+    margin-bottom: 6vh;
 }
 
 .text-information {
     color: #000;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: var(--font-size);
     font-weight: 400;
 }
 
-/*carreiras*/
+/* carreiras cards */
 .section-carrers {
     display: flex;
-    margin: 10px;
     justify-content: center;
+    margin: 1.5vh;
 }
 
 article {
-    border-radius: 35px;
-    padding: 20px;
-    position: relative;
+    border-radius: 3vh;
+    padding: 4vh;
+}
+
+.card-black, .card-red, .card-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1vh;
+    /* Tirar a Borda depois */
+    border: 2px solid var(--black);
+    font-family: "Montserrat";
+    width: 65%;
+    height: 20%;
 }
 
 .card-red {
     background-color: #e30613;
-    color: black;
+    color: #F3F3F3;
     font-family: "Montserrat";
-    width: 65%;
-    height: 188px;
-    border: 2px solid var(--black);
-    box-shadow: 0px 5px 0px 0px var(--dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7rem;
 }
 
 .card-white {
     background-color: #F3F3F3;
     color: black;
     font-family: "Montserrat";
-    width: 65%;
-    height: 188px;
-    border: 2px solid var(--black);
-    box-shadow: 0px 5px 0px 0px var(--dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7rem;
 }
 
 .card-black {
     background-color: #191A23;
     color: black;
-    font-family: "Montserrat";
-    width: 65%;
-    height: 188px;
-    border: 2px solid var(--black);
-    box-shadow: 0px 5px 0px 0px var(--dark);
+}
+
+.p-carrer-white, .p-carrer-black, .p-carrer-red{
+    text-align: center;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 7rem;
+    padding: 2vh;
+}
+
+.p-carrer-red {
+    color: var(--white);
+    font-size: 1.5rem;
 }
 
 .p-carrer-white {
-    color: var(--white);
-}
-
-.p-carrer-white{
-    border-radius: var(--border-radius);
-    height: 40px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    color: whitesmoke;
-    text-align: justify;
+    color: var(--vermelho);
+    font-size: 1.5rem;
 }
 
 .p-carrer-black {
-    border-radius: var(--border-radius);
-    height: 40px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    text-align: justify;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.p-carrer-red-title {
+    color: var(--white);
+    font-size: 3vh;
+}
+
+.p-carrer-white-title {
+    color: var(--vermelho);
+    font-size: 3vh;
+}
+
+.p-carrer-black-title {
+    color: var(--white);
+    font-size: 3vh;
+}
+
+.view-more {
+    color: var(--vermelho);
+}
+
+.view-more-red {
+    color: var(--white);
 }
