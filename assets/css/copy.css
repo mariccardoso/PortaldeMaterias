@@ -21,16 +21,17 @@
 
 /* Estrutura da Header*/
 header{
-    padding: 1.5rem;
+margin-top: 1rem;
     width: 100%;
-position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
     z-index: 100;
     transition: .3s;
-    background: whitesmoke;
-    box-shadow: 0px 23px 26px -10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
 }
 
 /* Meu nome (Logo)*/
@@ -162,7 +163,6 @@ ul.navlist{
         box-shadow: 0px 23px 26px -10px rgba(0,0,0,0.1);
         border-bottom-right-radius: 1rem;        
         border-bottom-left-radius: 1rem;
-        background: whitesmoke;
     }
     ul.navlist a{
         font-size: 1.5rem;
