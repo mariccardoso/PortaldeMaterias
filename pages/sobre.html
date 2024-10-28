@@ -7,29 +7,33 @@
     <title>Sobre Nós</title>
 
     <link rel="stylesheet" href="../assets/css/sobre.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
 
     <link rel="shortcut icon" type="imagex/png" href="https://www.sp.senai.br/favicon.ico">
 
 </head>
 <body>
     <main class="lading-page">
-        <header class="navigation-bar">
-            <nav class="nav-header" aria-label="Navegação principal">
-                <a href="https://www.sp.senai.br/" target="_blank">
-                    <img src="../assets/img/logo-senai.png" alt="Logo do SENAI" class="img-header">
-                </a>
-                <ul class="list-nav-header">
-                    <li class="nav-item"><a href="./../index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="./carreira.html" class="nav-link">Carreiras</a></li>
-                    <li class="nav-item"><a href="./dica.html" class="nav-link">Dicas</a></li>
-                    <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre nós</a></li>
-                    <li class="nav-item"><a href="./noticia.html" class="nav-link">Notícias</a></li>
-                    <li class="nav-item"><a href="./simulado.html" class="nav-link">Simulados</a></li>
-                    <li class="nav-item"><a href="./entevista.html" class="nav-link">Entrevistas</a></li>
-                    <label for="" class="button-nav-header">Contato</label>
-                </ul>
-            </nav>
+        <div class="overlay"></div>
+        <header>
+            <a href="https://www.sp.senai.br/" target="_blank"><img src="/assets/img/logo-senai.png" class="logo"></a>
+            <ul class="navlist">
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="../pages/carreira.html">Carreiras</a></li>
+                <li><a href="../pages/dica.html">Dicas</a></li>
+                <li><a href="../pages/sobre.html">Sobre Nós</a></li>
+                <li><a href="../pages/noticia.html">Noticias</a></li>
+                <li><a href="../pages/simulado.html">Simulados</a></li>
+                <li><a href="../pages/entevista.html">Entrevistas</a></li>
+            </ul>
+            <div class="right-header">
+                <a href="#contact" class="btn">Entre em contato <i class='bx bx-message-dots'></i> </a>
+                <div class="menu-icon">
+                    <div class="bar"></div>
+                </div>
+            </div>
         </header>
+        
 
         <section class="introduction">
             <h1 class="title-sobrenos">Conheça nossa Equipe</h1>
@@ -85,7 +89,7 @@
             </div>
         
             <div class="cards"></div>
-            <div class="button-cards">
+            <div class="teste">
                 <article class="card">
                     <div class="member-section">
                         <img src="../assets/img/integrantes/Duda.png" alt="Foto de Maria Eduarda" class="member-img">
@@ -117,7 +121,8 @@
                 </article>
             </div>
         </section>
-        bubububububububub
+
+        <script src="../assets/js/menu_Java.js"></script>
     </main>
     
 </body>

@@ -1,124 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carreiras</title>
 
-    <link rel="stylesheet" href="../assets/css/carreira.css">
-    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/carreira.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
 
-    <link rel="shortcut icon" type="imagex/png" href="https://www.sp.senai.br/favicon.ico">
-</head>
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="https://www.sp.senai.br/favicon.ico"
+    />
+  </head>
 
-<body>
+  <body>
     <main class="lading-page">
-        <header>
-            <div class="container-header">
-                <div class="header-img">
-                    <a href="https://www.sp.senai.br/" target="_blank">
-                        <img src="/assets/img/logo-senai.png" alt="Logo do SENAI" class="img-header">
-                    </a>
-                </div>
-                <div class="nav-header" aria-label="Navegação principal">
-                    <ul class="list-nav-header">
-                        <div class="button-all">
-                            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="../pages/carreira.html" class="nav-link">Carreiras</a></li>
-                            <li class="nav-item"><a href="../pages/dica.html" class="nav-link">Dicas</a></li>
-                            <li class="nav-item"><a href="../pages/sobre.html" class="nav-link">Sobre nós</a></li>
-                            <li class="nav-item"><a href="../pages/noticia.html" class="nav-link">Notícias</a></li>
-                            <li class="nav-item"><a href="../pages/simulado.html" class="nav-link">Simulados</a></li>
-                            <li class="nav-item"><a href="../pages/entevista.html" class="nav-link">Entrevistas</a></li>
-                        </div>
-                        <div class="button-div-contato">
-                            <label href="./pages/contato.html" class="button-nav-header">Contato</label>
-                        </div>        
-                    </ul>
-                </div>
-            </div>
-        </header>
+      <div class="overlay"></div>
+      <header>
+        <a href="https://www.sp.senai.br/" target="_blank"
+          ><img src="/assets/img/logo-senai.png" class="logo"
+        /></a>
+        <ul class="navlist">
+          <li><a href="../index.html" class="active">Home</a></li>
+          <li><a href="../pages/carreira.html">Carreiras</a></li>
+          <li><a href="../pages/dica.html">Dicas</a></li>
+          <li><a href="../pages/sobre.html">Sobre Nós</a></li>
+          <li><a href="../pages/noticia.html">Noticias</a></li>
+          <li><a href="../pages/simulado.html">Simulados</a></li>
+          <li><a href="../pages/entevista.html">Entrevistas</a></li>
+        </ul>
+        <div class="right-header">
+          <a href="#contact" class="btn"
+            >Entre em contato <i class="bx bx-message-dots"></i>
+          </a>
+          <div class="menu-icon">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </header>
 
-        <!-- Sessão de introdução à página -->
-        <section class="title-text">
-            <div class="container-introduction">
-                <h1 class="title-carrers">Carreiras</h1>
-            <p class="text-information">Aqui você poderá encontrar orientações sobre escolhas de carreira e cursos
-                superiores na área de química, ajudando você a explorar os diversos caminhos profissionais na área de
-                quimica.</p>
-            </div>
+      <!-- Sessão de introdução à página -->
+      <section class="title-text">
+        <div class="container-introduction">
+          <h1 class="title-carrers">Carreiras</h1>
+          <p class="text-information">
+            Aqui você poderá encontrar orientações sobre escolhas de carreira e
+            cursos superiores na área de química, ajudando você a explorar os
+            diversos caminhos profissionais na área de quimica.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sessão de carreiras -->
+      <article class="cards">
+        <section class="section-carrers">
+          <article
+            class="card-black"
+            id="cardBlack"
+            onclick="funçãoPassarMouseBlack()"
+            onclick="adicionarSeta()"
+          >
+            <p class="p-carrer-black-title">Desenvolvimento de Sistemas</p>
+            <p class="p-carrer-black-subtitle">
+              Desenvolvedor de Software para Automação de Processos Industriais
+            </p>
+            <p class="p-carrer-black">
+              Desenvolvedores criam e mantêm sistemas que automatizam processos
+              industriais, melhorando a eficiência e precisão nas operações.
+              Eles trabalham com a programação de softwares e a integração de
+              sistemas para otimização. Na indústria química, sistemas
+              automatizados são essenciais para controlar reações, processos
+              produtivos e garantir a precisão nas dosagens e misturas de
+              substâncias.
+            </p>
+            <a href="https://sp.senai.br/cursos?unidade=564#" target="_blank">
+              <div class="view-more-global">
+                <p class="view-more">ver mais detalhes</p>
+                <img src="/assets/img/arrow.png" alt="Arrow" class="arrow" />
+              </div>
+            </a>
+          </article>
         </section>
 
-        <!-- Sessão de carreiras -->
-        <article class="cards">
-            <section class="section-carrers">
-                <article class="card-black" id="cardBlack" onclick="funçãoPassarMouseBlack()" onclick="adicionarSeta()">
-                    <p class="p-carrer-black-title">Desenvolvedor de Software para Automação de Processos Industriais (Desenvolvimento de Sistemas)</p>
-                    <p class="p-carrer-black">Desenvolvedores criam e mantêm sistemas que automatizam processos
-                        industriais, melhorando a eficiência e precisão nas operações. Eles trabalham com a programação
-                        de softwares e a integração de sistemas para otimização. Na indústria química, sistemas
-                        automatizados são essenciais para controlar reações, processos produtivos e garantir a precisão
-                        nas dosagens e misturas de substâncias.</p>
-                    <p class="view-more">ver mais detalhes</p>
-                    <img src="/assets/img/arrow.png" alt="Arrow" class="arrow" />
-                </article>
-            </section>
+        <section class="section-carrers">
+          <article
+            class="card-white"
+            id="cardWhite"
+            onclick="funçãoPassarMouseWhite()"
+          >
+            <p class="p-carrer-white-title">Mecânica</p>
+            <p class="p-carrer-white-subtitle">
+              Técnico em Manutenção Industrial
+            </p>
+            <p class="p-carrer-white">
+              O Técnico em Manutenção Industrial é responsável pela instalação,
+              manutenção e conserto de máquinas e equipamentos industriais. Ele
+              garante que o maquinário funcione de forma eficiente e segura. Na
+              indústria química, muitos processos envolvem o uso de maquinários
+              complexos, como misturadores, reatores e tubulações, que precisam
+              de manutenção constante para evitar contaminações ou falhas no
+              processo produtivo.
+            </p>
+            <a href="https://sp.senai.br/cursos?unidade=564#" target="_blank">
+                <div class="view-more-global">
+                  <p class="view-more">ver mais detalhes</p>
+                  <img src="/assets/img/arrow.png" alt="Arrow" class="arrow" />
+                </div>
+              </a>
+          </article>
+        </section>
 
-            <section class="section-carrers">
-                <article class="card-white" id="cardWhite" onclick="funçãoPassarMouseWhite()">
-                    <p class="p-carrer-white-title">Técnico em Manutenção Industrial (Mecânica)</p>
-                    <p class="p-carrer-white">O Técnico em Manutenção Industrial é responsável pela instalação, 
-                        manutenção e conserto de máquinas e equipamentos industriais. Ele garante que o maquinário 
-                        funcione de forma eficiente e segura. Na indústria química, muitos processos envolvem 
-                        o uso de maquinários complexos, como misturadores, reatores e tubulações, que precisam 
-                        de manutenção constante para evitar contaminações ou falhas no processo produtivo.</p>
-                    <p class="view-more">ver mais detalhes</p>
-                    <img src="/assets/img/arrow.png" alt="Arrow" class="arrow" />
-                </article>
-            </section>
+        <section class="section-carrers">
+          <article
+            class="card-red"
+            id="cardRed"
+            onclick="funçãoPassarMouseRed()"
+          >
+            <p class="p-carrer-red-title">Eletroeletrônica</p>
+            <p class="p-carrer-red-subtitle">
+              Técnico em Manutenção de Equipamentos Eletroeletrônicos
+            </p>
+            <p class="p-carrer-red">
+              Este profissional realiza a instalação, manutenção e reparo de
+              sistemas eletroeletrônicos, garantindo que máquinas e equipamentos
+              funcionem corretamente. Em indústrias químicas, muitos processos
+              dependem de equipamentos eletrônicos para monitoramento de
+              temperatura, pressão e outros parâmetros, essenciais para garantir
+              a segurança e qualidade da produção.
+            </p>
+            <a href="https://sp.senai.br/cursos?unidade=564#" target="_blank">
+                <div class="view-more-global">
+                  <p class="view-more-red">ver mais detalhes</p>
+                  <img src="/assets/img/arrow-white.png" alt="Arrow" class="arrow" />
+                </div>
+              </a>
+          </article>
+        </section>
 
-            <section class="section-carrers">
-                <article class="card-red" id="cardRed" onclick="funçãoPassarMouseRed()">
-                    <p class="p-carrer-red-title">Técnico em Manutenção de Equipamentos Eletroeletrônicos (Eletroeletrônica)</p>
-                    <p class="p-carrer-red"> Este profissional realiza a instalação, manutenção e reparo de sistemas 
-                        eletroeletrônicos, garantindo que máquinas e equipamentos funcionem corretamente. Em indústrias 
-                        químicas, muitos processos dependem de equipamentos eletrônicos para monitoramento de 
-                        temperatura, pressão e outros parâmetros, essenciais para garantir a segurança e qualidade 
-                        da produção.</p>
-                    <p class="view-more-red">ver mais detalhes</p>
-                    <img src="/assets/img/arrow-white.png" alt="Arrow" class="arrow" />
-                </article>
-            </section>
+        <section class="section-carrers">
+          <article
+            class="card-black"
+            id="cardBlack2"
+            onclick="funçãoPassarMouseBlack2()"
+          >
+            <p class="p-carrer-black-title">Administração</p>
+            <p class="p-carrer-black-subtitle">Técnico em Qualidade</p>
+            <p class="p-carrer-black">
+              "O Técnico em Qualidade atua na implementação e controle de
+              processos para garantir que produtos e serviços atendam aos
+              padrões de qualidade exigidos. Eles realizam auditorias, testam
+              produtos e monitoram a conformidade com normas técnicas e
+              regulatórias. Os profissionais dessa área podem atuar em
+              indústrias químicas, alimentícias ou farmacêuticas, onde o
+              controle de qualidade é fundamental para garantir a segurança e a
+              eficácia dos produtos."
+            </p>
+            <a href="https://sp.senai.br/cursos?unidade=564#" target="_blank">
+                <div class="view-more-global">
+                  <p class="view-more">ver mais detalhes</p>
+                  <img src="/assets/img/arrow.png" alt="Arrow" class="arrow" />
+                </div>
+              </a>
+          </article>
+        </section>
 
-            <section class="section-carrers">
-                <article class="card-black" id="cardBlack2" onclick="funçãoPassarMouseBlack2()">
-                    <p class="p-carrer-black-title">Técnico em Qualidade (Administração)</p>
-                    <p class="p-carrer-black">"O Técnico em Qualidade atua na implementação e controle de processos para 
-                        garantir que produtos e serviços atendam aos padrões de qualidade exigidos. Eles realizam auditorias, 
-                        testam produtos e monitoram a conformidade com normas técnicas e regulatórias. Os profissionais dessa 
-                        área podem atuar em indústrias químicas, alimentícias ou farmacêuticas, onde o controle de qualidade 
-                        é fundamental para garantir a segurança e a eficácia dos produtos."</p>
-                    <p class="view-more">ver mais detalhes</p>
-                    <img src="/assets/img/arrow.png" alt="Arrow" class="arrow" />
-                </article>
-            </section>
-
-            <section class="section-carrers">
-                <article class="card-white" id="cardWhite2" onclick="funçãoPassarMouseWhite()">
-                    <p class="p-carrer-white-title">Técnico em Processos de Produção de Alimentos (Alimentos)</p>
-                    <p class="p-carrer-white"> O Técnico em Alimentos é responsável por desenvolver e melhorar produtos alimentícios, 
-                        controlar a qualidade e garantir que os processos de produção sejam seguros e eficientes. A química dos 
-                        alimentos é fundamental para este campo, já que envolve o entendimento das reações químicas durante o 
-                        processamento de alimentos, preservação, e controle de contaminantes."</p>
-                    <p class="view-more">ver mais detalhes</p>
-                    <img src="/assets/img/arrow.png" alt="Arrow" class="arrow" />
-                </article>
-            </section>
-
-        </article>
+        <section class="section-carrers">
+          <article
+            class="card-white"
+            id="cardWhite2"
+            onclick="funçãoPassarMouseWhite()"
+          >
+            <p class="p-carrer-white-title">Alimentos</p>
+            <p class="p-carrer-white-subtitle">
+              Técnico em Processos de Produção de Alimentos
+            </p>
+            <p class="p-carrer-white">
+              O Técnico em Alimentos é responsável por desenvolver e melhorar
+              produtos alimentícios, controlar a qualidade e garantir que os
+              processos de produção sejam seguros e eficientes. A química dos
+              alimentos é fundamental para este campo, já que envolve o
+              entendimento das reações químicas durante o processamento de
+              alimentos, preservação, e controle de contaminantes."
+            </p>
+            <a href="https://sp.senai.br/cursos?unidade=564#" target="_blank">
+                <div class="view-more-global">
+                  <p class="view-more">ver mais detalhes</p>
+                  <img src="/assets/img/arrow.png" alt="Arrow" class="arrow" />
+                </div>
+              </a>
+          </article>
+        </section>
+      </article>
     </main>
 
     <script src="../assets/js/carreira.js"></script>
-</body>
-
+    <script src="../assets/js/menu_Java.js"></script>
+  </body>
 </html>
