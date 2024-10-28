@@ -14,12 +14,13 @@
     --transition-speed: 0.3s;
 }
 
-/* Estilos gerais */
+
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
+
 
 /* Configurações da Main */
 .landing-page {
@@ -63,7 +64,104 @@
     font-weight: 400;
 }
 
-/* carreiras cards */
+.carreiras-container {
+    display: inline-flex;
+    height: 80rem;
+    padding: 0rem 6.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-shrink: 0;
+}
+
+.carreiras-container .card {
+    display: flex;
+    height: 20%;
+    padding: 4rem 3rem;
+    align-items: flex-start;
+    gap: 4rem;
+    flex-shrink: 0;
+}
+
+.carreiras-container hr{
+    width: 0.0625rem;
+    height: 11rem;
+    background: #FFF;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.card-container p, h2 {
+    color: var(--white);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-container a {
+    color: var(--Vermelho, #E30613);
+    font-family: "Space Grotesk";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    /* 140% */
+}
+
+#cardblack {
+    /*stlyes*/
+    border-radius: 2.8125rem;
+    background: var(--dark);
+}
+
+#cardwhite{
+    /*stlyes*/
+    border-radius: 2.8125rem;
+    background: var(--white);
+    border: #E30613 0.125rem solid;
+}
+
+#cardred{
+    /*stlyes*/
+    border-radius: 2.8125rem;
+    background: var(--vermelho);
+}
+
+#cardblack p, h2{
+    color: var(--white);
+}
+
+#cardwhite p{
+    color: var(--vermelho);
+}
+
+#cardwhite h2{
+    color: var(--vermelho);
+}
+
+#cardred p, h2{
+    color: var(--white);
+}
+
+#cardblack a {
+    color: var(--vermelho);
+}
+
+#cardwhite a {
+    color: var(--vermelho);
+}
+
+#cardred a {
+    color: var(--white);
+}
+
+
+/* carreiras cards 
 .section-carrers {
     display: flex;
     justify-content: center;
@@ -82,7 +180,7 @@ article {
     flex-direction: column;
     gap: 1rem;
     margin: 1vh;
-    /* Tirar a Borda depois */
+    /* Tirar a Borda depois 
     border: 2px solid var(--black);
     font-family: "Montserrat";
     width: 65%;
