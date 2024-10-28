@@ -104,6 +104,10 @@ article {
 .card-black {
     background-color: #191A23;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
 }
 
 .p-carrer-white, .p-carrer-black, .p-carrer-red{
@@ -117,31 +121,50 @@ article {
 
 .p-carrer-red {
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.view-more-red {
+    color: var(--white);
 }
 
 .p-carrer-white {
     color: var(--vermelho);
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.p-carrer-red-subtitle {
+    color: var(--white);
+    font-size: 3vh;
 }
 
 .p-carrer-black {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .p-carrer-red-title {
     color: var(--white);
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 .p-carrer-white-title {
     color: var(--vermelho);
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 .p-carrer-black-title {
     color: var(--white);
+    font-size: 4vh;
+}
+
+.p-carrer-black-subtitle {
+    color: var(--white);
+    font-size: 3vh;
+}
+
+.p-carrer-white-subtitle {
+    color: var(--vermelho);
     font-size: 3vh;
 }
 
@@ -151,4 +174,14 @@ article {
 
 .view-more-red {
     color: var(--white);
+}
+
+.view-more-global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    padding: 2vh;
+    gap: 2rem;
 }
