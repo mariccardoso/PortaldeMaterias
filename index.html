@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Portal de Matérias</title>
 
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/header.css">
+    <!-- Importação das páginas de estilo (CSS) -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
 
-    <link rel="shortcut icon" type="imagex/png" href="https://www.sp.senai.br/favicon.ico">
+    <!-- Importação do ícone do SENAI -->
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="https://www.sp.senai.br/favicon.ico"
+    />
+  </head>
 
-</head>
+  <body>
+    <!------------ Cabeçalho da página ------------>
+    <header>
+      <!-- Logo do SENAI -->
+      <a href="https://www.sp.senai.br/" target="_blank"
+        ><img src="/assets/img/logo-senai.png" class="logo"
+      /></a>
 
-<body>
-<div class="overlay"></div>
-<header>
-    <a href="https://www.sp.senai.br/" target="_blank"><img src="/assets/img/logo-senai.png" class="logo"></a>
-    <ul class="navlist">
+      <!-- Menu de navegação -->
+      <ul class="navlist">
         <li><a href="#" class="active">Home</a></li>
         <li><a href="./pages/carreira.html">Carreiras</a></li>
         <li><a href="./pages/dica.html">Dicas</a></li>
@@ -25,111 +34,153 @@
         <li><a href="./pages/noticia.html">Noticias</a></li>
         <li><a href="./pages/simulado.html">Simulados</a></li>
         <li><a href="./pages/entevista.html">Entrevistas</a></li>
-    </ul>
-    <div class="right-header">
-        <a href="#contact" class="btn">Entre em contato <i class='bx bx-message-dots'></i> </a>
+      </ul>
+
+      <!-- Botão de contato -->
+      <div class="right-header">
+        <a href="#contact" class="btn"
+          >Entre em contato <i class="bx bx-message-dots"></i>
+        </a>
+
+        <!-- Ícone do menu mobile -->
         <div class="menu-icon">
-            <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-
+    <!------------ Seção principal da página ------------>
     <section class="container-main">
-        <div class="container-text">
-                <h1 class="section-title">Bem-vindo ao Portal de Química!</h1>
-                <p class="section-text">Explore o fascinante mundo da química! Aqui, você encontrará conteúdos sobre
-                    reações, elementos, compostos e muito mais. Prepare-se para aprender e experimentar o universo dos
-                    átomos e moléculas de uma maneira dinâmica e interativa.</p>
-                <label href="pages/noticia.html" class="button">Veja as notícias do momento</label>
-    
-        </div>
-        <div class="container-img">
-                <img src="./assets/img/main-img.png" alt="material quimico borbulhando" class="home-illustration">
-        </div>
+      <!-- Texto de boas-vindas -->
+      <div class="container-text">
+        <h1 class="section-title">Bem-vindo ao Portal de Química!</h1>
+        <p class="section-text">
+          Explore o fascinante mundo da química! Aqui, você encontrará conteúdos
+          sobre reações, elementos, compostos e muito mais. Prepare-se para
+          aprender e experimentar o universo dos átomos e moléculas de uma
+          maneira dinâmica e interativa.
+        </p>
+
+        <!-- Botão de acesso às notícias -->
+        <label href="pages/noticia.html" class="button">Veja as notícias do momento</label>
+      </div>
+
+      <!-- Imagem ilustrativa -->
+      <div class="container-img">
+        <img
+          src="./assets/img/main-img.png"
+          alt="material quimico borbulhando"
+          class="home-illustration"
+        />
+      </div>
     </section>
+
+    <!------------ Seção de conteúdo ------------>
     <section class="logotipos">
-        <div class="logotipos-introduction">
-            <h2>Ferramentas</h2>
-            <p>Aqui estão algumas ferramentas muito úteis para estudar e se organizar</p>
+      <!-- Título e descrição da seção -->
+      <div class="logotipos-introduction">
+        <h1 class="button">Ferramentas de Química</h1>
+        <p class="section-text">
+          Aqui estão algumas ferramentas muito úteis para estudar e se organizar
+        </p>
+      </div>
+
+      <div class="logotipos-item">
+        <div class="card-item">
+          <a href="https://www.omnicalculator.com/" target="_blank">
+            <img
+              src="./assets/img/logos/ominiCalculator.png"
+              alt="ominiCalculator"
+              class="logotipo"
+            />
+          </a>
+          <p>Calculadoras para matemática e ciências.</p>
         </div>
-
-        <div class="logotipos-item">
-
-            <a href="https://www.omnicalculator.com/" target="_blank">
-                <div class="card-item">
-                    <img src="./assets/img/logos/ominiCalculator.png" alt="ominiCalculator" class="logotipo">
-                </div>
-            </a>
-
-            <hr>
-
-            <a href="https://ptable.com/?lang=pt#Propriedades" target="_blank">
-                <div class="card-item">
-                    <img src="./assets/img/logos/ptable.png" alt="ptable" class="logotipo">
-                </div> 
-            </a>
-
-            <hr>
-            
-            <a href="https://pt.symbolab.com/" target="_blank">
-                <div class="card-item">
-                    <img src="./assets/img/logos/symbolab.png" alt="symbolab" class="logotipo">
-                </div>   
-            </a>
-
-            <hr>
-            
-            <a href="https://www.notion.so/pt" target="_blank">
-                <div class="card-item">
-                    <img src="./assets/img/logos/notion.png" alt="notion" class="logotipo">
-                </div>      
-            </a>
-            
-            <hr>
-
-            <a href="https://www.google.com/" target="_blank">
-                <div class="card-item">
-                    <img src="./assets/img/logos/google.png" alt="google" class="logotipo">
-                </div>    
-            </a>
-            
-            <hr>
-
-            <a href="https://quizlet.com/br" target="_blank">
-                <div class="card-item">
-                    <img src="./assets/img/logos/quizlet.png" alt="quizlet" class="logotipo">
-                </div>    
-            </a>
-            
+      
+        <div class="card-item">
+          <a href="https://ptable.com/?lang=pt#Propriedades" target="_blank">
+            <img
+              src="./assets/img/logos/ptable.png"
+              alt="ptable"
+              class="logotipo"
+            />
+          </a>
+          <p>Tabela periódica interativa com dados químicos.</p>
         </div>
+      
+        <div class="card-item">
+          <a href="https://pt.symbolab.com/" target="_blank">
+            <img
+              src="./assets/img/logos/symbolab.png"
+              alt="symbolab"
+              class="logotipo"
+            />
+          </a>
+          <p>Solucionador de equações matemáticas.</p>
+        </div>
+      
+        <div class="card-item">
+          <a href="https://www.notion.so/pt" target="_blank">
+            <img
+              src="./assets/img/logos/notion.png"
+              alt="notion"
+              class="logotipo"
+            />
+          </a>
+          <p>Ferramenta de produtividade e organização.</p>
+        </div>
+      
+        <div class="card-item">
+          <a href="https://www.google.com/" target="_blank">
+            <img
+              src="./assets/img/logos/google.png"
+              alt="google"
+              class="logotipo"
+            />
+          </a>
+          <p>Busca e serviços online.</p>
+        </div>
+      
+        <div class="card-item">
+          <a href="https://quizlet.com/br" target="_blank">
+            <img
+              src="./assets/img/logos/quizlet.png"
+              alt="quizlet"
+              class="logotipo"
+            />
+          </a>
+          <p>Flashcards e recursos de aprendizado.</p>
+        </div>
+      </div>
+      
+
+      </div>
     </section>
 
     <section class="teste-container">
-        <div class="teste">
-            <h2>Card content</h2>
-        </div>
-        <div class="teste">
-            <h2>Card content</h2>
-        </div>
-        <div class="teste">
-            <h2>Card content</h2>
-        </div>
-        <div class="teste">
-            <h2>Card content</h2>
-        </div>
-        <div class="teste">
-            <h2>Card content</h2>
-        </div>
-        <div class="teste">
-            <h2>Card content</h2>
-        </div>
-        <div class="teste">
-            <h2>Card content</h2>
-        </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
     </section>
 
     <script src="./assets/js/menu_Java.js"></script>
-</body>
-
+  </body>
 </html>
