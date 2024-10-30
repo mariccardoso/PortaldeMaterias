@@ -163,24 +163,30 @@
     </section>
 
     <!------------ Seção de cartões ------------>
-    <section class="cards-section">
-      <!-- Div do card de Química -->
-      <div class="cards">
-        <h2>Título do Card</h2>
-        <img
-          src="caminho/para/imagem.jpg"
-          alt="Descrição da imagem"
-          class="card-image"
-        />
-        <p>
-          Esta é uma descrição breve do conteúdo do card. Aqui você pode
-          adicionar informações relevantes sobre o que o card representa.
-        </p>
-        <div class="card-buttons">
-          <a href="#" class="button">Ação 1</a>
-          <a href="#" class="button">Ação 2</a>
+    <section class="cards">
+      <article class="card-buttons">
+        <div class="developers-container">
+          <h2 class="button-developers">PDF:</h2>
+          <p class="developers-a">Tabela Periódica</p>
         </div>
-      </div>
+        <hgroup>
+          <p>
+            Baixe agora a versão em PDF da Tabela Periódica e tenha este valioso
+            recurso sempre à mão para suas pesquisas e estudos.
+          </p>
+        </hgroup>
+        <a
+          href="assets/pdf/tabela-periodica.pdf"
+          class="button-dowload"
+          download
+          >Baixar</a
+        >
+      </article>
+      <img
+        src="assets/img/poisons.png"
+        alt="Vários potes de veneno"
+        class="card-image"
+      />
     </section>
 
     <!------------ Sessão de contato ------------>
@@ -191,7 +197,9 @@
         </div>
         <h3>
           Fale conosco ou com o
-          <a href="https://www.sp.senai.br/" target="_blank">SENAI</a>
+          <a href="https://www.sp.senai.br/" target="_blank"
+            >SENAI<img src="assets/img/arrow.png" alt="Seta"
+          /></a>
         </h3>
         <p>Entre em contato com os desenvolvedores do Portal de Química!</p>
         <p>Tem alguma dúvida, sugestão ou crítica? Fale conosco!</p>
@@ -200,6 +208,10 @@
       <!-- Div de Contato com os Desenvolvedores -->
       <div class="card-contact-desenvolvedores">
         <section class="section-content">
+          <div class="developers-container">
+            <h1 class="button-developers">Contato:</h1>
+            <a class="developers-a" href="pages/sobre.html">desenvolvedores</a>
+          </div>
           <p>Seu nome</p>
           <input
             type="text"
@@ -237,15 +249,22 @@
           />
         </section>
       </div>
-
-      <!-- Div de Contato com o SENAI -->
-      <div class="card-contact-senai">
-        <!-- Conteúdo da div de contato com o SENAI -->
-      </div>
     </section>
 
     <!-- Scripts -->
     <script src="./assets/js/menu_Java.js"></script>
     <script src="assets/js/animation-pages.js"></script>
+
+    <!-- Script (unico desta página) para rolar até a seção de contato -->
+    <script>
+      document
+        .getElementById("btn-entre-em-contato")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          document
+            .getElementById("contate-nos")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
   </body>
 </html>

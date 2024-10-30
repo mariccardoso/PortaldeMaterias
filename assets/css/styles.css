@@ -2,44 +2,37 @@
 
 /* Variáveis CSS para cores e tamanhos */
 :root {
-    --grey: #f3f3f3;
-    /* Branco padrão */
-    --vermelho: #e30613;
-    /* Vermelho padrão*/
-    --dark: #191A23;
-    /*Preto 01 padrão*/
-    --black: #000;
-    /*Preto 02 padrão*/
-    --gap-large: 40px;
-    /* Espaçamento grande entre os itens (por exemplo, em desktops) */
-    --gap-small: 20px;
-    /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
-    --font-size: 20px;
-    /* Tamanho da fonte padrão */
-    --border-radius: 10px;
-    /* Raio da borda para bordas arredondadas */
-    --transition-speed: 0.3s;
-    /* Velocidade da transição de cor para suavizar mudanças */
-    --contact: #89898931;
-
-    --teste1: #eeff00;
+    --grey: #f3f3f3; /* Branco padrão */
+    --vermelho: #e30613; /* Vermelho padrão */
+    --dark: #191A23; /* Preto 01 padrão */
+    --black: #000; /* Preto 02 padrão */
+    --gap-large: 40px; /* Espaçamento grande entre os itens (por exemplo, em desktops) */
+    --gap-small: 20px; /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
+    --font-size: 20px; /* Tamanho da fonte padrão */
+    --border-radius: 10px; /* Raio da borda para bordas arredondadas */
+    --transition-speed: 0.3s; /* Velocidade da transição de cor para suavizar mudanças */
+    --contact: #89898931; /* Cor de fundo para a seção de contato */
+    --teste1: #eeff00; /* Cores de teste */
     --teste2: #ff00ee;
     --teste3: #00eeff;
     --teste4: #00ff00;
 }
 
+/* Reset de estilos */
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
+/* Estilos para o corpo da página */
 body {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Estilos para a animação de transição */
@@ -52,6 +45,7 @@ body {
     opacity: 0;
 }
 
+/* Estilos para a seção principal */
 .container-main {
     display: flex;
     width: 100%;
@@ -84,6 +78,7 @@ body {
     align-items: center;
 }
 
+/* Estilos para botões */
 .button {
     padding: 20px 35px;
     align-items: flex-start;
@@ -97,8 +92,15 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+    transition: background-color var(--transition-speed);
 }
 
+.button:hover {
+    background-color: darken(var(--vermelho), 10%);
+    color: var(--dark);
+}
+
+/* Estilos para títulos e textos */
 .section-title {
     margin-top: 25px;
     color: var(--dark);
@@ -118,18 +120,17 @@ body {
     width: 700px;
 }
 
+/* Estilos para a seção de logotipos */
 .logotipos {
     display: flex;
     flex-direction: column;
     padding: 10vh;
     align-items: center;
     gap: 1rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
     background-color: #fff;
-    width: 80%;
+    width: 90%;
     height: 60%;
-    border-radius: 3vh;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .logotipo {
@@ -170,10 +171,11 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    background-color:#fff;
+    background-color: #fff;
     width: 100%;
 }
 
+/* Estilos para os cards */
 .card-item {
     display: flex;
     flex-direction: column;
@@ -182,9 +184,15 @@ body {
     align-items: center;
     text-align: center;
     background-color: #fff;
+    margin-top: 5vh;
     width: 40vh;
     height: 25vh;
     gap: 1.5rem;
+    transition: transform 0.3s ease; /* Adiciona transição suave */
+}
+
+.card-item:hover {
+    transform: scale(1.2); /* Aumenta o card ao passar o mouse */
 }
 
 .card-item p {
@@ -197,51 +205,130 @@ body {
     line-height: normal;
 }
 
-/* ---------- Card química ---------- */
+/* Estilos para a seção de cartões */
 .cards-section {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 30vh;
-    margin-top: 30vh;
+    gap: 10vh;
+    margin-top: 15vh;
 }
 
 .cards {
-    width: 200vh;
-    height: 80vh;
-    background-color: #fff;
+    width: 60%;
+    height: 60vh;
+    background-color: var(--contact);
     border-radius: 3vh;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     display: flex;
-    flex-direction: column; /* Alinha os itens verticalmente */
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
     font-size: 1rem;
-    padding: 20px; /* Adiciona um espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+    padding: 50px;
+    margin-top: 20vh;
+}
+
+.button-dowload {
+    padding: 10px 25px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 14px;
+    background: var(--dark);
+    color: var(--grey);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    width: 20%;
+    transition: background-color var(--transition-speed);
+}
+
+.button-dowload:hover {
+    background-color: darken(var(--dark), 10%);
+    color: var(--dark);
 }
 
 .card-image {
-    max-width: 80%; /* Limita a largura da imagem */
-    border-radius: 15px; /* Arredonda os cantos da imagem */
-    margin-bottom: 20px; /* Espaço abaixo da imagem */
+    max-width: 30%;
+    border-radius: 3vh;
+    margin-right: 40px;
 }
 
 .card-buttons {
     display: flex;
-    gap: 10px; /* Espaçamento entre os botões */
+    flex-direction: column;
+    gap: 10px;
+    margin: 10vh;
+}
+
+.card-buttons hgroup {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.5rem;
+}
+
+.card-buttons hgroup p {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark);
+    width: 50%;
+    margin-bottom: 2rem;
 }
 
 /* ---------- Sessão de contato - Desenvolvedores ---------- */
-
 .card-contact-desenvolvedores {
     display: flex;
     background-color: var(--contact);
     width: 150vh;
-    height: 70vh;
+    height: 100vh;
     border-radius: 3vh;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    margin-bottom: 10vh;
+}
+
+.developers-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    height: 40rem;
+    gap: 1rem;
+    height: 20%;
+}
+
+.button-developers {
+    padding: 10px 25px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 14px;
+    background: var(--vermelho);
+    color: var(--grey);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    transition: background-color var(--transition-speed);
+}
+
+.button-developers:hover {
+    background-color: darken(var(--vermelho), 10%);
+    color: var(--dark);
+}
+
+.developers-a {
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--dark);
+    text-decoration: underline;
 }
 
 hgroup {
@@ -261,6 +348,10 @@ hgroup h3 {
     color: var(--dark);
 }
 
+hgroup h3 a {
+    color: var(--vermelho);
+}
+
 hgroup p {
     font-family: Montserrat;
     font-size: 1rem;
@@ -268,6 +359,7 @@ hgroup p {
     color: var(--dark);
 }
 
+/* Estilos para a seção de contato */
 .contate-nos {
     padding: 20px 35px;
     align-items: flex-start;
@@ -281,7 +373,7 @@ hgroup p {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    margin: 10vh
+    margin: 10vh;
 }
 
 .section-content {
@@ -315,8 +407,8 @@ hgroup p {
 
 .img-section-cards {
     display: flex;
-    width: 120%;
-    margin-left: 17vh;
+    width: 150%;
+    margin-left: 10vh;
 }
 
 .input-dev {
@@ -344,7 +436,7 @@ hgroup p {
     width: 60%;
     height: 10vh;
     border-radius: 2vh;
-    background-color: var(--vermelho);
+    background-color: var(--black);
     color: var(--grey);
     font-family: "Space Grotesk";
     font-size: 2.3vh;
@@ -354,14 +446,10 @@ hgroup p {
     margin-top: 1vh;
     border: none;
     margin-top: 4vh;
+    transition: background-color var(--transition-speed);
 }
 
-/* ---------- Sessão de contato - SENAI ---------- */
-
-.card-contact-senai {
-    background-color: var(--dark);
-    width: 200vh;
-    height: 70vh;
-    border-radius: 3vh 3vh 0vh 0vh;
+.button-contact:hover {
+    background-color: darken(var(--black), 10%);
+    color: var(--dark);
 }
-
