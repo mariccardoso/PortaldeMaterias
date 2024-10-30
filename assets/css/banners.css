@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Variáveis CSS para cores e tamanhos */
+:root {
+    --white: #fff;
+    --vermelho: #e30613;
+    --dark: #191A23;
+    --black: #000;
+    --gap-large: 40px;
+    --gap-small: 20px;
+    --font-size: 20px;
+    --border-radius: 10px;
+    --transition-speed: 0.3s;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 2rem;
+    margin: 2rem;
+    width: 90%;
+    height: 25rem;
+
+    border-radius: 6rem;
+    background-image: url(../img/banners/banner-back.png);
+    background-repeat: no-repeat
+}
+
+.banner-introduction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    width: 30%;
+}
+.banner-introduction-container h1 {
+    color: var(--white);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+.banner-introduction-container p {
+    color: var(--white);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.55rem;
+    line-height: 1.75rem;
+}
+
+.banner-introduction-img img {
+    width: 80%;
+    height: 100%;
+}
