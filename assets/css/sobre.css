@@ -22,6 +22,16 @@
     box-sizing: border-box;
 }
 
+/* Estilos para a animação de transição */
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-out-active {
+    opacity: 0;
+}
+
 .teste {
     background-color: #e30613;
     width: 100%;
