@@ -1,130 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Sobre Nós</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Portal de Matérias</title>
 
-    <link rel="stylesheet" href="../assets/css/sobre.css">
-    <link rel="stylesheet" href="../assets/css/header.css">
+    <!-- Importação das páginas de estilo (CSS) -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
 
-    <link rel="shortcut icon" type="imagex/png" href="https://www.sp.senai.br/favicon.ico">
+    <!-- Importação do ícone do SENAI -->
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="https://www.sp.senai.br/favicon.ico"
+    />
+  </head>
 
-</head>
-<body>
-    <main class="lading-page">
-        <div class="overlay"></div>
-        <header>
-            <a href="https://www.sp.senai.br/" target="_blank"><img src="/assets/img/logo-senai.png" class="logo"></a>
-            <ul class="navlist">
-                <li><a href="../index.html" class="active">Home</a></li>
-                <li><a href="../pages/carreira.html">Carreiras</a></li>
-                <li><a href="../pages/dica.html">Dicas</a></li>
-                <li><a href="../pages/sobre.html">Sobre Nós</a></li>
-                <li><a href="../pages/noticia.html">Noticias</a></li>
-                <li><a href="../pages/simulado.html">Simulados</a></li>
-                <li><a href="../pages/entevista.html">Entrevistas</a></li>
-            </ul>
-            <div class="right-header">
-                <a href="#contact" class="btn">Entre em contato <i class='bx bx-message-dots'></i> </a>
-                <div class="menu-icon">
-                    <div class="bar"></div>
-                </div>
-            </div>
-        </header>
-        
-    <div class="teste"> 
-        <!-- imagem da equipe --> 
-    </div>
+  <body>
+    <!------------ Cabeçalho da página ------------>
+    <header>
+      <!-- Logo do SENAI -->
+      <a href="https://www.sp.senai.br/" target="_blank"
+        ><img src="/assets/img/logo-senai.png" class="logo"
+      /></a>
 
-        <!-- <section class="introduction">
-            <h1 class="title-sobrenos">Conheça nossa Equipe</h1>
-            <p class="site-text">Conheça a equipe por trás da criação de conteúdos de Química para o Portal de Matérias, dedicados a tornar o estudo mais acessível e interessante.</p>
-        </section> -->
-        
-        <section class="team-members">
-            <div class="top-cards">
-                <article class="card">
-                    <div class="member-section">
-                        <img src="../assets/img/integrantes/samuel.png" alt="Foto de Samuel Braga" class="member-img">
-                        <div class="member-text">
-                            <a href="https://www.linkedin.com/in/samuelbrag4/" <h4 class="member-name">Samuel Braga</h4> </a>
-                            <p class="member-position">Product Owner</p>
-                        </div>
-                        <a href="https://www.linkedin.com" target="_blank">
-                            <box-icon type='logo' name='linkedin'></box-icon>
-                        </a>
-                        <hr>
-                        <p class="member-description"><a href="https://www.linkedin.com/in/samuelbrag4/">Samuel</a>, estudante do <a href="https://www.sp.senai.br/" target="_blank">SENAI</a>, trouxe um forte conhecimento em HTML e CSS, sendo fundamental para o desenvolvimento geral do projeto. Atuando como gerente, ele garantiu a organização e o progresso da equipe. Além de programar, Samuel tem como hobbies estudar, jogar e desenvolver novos projetos.</p>
-                    </div>
-                </article>
-                
-                <article class="card">
-                    <div class="member-section">
-                        <img src="../assets/img/integrantes/mariana.png" alt="Foto de Mariana Cardoso" class="member-img">
-                        <div class="member-text">
-                            <a href="https://www.linkedin.com/in/mariana-cardoso-507bba244/"  <h4 class="member-name">Mariana Cardoso</h4> </a>
-                            <p class="member-position">Scrum Master</p>
-                        </div>
-                        <a href="https://www.linkedin.com" target="_blank">
-                            <box-icon type='logo' name='linkedin'></box-icon>
-                        </a>
-                        <hr>
-                        <p class="member-description">Com vasta experiência em gerenciamento de projetos,<a href="https://www.linkedin.com/in/mariana-cardoso-507bba244/">Mariana</a> foi essencial para a organização e harmonia da equipe. Estudante do <a href="https://www.sp.senai.br/" target="_blank">SENAI</a>, sua familiaridade com HTML e CSS contribuiu diretamente para o desenvolvimento do projeto, além de ser uma líder natural na coordenação das tarefas.</p>
-                    </div>
-                </article>
-                
-                <article class="card">
-                    <div class="member-section">
-                        <img src="../assets/img/integrantes/vitor.png" alt="Foto de Vitor Sampaio" class="member-img">
-                        <div class="member-text">
-                            <a href="https://www.linkedin.com/in/vitor-sampaio-152839241/" <h4 class="member-name">Vitor Sampaio</h4> </a>
-                            <p class="member-position">Equipe de Desenvolvimento</p>
-                        </div>
-                        <a href="https://www.linkedin.com" target="_blank">
-                            <box-icon type='logo' name='linkedin'></box-icon>
-                        </a>
-                        <hr>
-                        <p class="member-description"><a href="https://www.linkedin.com/in/vitor-sampaio-152839241/">Vitor</a>, também estudante do <a href="https://www.sp.senai.br/" target="_blank">SENAI</a>, desempenhou um papel importante no desenvolvimento das páginas do projeto. Com bons conhecimentos em HTML e CSS, ele contribuiu de forma direta para a construção do portal.</p>
-                    </div>
-                </article>
-            
-        
-                <article class="card">
-                    <div class="member-section">
-                        <img src="../assets/img/integrantes/Duda.png" alt="Foto de Maria Eduarda" class="member-img">
-                        <div class="member-text">
-                            <a href="https://www.linkedin.com/in/maria-eduarda-reis-pereira-0756542b1/"   <h4 class="member-name">Maria Eduarda</h4> </a>
-                            <p class="member-position">Equipe de Desenvolvimento</p>
-                        </div>
-                        <a href="https://www.linkedin.com" target="_blank">
-                            <box-icon type='logo' name='linkedin'></box-icon>
-                        </a>
-                        <hr>
-                        <p class="member-description">Com grande experiência em organização, <a href="https://www.linkedin.com/in/maria-eduarda-reis-pereira-0756542b1/">Maria Eduarda</a> foi uma peça chave no desenvolvimento da documentação do projeto. Estudante do <a href="https://www.sp.senai.br/" target="_blank">SENAI</a>, seu foco e dedicação ajudaram a equipe a manter o projeto em ordem.</p>
-                    </div>
-                </article>
-        
-                <article class="card">
-                    <div class="member-section">
-                        <img src="../assets/img/integrantes/bruno.png" alt="Foto de Bruno Quintino" class="member-img">
-                        <div class="member-text">
-                            <a href="https://www.linkedin.com/in/bruno-quintino-2268b932b/"   <h4 class="member-name">Bruno Quintino</h4> </a>
-                            <p class="member-position">Equipe de Desenvolvimento</p>
-                        </div>
-                        <a href="https://www.linkedin.com" target="_blank">
-                            <box-icon type='logo' name='linkedin'></box-icon>
-                        </a>
-                        <hr>
-                        <p class="member-description"><a href="https://www.linkedin.com/in/bruno-quintino-2268b932b/">Bruno</a>, estudante do <a href="https://www.sp.senai.br/" target="_blank">SENAI</a>, colaborou ativamente no desenvolvimento do projeto. Seu empenho e contribuição ajudaram a equipe a atingir os objetivos com sucesso.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
+      <!-- Menu de navegação -->
+      <ul class="navlist">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="./pages/carreira.html">Carreiras</a></li>
+        <li><a href="./pages/dica.html">Dicas</a></li>
+        <li><a href="./pages/sobre.html">Sobre Nós</a></li>
+        <li><a href="./pages/noticia.html">Noticias</a></li>
+        <li><a href="./pages/simulado.html">Simulados</a></li>
+        <li><a href="./pages/entevista.html">Entrevistas</a></li>
+      </ul>
 
-        <script src="../assets/js/menu_Java.js"></script>
-    </main>
-    
-</body>
+      <!-- Botão de contato -->
+      <div class="right-header">
+        <a href="#contact" class="btn"
+          >Entre em contato <i class="bx bx-message-dots"></i>
+        </a>
+
+        <!-- Ícone do menu mobile -->
+        <div class="menu-icon">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <!------------ Seção principal da página ------------>
+    <section class="container-main">
+      <!-- Texto de boas-vindas -->
+      <div class="container-text">
+        <h1 class="section-title">Bem-vindo ao Portal de Química!</h1>
+        <p class="section-text">
+          Explore o fascinante mundo da química! Aqui, você encontrará conteúdos
+          sobre reações, elementos, compostos e muito mais. Prepare-se para
+          aprender e experimentar o universo dos átomos e moléculas de uma
+          maneira dinâmica e interativa.
+        </p>
+
+        <!-- Botão de acesso às notícias -->
+        <label href="pages/noticia.html" class="button">Veja as notícias do momento</label>
+      </div>
+
+      <!-- Imagem ilustrativa -->
+      <div class="container-img">
+        <img
+          src="./assets/img/main-img.png"
+          alt="material quimico borbulhando"
+          class="home-illustration"
+        />
+      </div>
+    </section>
+
+    <!------------ Seção de conteúdo ------------>
+    <section class="logotipos">
+      <!-- Título e descrição da seção -->
+      <div class="logotipos-introduction">
+        <h1 class="button">Ferramentas de Química</h1>
+        <p class="section-text">
+          Aqui estão algumas ferramentas muito úteis para estudar e se organizar
+        </p>
+      </div>
+
+      <div class="logotipos-item">
+        <div class="card-item">
+          <a href="https://www.omnicalculator.com/" target="_blank">
+            <img
+              src="./assets/img/logos/ominiCalculator.png"
+              alt="ominiCalculator"
+              class="logotipo"
+            />
+          </a>
+          <p>Calculadoras para matemática e ciências.</p>
+        </div>
+      
+        <div class="card-item">
+          <a href="https://ptable.com/?lang=pt#Propriedades" target="_blank">
+            <img
+              src="./assets/img/logos/ptable.png"
+              alt="ptable"
+              class="logotipo"
+            />
+          </a>
+          <p>Tabela periódica interativa com dados químicos.</p>
+        </div>
+      
+        <div class="card-item">
+          <a href="https://pt.symbolab.com/" target="_blank">
+            <img
+              src="./assets/img/logos/symbolab.png"
+              alt="symbolab"
+              class="logotipo"
+            />
+          </a>
+          <p>Solucionador de equações matemáticas.</p>
+        </div>
+      
+        <div class="card-item">
+          <a href="https://www.notion.so/pt" target="_blank">
+            <img
+              src="./assets/img/logos/notion.png"
+              alt="notion"
+              class="logotipo"
+            />
+          </a>
+          <p>Ferramenta de produtividade e organização.</p>
+        </div>
+      
+        <div class="card-item">
+          <a href="https://www.google.com/" target="_blank">
+            <img
+              src="./assets/img/logos/google.png"
+              alt="google"
+              class="logotipo"
+            />
+          </a>
+          <p>Busca e serviços online.</p>
+        </div>
+      
+        <div class="card-item">
+          <a href="https://quizlet.com/br" target="_blank">
+            <img
+              src="./assets/img/logos/quizlet.png"
+              alt="quizlet"
+              class="logotipo"
+            />
+          </a>
+          <p>Flashcards e recursos de aprendizado.</p>
+        </div>
+      </div>
+      
+
+      </div>
+    </section>
+
+    <section class="teste-container">
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+      <div class="teste">
+        <h2>Card content</h2>
+      </div>
+    </section>
+
+    <script src="./assets/js/menu_Java.js"></script>
+  </body>
 </html>

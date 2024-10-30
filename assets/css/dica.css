@@ -70,7 +70,7 @@
 
 .dica{
     display: flex;
-    width: 60%;
+    width: 80%;
     background-color: #e30613;
     flex-direction: column;
     align-items: flex-start;
@@ -140,7 +140,7 @@
 }
 .iframe-dev{
     width: 60%;
-    min-height: 23rem;
+    min-height: 30rem;
 }
 .dica.ativa {
     border-radius: 2.81rem;

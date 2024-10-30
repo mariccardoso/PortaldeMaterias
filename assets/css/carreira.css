@@ -22,45 +22,10 @@
 }
 
 /* Configurações da Main */
-.landing-page {
-    margin-right: 100vh;
-}
-
-.title-text {
+.lading-page {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.container-introduction {
-    display: flex;
-    padding: 0px 10vh;
-    align-items: flex-start;
-    gap: var(--gap-large);
-    margin-top: 3vh;
-}
-
-.title-carrers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-family: "Montserrat";
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-    background: var(--vermelho);
-    border-radius: var(--border-radius);
-    width: 35vh;
-    height: 4vh;
-    margin-bottom: 6vh;
-}
-
-.text-information {
-    color: #000;
-    font-family: Montserrat;
-    font-size: var(--font-size);
-    font-weight: 400;
 }
 
 .carreiras-container {
