@@ -20,6 +20,7 @@
     /* Raio da borda para bordas arredondadas */
     --transition-speed: 0.3s;
     /* Velocidade da transição de cor para suavizar mudanças */
+    --contact: #89898931;
 
     --teste1: #eeff00;
     --teste2: #ff00ee;
@@ -41,30 +42,14 @@ body {
     justify-content: center;
 }
 
-.teste {
-    width: 200vh;
-    height: 80vh;
-    background-color: var(--grey);
-    border-radius: 25px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
+/* Estilos para a animação de transição */
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
 }
 
-.teste:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s;
-}
-
-.teste-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40vh;
-    margin-top: 40vh;
+.fade-out-active {
+    opacity: 0;
 }
 
 .container-main {
@@ -143,7 +128,7 @@ body {
     background-color: #fff;
     width: 80%;
     height: 60%;
-    border-radius: 25px;
+    border-radius: 3vh;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -210,5 +195,173 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* ---------- Card química ---------- */
+.cards-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30vh;
+    margin-top: 30vh;
+}
+
+.cards {
+    width: 200vh;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 3vh;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 20px; /* Adiciona um espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.card-image {
+    max-width: 80%; /* Limita a largura da imagem */
+    border-radius: 15px; /* Arredonda os cantos da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* ---------- Sessão de contato - Desenvolvedores ---------- */
+
+.card-contact-desenvolvedores {
+    display: flex;
+    background-color: var(--contact);
+    width: 150vh;
+    height: 70vh;
+    border-radius: 3vh;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: 5vh;
+}
+
+hgroup h3 {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+hgroup p {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+.contate-nos {
+    padding: 20px 35px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 14px;
+    background: var(--vermelho);
+    color: var(--grey);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 10vh
+}
+
+.section-content {
+    width: 60%;
+    height: 85.7%;
+    border-radius: 3vh 0vh 0vh 3vh;
+    padding: 5vh 15vh 5vh 15vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Espaçamento entre os inputs */
+.section-content .input-dev {
+    margin-bottom: 3vh;
+}
+
+.section-content p {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+.section-img {
+    width: 40%;
+    height: 100%;
+    border-radius: 0vh 3vh 3vh 0vh;
+    display: flex;
+    align-items: center;
+}
+
+.img-section-cards {
+    display: flex;
+    width: 120%;
+    margin-left: 17vh;
+}
+
+.input-dev {
+    width: 60%;
+    height: 7vh;
+    border-radius: 1vh;
+    border: 1px solid black;
+    margin-top: 1vh;
+    padding-left: 3vh;
+    font-size: 0.8rem;
+}
+
+.textarea-dev {
+    width: 60%;
+    height: 40vh;
+    border-radius: 2vh;
+    border: 1px solid black;
+    margin-top: 1vh;
+    padding-left: 3vh;
+    padding-top: 7px;
+    font-size: 0.9rem;
+}
+
+.button-contact {
+    width: 60%;
+    height: 10vh;
+    border-radius: 2vh;
+    background-color: var(--vermelho);
+    color: var(--grey);
+    font-family: "Space Grotesk";
+    font-size: 2.3vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.3vh;
+    margin-top: 1vh;
+    border: none;
+    margin-top: 4vh;
+}
+
+/* ---------- Sessão de contato - SENAI ---------- */
+
+.card-contact-senai {
+    background-color: var(--dark);
+    width: 200vh;
+    height: 70vh;
+    border-radius: 3vh 3vh 0vh 0vh;
 }
 

@@ -16,30 +16,35 @@
       href="https://www.sp.senai.br/favicon.ico"
     />
   </head>
-
   <body>
     <!------------ Cabeçalho da página ------------>
     <header>
       <!-- Logo do SENAI -->
-      <a href="https://www.sp.senai.br/" target="_blank"
-        ><img src="/assets/img/logo-senai.png" class="logo"
-      /></a>
+      <a href="https://www.sp.senai.br/" target="_blank">
+        <img
+          src="/assets/img/logo-senai.png"
+          class="logo"
+          alt="Logo do SENAI"
+        />
+      </a>
 
       <!-- Menu de navegação -->
       <ul class="navlist">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="./pages/carreira.html">Carreiras</a></li>
-        <li><a href="./pages/dica.html">Dicas</a></li>
-        <li><a href="./pages/sobre.html">Sobre Nós</a></li>
-        <li><a href="./pages/noticia.html">Noticias</a></li>
-        <li><a href="./pages/simulado.html">Simulados</a></li>
-        <li><a href="./pages/entevista.html">Entrevistas</a></li>
+        <li><a href="index.html" id="nav-home">Home</a></li>
+        <li><a href="pages/carreira.html" id="nav-carreiras">Carreiras</a></li>
+        <li><a href="pages/dica.html" id="nav-dicas">Dicas</a></li>
+        <li><a href="pages/sobre.html" id="nav-sobre">Sobre Nós</a></li>
+        <li><a href="pages/noticia.html" id="nav-noticias">Noticias</a></li>
+        <li><a href="pages/simulado.html" id="nav-simulados">Simulados</a></li>
+        <li>
+          <a href="pages/entevista.html" id="nav-entrevistas">Entrevistas</a>
+        </li>
       </ul>
 
       <!-- Botão de contato -->
-      <div class="right-header">
-        <a href="#contact" class="btn"
-          >Entre em contato <i class="bx bx-message-dots"></i>
+      <div class="right-header" id="btn-entre-em-contato">
+        <a href="#contate-nos" class="btn">
+          Entre em contato <i class="bx bx-message-dots"></i>
         </a>
 
         <!-- Ícone do menu mobile -->
@@ -62,7 +67,9 @@
         </p>
 
         <!-- Botão de acesso às notícias -->
-        <label href="pages/noticia.html" class="button">Veja as notícias do momento</label>
+        <label href="pages/noticia.html" class="button"
+          >Veja as notícias do momento</label
+        >
       </div>
 
       <!-- Imagem ilustrativa -->
@@ -85,6 +92,7 @@
         </p>
       </div>
 
+      <!-- Itens de logotipos -->
       <div class="logotipos-item">
         <div class="card-item">
           <a href="https://www.omnicalculator.com/" target="_blank">
@@ -96,7 +104,7 @@
           </a>
           <p>Calculadoras para matemática e ciências.</p>
         </div>
-      
+
         <div class="card-item">
           <a href="https://ptable.com/?lang=pt#Propriedades" target="_blank">
             <img
@@ -107,7 +115,7 @@
           </a>
           <p>Tabela periódica interativa com dados químicos.</p>
         </div>
-      
+
         <div class="card-item">
           <a href="https://pt.symbolab.com/" target="_blank">
             <img
@@ -118,7 +126,7 @@
           </a>
           <p>Solucionador de equações matemáticas.</p>
         </div>
-      
+
         <div class="card-item">
           <a href="https://www.notion.so/pt" target="_blank">
             <img
@@ -129,7 +137,7 @@
           </a>
           <p>Ferramenta de produtividade e organização.</p>
         </div>
-      
+
         <div class="card-item">
           <a href="https://www.google.com/" target="_blank">
             <img
@@ -140,7 +148,7 @@
           </a>
           <p>Busca e serviços online.</p>
         </div>
-      
+
         <div class="card-item">
           <a href="https://quizlet.com/br" target="_blank">
             <img
@@ -152,35 +160,91 @@
           <p>Flashcards e recursos de aprendizado.</p>
         </div>
       </div>
-      
+    </section>
 
+    <!------------ Seção de cartões ------------>
+    <section class="cards-section">
+      <!-- Div do card de Química -->
+      <div class="cards">
+        <h2>Título do Card</h2>
+        <img
+          src="caminho/para/imagem.jpg"
+          alt="Descrição da imagem"
+          class="card-image"
+        />
+        <p>
+          Esta é uma descrição breve do conteúdo do card. Aqui você pode
+          adicionar informações relevantes sobre o que o card representa.
+        </p>
+        <div class="card-buttons">
+          <a href="#" class="button">Ação 1</a>
+          <a href="#" class="button">Ação 2</a>
+        </div>
       </div>
     </section>
 
-    <section class="teste-container">
-      <div class="teste">
-        <h2>Card content</h2>
+    <!------------ Sessão de contato ------------>
+    <section class="cards-section" id="contate-nos">
+      <hgroup>
+        <div class="contate-nos">
+          <h2 id="contate-nos">Contato</h2>
+        </div>
+        <h3>
+          Fale conosco ou com o
+          <a href="https://www.sp.senai.br/" target="_blank">SENAI</a>
+        </h3>
+        <p>Entre em contato com os desenvolvedores do Portal de Química!</p>
+        <p>Tem alguma dúvida, sugestão ou crítica? Fale conosco!</p>
+      </hgroup>
+
+      <!-- Div de Contato com os Desenvolvedores -->
+      <div class="card-contact-desenvolvedores">
+        <section class="section-content">
+          <p>Seu nome</p>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Nome Completo"
+            required
+            maxlength="100"
+            class="input-dev"
+          />
+          <p>Seu e-mail*</p>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seuemail@exemplo.com"
+            class="input-dev"
+          />
+          <p>Sua Mensagem*</p>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            placeholder="Sua mensagem"
+            required
+            class="textarea-dev"
+          ></textarea>
+          <button class="button-contact" type="submit">Enviar mensagem</button>
+        </section>
+
+        <section class="section-img">
+          <img
+            src="assets/img/contact-ilustration.png"
+            alt="Imagem Ilustrativa"
+            class="img-section-cards"
+          />
+        </section>
       </div>
-      <div class="teste">
-        <h2>Card content</h2>
-      </div>
-      <div class="teste">
-        <h2>Card content</h2>
-      </div>
-      <div class="teste">
-        <h2>Card content</h2>
-      </div>
-      <div class="teste">
-        <h2>Card content</h2>
-      </div>
-      <div class="teste">
-        <h2>Card content</h2>
-      </div>
-      <div class="teste">
-        <h2>Card content</h2>
+
+      <!-- Div de Contato com o SENAI -->
+      <div class="card-contact-senai">
+        <!-- Conteúdo da div de contato com o SENAI -->
       </div>
     </section>
 
+    <!-- Scripts -->
     <script src="./assets/js/menu_Java.js"></script>
   </body>
 </html>
