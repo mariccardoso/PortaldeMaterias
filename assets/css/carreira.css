@@ -21,6 +21,15 @@
     padding: 0;
 }
 
+/* Estilos para a animação de transição */
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-out-active {
+    opacity: 0;
+}
 
 /* Configurações da Main */
 .lading-page {
@@ -53,11 +62,13 @@
     height: 11rem;
     background: #FFF;
 }
+
 .card-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.25rem;
+    background-color: #E30613;
 }
 
 .card-container p, h2 {
@@ -82,6 +93,20 @@
     /*stlyes*/
     border-radius: 2.8125rem;
     background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-introduction {
+    background-color: yellow;
+}
+
+.card-content {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    gap: 1rem;
 }
 
 #cardwhite{
