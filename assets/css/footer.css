@@ -1,2 +1,66 @@
+/* ---------- Estilos para o rodapé ---------- */
+.footer {
+    background-color: var(--dark);
+    color: var(--grey);
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    color: var(--grey);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+.footer-links ul li a:hover {
+    color: var(--vermelho);
+}
+
+.footer-contact p {
+    margin: 0.5rem 0;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 0.5rem;
+    transition: transform var(--transition-speed);
+}
+
+.footer-social a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid var(--grey);
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
 
