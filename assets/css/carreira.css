@@ -48,8 +48,18 @@
     flex-shrink: 0;
 }
 
-.carreiras-container .card {
+.carreiras-container {
     display: flex;
+    height: 20%;
+    padding: 4rem 3rem;
+    align-items: flex-start;
+    gap: 4rem;
+    flex-shrink: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
     height: 20%;
     padding: 4rem 3rem;
     align-items: flex-start;
@@ -60,15 +70,15 @@
 .carreiras-container hr{
     width: 0.0625rem;
     height: 11rem;
-    background: #FFF;
+    background: #FFF;*/
 }
 
 .card-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-    background-color: #E30613;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: #E30613;
 }
 
 .card-container p, h2 {
@@ -100,13 +110,27 @@
 }
 
 .card-introduction {
-    background-color: yellow;
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+    flex-direction: column;
+    padding-right: 2vh;
 }
 
 .card-content {
     display: flex;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     gap: 1rem;
+    flex-direction: row;
+}
+
+
+.learn-title {
+    display: flex;
+}
+
+.text-carrer {
+    text-align: center;
 }
 
 #cardwhite{
@@ -114,6 +138,10 @@
     border-radius: 2.8125rem;
     background: var(--white);
     border: #E30613 0.125rem solid;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #cardred{
@@ -122,8 +150,12 @@
     background: var(--vermelho);
 }
 
-#cardblack p, h2{
+#cardblack p, h3{
     color: var(--white);
+}
+
+#cardblack  h1{
+    color: var(--vermelho);
 }
 
 #cardwhite p{
