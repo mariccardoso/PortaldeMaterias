@@ -122,6 +122,7 @@
     /* background-color: rgb(255, 255, 255); */
     gap: 1rem;
     flex-direction: row;
+    align-items: flex-start;
 }
 
 
@@ -131,6 +132,12 @@
 
 .text-carrer {
     text-align: center;
+}
+
+.main-hr{
+    width: 0.0425rem;
+    height: 11rem;
+    background: #FFF;
 }
 
 #cardwhite{
@@ -145,12 +152,19 @@
 }
 
 #cardred{
-    /*stlyes*/
     border-radius: 2.8125rem;
     background: var(--vermelho);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#cardblack p, h3{
+#cardblack p{
+    color: var(--white);
+}
+
+#cardblack  h3{
     color: var(--white);
 }
 
@@ -158,8 +172,8 @@
     color: var(--vermelho);
 }
 
-#cardwhite p{
-    color: var(--vermelho);
+#cardwhite p, h3{
+    color: var(--black);
 }
 
 #cardwhite h2{
@@ -182,6 +196,9 @@
     color: var(--white);
 }
 
+.footer {
+margin-top: 3rem;
+}
 
 /* carreiras cards 
 .section-carrers {
