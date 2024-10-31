@@ -122,6 +122,7 @@
     /* background-color: rgb(255, 255, 255); */
     gap: 1rem;
     flex-direction: row;
+    align-items: flex-start;
 }
 
 
@@ -131,6 +132,12 @@
 
 .text-carrer {
     text-align: center;
+}
+
+.main-hr{
+    width: 0.0425rem;
+    height: 11rem;
+    background: #FFF;
 }
 
 #cardwhite{
@@ -145,12 +152,20 @@
 }
 
 #cardred{
-    /*stlyes*/
     border-radius: 2.8125rem;
     background: var(--vermelho);
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: stretch;
 }
 
-#cardblack p, h3{
+#cardblack p{
+    color: var(--white);
+}
+
+#cardblack  h3{
     color: var(--white);
 }
 
@@ -158,8 +173,8 @@
     color: var(--vermelho);
 }
 
-#cardwhite p{
-    color: var(--vermelho);
+#cardwhite p, h3{
+    color: var(--black);
 }
 
 #cardwhite h2{
