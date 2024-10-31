@@ -55,6 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 40rem;
+    margin: 5vh 0vh 5vh 0vh;
 }
 
 .container-text {
@@ -78,6 +79,11 @@ body {
     align-items: center;
 }
 
+.container-img img {
+    width: 100%;
+    height: auto;
+}
+
 /* Estilos para botões */
 .button {
     padding: 20px 35px;
@@ -93,6 +99,9 @@ body {
     font-weight: 400;
     line-height: 28px;
     transition: background-color var(--transition-speed);
+    display: flex;
+    justify-content: center;
+    margin: 1vh;
 }
 
 .button:hover {
@@ -452,4 +461,88 @@ hgroup p {
 .button-contact:hover {
     background-color: darken(var(--black), 10%);
     color: var(--dark);
+}
+
+/* Estilos de responsividade */
+@media (max-width: 768px) {
+    .container-main {
+        flex-direction: column;
+    }
+
+    .container-text, .container-img {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-img img,
+    .img-section-cards,
+    .card-image {
+        width: 0;
+        height: auto;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-text {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .logotipos {
+        gap: 5vh;
+        height: 150vh;
+        width: 80%;
+    }
+
+    .logotipos-item {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card-item {
+        width: 90%;
+        height: auto;
+        margin-top: 2vh;
+    }
+
+    .cards {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card-buttons {
+        margin: 5vh 0;
+    }
+
+    .card-contact-desenvolvedores {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .developers-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section-content {
+        width: 90%;
+        height: auto;
+        padding: 5vh;
+    }
+
+    .section-img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .input-dev, .textarea-dev, .button-contact {
+        width: 100%;
+    }
 }
