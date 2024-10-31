@@ -60,15 +60,15 @@
 .carreiras-container hr{
     width: 0.0625rem;
     height: 11rem;
-    background: #FFF;
+    background: #FFF;*/
 }
 
 .card-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1.25rem;
-    background-color: #E30613;
+    /* background-color: #E30613;
 }
 
 .card-container p, h2 {
@@ -105,8 +105,13 @@
 
 .card-content {
     display: flex;
-    background-color: rgb(255, 255, 255);
+   /* background-color: rgb(255, 255, 255);*/
     gap: 1rem;
+}
+
+
+.learn-title {
+    display: flex;
 }
 
 #cardwhite{
