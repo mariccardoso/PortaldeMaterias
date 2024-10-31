@@ -70,7 +70,7 @@
 .carreiras-container hr{
     width: 0.0625rem;
     height: 11rem;
-    background: #FFF;*/
+    background: #FFF;
 }
 
 .card-container {
@@ -155,10 +155,9 @@
     border-radius: 2.8125rem;
     background: var(--vermelho);
     display: flex;
-    flex-direction: column;
-    align-content: flex-start;
+    align-items: center;
     justify-content: center;
-    align-items: stretch;
+    flex-direction: column;
 }
 
 #cardblack p{
