@@ -51,7 +51,7 @@
 .carreiras-container {
     display: flex;
     height: 20%;
-    padding: 4rem 3rem;
+    padding: 4rem 3rem 0;
     align-items: flex-start;
     gap: 4rem;
     flex-shrink: 0;
@@ -196,6 +196,9 @@
     color: var(--white);
 }
 
+.footer {
+margin-top: 3rem;
+}
 
 /* carreiras cards 
 .section-carrers {
