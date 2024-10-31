@@ -150,7 +150,11 @@
     background: var(--vermelho);
 }
 
-#cardblack p, h3{
+#cardblack p{
+    color: var(--white);
+}
+
+#cardblack  h3{
     color: var(--white);
 }
 
@@ -158,8 +162,8 @@
     color: var(--vermelho);
 }
 
-#cardwhite p{
-    color: var(--vermelho);
+#cardwhite p, h3{
+    color: var(--black);
 }
 
 #cardwhite h2{
