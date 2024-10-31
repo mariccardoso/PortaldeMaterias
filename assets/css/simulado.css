@@ -31,11 +31,6 @@
     opacity: 0;
 }
 
-/* Configurações da Main */
-.landing-page {
-    margin-right: 120px;
-}
-
 .container-main {
     display: flex;
     width: 100%;
