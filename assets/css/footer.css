@@ -4,6 +4,7 @@
     color: var(--grey);
     padding: 2rem 0;
     width: 100%;
+    margin-top: 5rem ;
     text-align: center;
     font-family: 'Space Grotesk', sans-serif;
 }
