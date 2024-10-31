@@ -21,6 +21,16 @@
     padding: 0;
 }
 
+/* Estilos para a animação de transição */
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-out-active {
+    opacity: 0;
+}
+
 /* Estilos container */
 .container {
     display: flex;
