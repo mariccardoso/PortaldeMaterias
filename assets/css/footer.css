@@ -47,6 +47,12 @@
     margin: 0.5rem 0;
 }
 
+.footer-contact p a{
+    color: rgb(255, 132, 132);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
 .footer-social a img {
     width: 30px;
     height: 30px;

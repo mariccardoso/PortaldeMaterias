@@ -48,6 +48,7 @@
     margin: 2rem;
     width: 95%;
     height: 25rem;
+    margin: 5rem;
 
     border-radius: 3.5rem;
     background-image: url(../img/banners/banner-img-background.png);
@@ -82,4 +83,37 @@
 .banner-introduction-img img {
     width: 80%;
     height: 100%;
+}
+
+@media (max-width: 1200px) {
+    .banner-introduction {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        margin: 1.5rem;
+        margin-top: 4rem;
+        width: 80%;
+        background-color: var(--vermelho);
+    }
+
+    .banner-introduction-container {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-introduction-container h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .banner-introduction-container p {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        width: 90%;
+    }
+
+    .banner-introduction-img img {
+        width: 0%;
+    }
 }
