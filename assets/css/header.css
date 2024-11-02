@@ -135,6 +135,12 @@ ul.navlist {
   .menu-icon::before {
     display: block;
   }
+  .logo{
+    width: 100px;
+  }
+  .btn{
+    font-size: 0.6rem;
+  }
   ul.navlist {
     position: absolute;
     top: -1000px;
