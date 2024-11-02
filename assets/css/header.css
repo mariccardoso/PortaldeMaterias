@@ -126,15 +126,6 @@ ul.navlist {
   opacity: 0;
 }
 
-@media (max-width: 991px) {
-  header,
-  section,
-  footer {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-}
-
 @media (max-width: 1220px) {
   .proposal {
     display: none;
