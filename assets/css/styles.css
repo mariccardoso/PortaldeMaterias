@@ -2,32 +2,50 @@
 
 /* Variáveis CSS para cores e tamanhos */
 :root {
-    --grey: #f3f3f3;
-    /* Branco padrão */
-    --vermelho: #e30613;
-    /* Vermelho padrão*/
-    --dark: #191A23;
-    /*Preto 01 padrão*/
-    --black: #000;
-    /*Preto 02 padrão*/
-    --gap-large: 40px;
-    /* Espaçamento grande entre os itens (por exemplo, em desktops) */
-    --gap-small: 20px;
-    /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
-    --font-size: 20px;
-    /* Tamanho da fonte padrão */
-    --border-radius: 10px;
-    /* Raio da borda para bordas arredondadas */
-    --transition-speed: 0.3s;
-    /* Velocidade da transição de cor para suavizar mudanças */
+    --grey: #f3f3f3; /* Branco padrão */
+    --vermelho: #e30613; /* Vermelho padrão */
+    --dark: #191A23; /* Preto 01 padrão */
+    --black: #000; /* Preto 02 padrão */
+    --gap-large: 40px; /* Espaçamento grande entre os itens (por exemplo, em desktops) */
+    --gap-small: 20px; /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
+    --font-size: 20px; /* Tamanho da fonte padrão */
+    --border-radius: 10px; /* Raio da borda para bordas arredondadas */
+    --transition-speed: 0.3s; /* Velocidade da transição de cor para suavizar mudanças */
+    --contact: #89898931; /* Cor de fundo para a seção de contato */
+    --teste1: #eeff00; /* Cores de teste */
+    --teste2: #ff00ee;
+    --teste3: #00eeff;
+    --teste4: #00ff00;
 }
 
+/* Reset de estilos */
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
+/* Estilos para o corpo da página */
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para a animação de transição */
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-out-active {
+    opacity: 0;
+}
+
+/* Estilos para a seção principal */
 .container-main {
     display: flex;
     width: 100%;
@@ -37,6 +55,7 @@
     justify-content: center;
     align-items: center;
     height: 40rem;
+    margin: 5vh 0vh 5vh 0vh;
 }
 
 .container-text {
@@ -60,6 +79,12 @@
     align-items: center;
 }
 
+.container-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para botões */
 .button {
     padding: 20px 35px;
     align-items: flex-start;
@@ -73,8 +98,18 @@
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+    transition: background-color var(--transition-speed);
+    display: flex;
+    justify-content: center;
+    margin: 1vh;
 }
 
+.button:hover {
+    background-color: darken(var(--vermelho), 10%);
+    color: var(--dark);
+}
+
+/* Estilos para títulos e textos */
 .section-title {
     margin-top: 25px;
     color: var(--dark);
@@ -94,13 +129,14 @@
     width: 700px;
 }
 
+/* Estilos para a seção de logotipos */
 .logotipos {
     display: flex;
     flex-direction: column;
     padding: 10vh;
     align-items: center;
     gap: 1rem;
-    /*margin-top: 5rem;*/
+    margin-top: 5rem;
     background-color: #fff;
     width: 90%;
     height: 60%;
@@ -194,10 +230,319 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
     align-items: center;
-    gap: 10rem;
-    margin-top: 7rem;
+    font-size: 1rem;
+    padding: 50px;
+    margin-top: 20vh;
+}
+
+.button-dowload {
+    padding: 10px 25px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 14px;
+    background: var(--dark);
+    color: var(--grey);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    width: 20%;
+    transition: background-color var(--transition-speed);
+}
+
+.button-dowload:hover {
+    background-color: darken(var(--dark), 10%);
+    color: var(--dark);
+}
+
+.card-image {
+    max-width: 30%;
+    border-radius: 3vh;
+    margin-right: 40px;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10vh;
+}
+
+.card-buttons hgroup {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.5rem;
+}
+
+.card-buttons hgroup p {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark);
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+/* ---------- Sessão de contato - Desenvolvedores ---------- */
+.card-contact-desenvolvedores {
+    display: flex;
+    background-color: var(--contact);
+    width: 150vh;
+    height: 100vh;
+    border-radius: 3vh;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    margin-bottom: 10vh;
+}
+
+.developers-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    height: 40rem;
+    gap: 1rem;
+    height: 20%;
+}
+
+.button-developers {
+    padding: 10px 25px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 14px;
+    background: var(--vermelho);
+    color: var(--grey);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    transition: background-color var(--transition-speed);
+}
+
+.button-developers:hover {
+    background-color: darken(var(--vermelho), 10%);
+    color: var(--dark);
+}
+
+.developers-a {
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--dark);
+    text-decoration: underline;
+}
+
+hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: 5vh;
+}
+
+hgroup h3 {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+hgroup h3 a {
+    color: var(--vermelho);
+}
+
+hgroup p {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+/* Estilos para a seção de contato */
+.contate-nos {
+    padding: 20px 35px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 14px;
+    background: var(--vermelho);
+    color: var(--grey);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 10vh;
+}
+
+.section-content {
+    width: 60%;
+    height: 85.7%;
+    border-radius: 3vh 0vh 0vh 3vh;
+    padding: 5vh 15vh 5vh 15vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Espaçamento entre os inputs */
+.section-content .input-dev {
+    margin-bottom: 3vh;
+}
+
+.section-content p {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+.section-img {
+    width: 40%;
+    height: 100%;
+    border-radius: 0vh 3vh 3vh 0vh;
+    display: flex;
+    align-items: center;
+}
+
+.img-section-cards {
+    display: flex;
+    width: 150%;
+    margin-left: 10vh;
+}
+
+.input-dev {
+    width: 60%;
+    height: 7vh;
+    border-radius: 1vh;
+    border: 1px solid black;
+    margin-top: 1vh;
+    padding-left: 3vh;
+    font-size: 0.8rem;
+}
+
+.textarea-dev {
+    width: 60%;
+    height: 40vh;
+    border-radius: 2vh;
+    border: 1px solid black;
+    margin-top: 1vh;
+    padding-left: 3vh;
+    padding-top: 7px;
+    font-size: 0.9rem;
+}
+
+.button-contact {
+    width: 60%;
+    height: 10vh;
+    border-radius: 2vh;
+    background-color: var(--black);
+    color: var(--grey);
+    font-family: "Space Grotesk";
+    font-size: 2.3vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.3vh;
+    margin-top: 1vh;
+    border: none;
+    margin-top: 4vh;
+    transition: background-color var(--transition-speed);
+}
+
+.button-contact:hover {
+    background-color: darken(var(--black), 10%);
+    color: var(--dark);
+}
+
+/* Estilos de responsividade */
+@media (max-width: 768px) {
+    .container-main {
+        flex-direction: column;
+    }
+
+    .container-text, .container-img {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-img img,
+    .img-section-cards,
+    .card-image {
+        width: 0;
+        height: auto;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-text {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .logotipos {
+        gap: 5vh;
+        height: 150vh;
+        width: 80%;
+    }
+
+    .logotipos-item {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card-item {
+        width: 90%;
+        height: auto;
+        margin-top: 2vh;
+    }
+
+    .cards {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card-buttons {
+        margin: 5vh 0;
+    }
+
+    .card-contact-desenvolvedores {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .developers-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section-content {
+        width: 90%;
+        height: auto;
+        padding: 5vh;
+    }
+
+    .section-img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .input-dev, .textarea-dev, .button-contact {
+        width: 100%;
+    }
 }
