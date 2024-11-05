@@ -71,7 +71,7 @@ body {
 
 .container-img {
   display: flex;
-  width: 42%;
+  width: 40%;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
@@ -80,12 +80,13 @@ body {
 }
 
 .container-img img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
 /* Estilos para botões */
 .button {
+  border: none;
   padding: 20px 35px;
   align-items: flex-start;
   gap: 10px;
@@ -223,8 +224,8 @@ body {
 }
 
 .cards {
-  width: 60%;
-  height: 60vh;
+  width: 50%;
+  height: 35vh;
   background-color: var(--contact);
   border-radius: 3vh;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -416,8 +417,8 @@ hgroup p {
 
 .img-section-cards {
   display: flex;
-  width: 150%;
-  margin-left: 10vh;
+  width: 120%;
+  margin-left: 17vh;
 }
 
 .input-dev {
