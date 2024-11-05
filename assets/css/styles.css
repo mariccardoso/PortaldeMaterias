@@ -592,7 +592,6 @@ hgroup p {
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Responsividade para a seção principal */
   .container-main {
-    background-color: var(--teste1);
     flex-direction: column;
     margin-top: 1vh;
     height: 80rem;
