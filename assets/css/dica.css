@@ -70,7 +70,7 @@
 
 .dica{
     display: flex;
-    width: 60%;
+    width: 85%;
     background-color: #e30613;
     flex-direction: column;
     align-items: flex-start;
@@ -164,7 +164,61 @@
     display: flex;
     gap: 1.8rem; /* 30px convertidos para rem */
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .introduction {
+        width: 80%;
+        flex-direction: column;
+        gap: 3rem;
+        margin-left: 2rem;
+    }
 
+    .title-dica {
+        font-size: 1.75rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .dica {
+        width: 85%;
+        padding: 2rem 2.5rem;
+    }
+
+    .titulo {
+        font-size: 1.125rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .numero {
+        font-size: 1.75rem;
+    }
+
+    .texto-titulo {
+        font-size: 1.5rem;
+    }
+
+    .icone {
+        font-size: 1.375rem;
+        padding: 0.275rem 0.55rem;
+    }
+
+    .conteudo p {
+        width: 80%;
+        font-size: 1.125rem;
+    }
+
+    .iframe-dev {
+        width: 80%;
+        min-height: 24rem;
+    }
+
+    .dica.ativa {
+        padding: 2rem 2.5rem;
+    }
+
+    .dica.ativa .conteudo {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
 @media (max-width: 768px) {
     .introduction {
         width: 90%;
