@@ -60,10 +60,15 @@ ul.navlist {
   font-weight: 400;
   line-height: 28px;
   list-style-type: none;
+  transition: 0.4s ease;
+}
+
+.navlist li a:hover {
+  color: var(--vermelho);
+  text-decoration: underline;
 }
 
 /*Estilos para quando passar o mouse e quando o script tiver ativo*/
-.navlist li a:hover,
 .navlist li a.active {
   background: var(--gradient-color-bg);
   background-clip: text;
@@ -87,7 +92,10 @@ ul.navlist {
   font-family: "Space Grotesk", sans-serif;
 }
 
-.btn:hover,
+.btn:hover {
+  transform: scale(1.1);
+}
+
 .btn-box .d-CV:hover {
   box-shadow: var(--hover-box-shadow);
 }

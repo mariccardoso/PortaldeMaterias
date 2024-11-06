@@ -69,6 +69,15 @@ body {
   gap: 2rem;
 }
 
+.section-title a {
+  color: var(--vermelho);
+  transition: var(--transition-speed);
+}
+
+.section-title a:hover {
+  text-decoration: underline;
+}
+
 .container-img {
   display: flex;
   width: 40%;
@@ -99,15 +108,15 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
-  transition: background-color var(--transition-speed);
+  transition: var(--transition-speed);
   display: flex;
   justify-content: center;
   margin: 1vh;
 }
 
 .button:hover {
-  background-color: darken(var(--vermelho), 10%);
-  color: var(--dark);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+  transform: scale(1.1);
 }
 
 /* Estilos para títulos e textos */
@@ -195,14 +204,17 @@ body {
   text-align: center;
   background-color: #fff;
   margin-top: 5vh;
-  width: 40vh;
-  height: 25vh;
-  gap: 1.5rem;
-  transition: transform 0.3s ease; /* Adiciona transição suave */
+  width: 50vh;
+  height: auto;
+  gap: 1rem;
+  transition: var(--transition-speed); /* Adiciona transição suave */
+  border-radius: 3vh;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+  padding: 2rem;
 }
 
 .card-item:hover {
-  transform: scale(1.2); /* Aumenta o card ao passar o mouse */
+  transform: scale(1.1);
 }
 
 .card-item p {
@@ -224,7 +236,7 @@ body {
 }
 
 .cards {
-  width: 50%;
+  width: 80%;
   height: 35vh;
   background-color: var(--contact);
   border-radius: 3vh;
@@ -251,12 +263,12 @@ body {
   font-weight: 400;
   line-height: 28px;
   width: 20%;
-  transition: background-color var(--transition-speed);
+  transition: var(--transition-speed);
 }
 
 .button-dowload:hover {
-  background-color: darken(var(--dark), 10%);
-  color: var(--dark);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+  transform: scale(1.1);
 }
 
 .card-image {
@@ -323,12 +335,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
-  transition: background-color var(--transition-speed);
-}
-
-.button-developers:hover {
-  background-color: darken(var(--vermelho), 10%);
-  color: var(--dark);
 }
 
 .developers-a {
@@ -384,6 +390,12 @@ hgroup p {
   font-weight: 400;
   line-height: 28px;
   margin: 10vh;
+  transition: var(--transition-speed);
+}
+
+.contate-nos:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+  transform: scale(1.1);
 }
 
 .section-content {
@@ -456,12 +468,12 @@ hgroup p {
   margin-top: 1vh;
   border: none;
   margin-top: 4vh;
-  transition: background-color var(--transition-speed);
+  transition: var(--transition-speed);
 }
 
 .button-contact:hover {
-  background-color: darken(var(--black), 10%);
-  color: var(--dark);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+  transform: scale(1.1);
 }
 
 /* ---------- Estilos de responsividade ---------- */
