@@ -51,6 +51,18 @@ width: 100%;
 
 }
 
+.retangulo2 {
+    width: 95rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    right: 9%;
+    position: absolute;
+    border-radius: 50px;
+    font-size: 30px;
+    color: #000;
+    background-color: #e30613;
+}
 
 .cards-section {
     display: flex;
