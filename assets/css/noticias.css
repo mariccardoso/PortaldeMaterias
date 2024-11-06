@@ -37,6 +37,21 @@ width: 100%;
     flex-direction: column;
 }
 
+.retangulo {
+    width: 95rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    right: 9%;
+    position: absolute;
+    border-radius: 50px;
+    font-size: 30px;
+    color: #000;
+    background-color: #e30613;
+
+}
+
+
 .cards-section {
     display: flex;
     /* padding: 0rem 6.25rem; */
@@ -185,5 +200,7 @@ color: var(--grey);
     .card-img img {
         height: 12rem;
     }
+
+    
 }
 
