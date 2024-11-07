@@ -12,6 +12,7 @@
     --font-size: 20px;
     --border-radius: 3vh;
     --transition-speed: 0.3s; /* Velocidade da transição de cor para suavizar mudanças */
+    --contact: #89898931; /* Cor de fundo para a seção de contato */
 
     /* Testes */
     --teste1: #2fff00;
@@ -41,41 +42,33 @@
 }
 
 
-/*card: equipe*/
+/*card: conheça a equipe*/
 .img-team {
     background-color: var(--vermelho);
     width: 100%;
     height: 90vh;
     display: flex;
     justify-content: center;
+
     
 }
 
 .img-team img {
-    width: 70%;
+    width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
-.member-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
+
 
 .card-introduction {
     background-color: #e30613;
     border-radius: var(--border-radius);
-    width: 20%;
+    width: 20vh;
     height: 10vh;
     margin: 5% auto 5% auto;
    
 }
-
-.title-introduction:hover {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
-    transform: scale(1.1);
-  }
-  
 
 .title-introduction {
     display: flex;
@@ -87,11 +80,17 @@
     color: var(--grey);
     background-color: #e30613;
     border-radius: var(--border-radius);
-    width: 15%;
-    height: 5vh;
+    width: 25vh;
+    height: 6vh;
     margin: 5% auto 1% auto;
     transition: var(--transition-speed);
 }
+
+.title-introduction:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+    transform: scale(1.1);
+  }
+  
 
 .text-team {
     display: flex;
@@ -104,38 +103,83 @@
 }
 
 
-/*card: */
-
-.team-introduction {
-    background-color: #e30613;
-    width: 100%;
-    height: 85vh;
-    margin-bottom: 5%;
-}
-
+/*card: membros da equipe*/
 .team-members {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     margin-top: 80px;
-    background-color: var(--color-1);
+    display: flex;
 }
 
-.top-cards {
-    gap: 2rem;
+.top-cards { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttom-cards {
+    width: 100%;
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+}
+
+.member-img {
+    width: 15vh;
+    border-radius: 4vh;
+    border: 1px solid ;
+    box-shadow: 0px 3px 0px 0px var(--dark);
+}
+
+.card {
+    display: flex;
+    width: 50vh;
+    padding: 2rem;
+    border-radius: 50px;
+    border: 1px solid var(--dark);
+    box-shadow: 0px 5px 0px 0px var(--dark);
+    margin: 0% auto 5% auto;
+    background-color: var(--contact);
+    align-items: baseline;
+}
+
+.card-buttom {
+    display: flex;
+    width: 50vh;
+    padding: 2rem;
+    border-radius: 50px;
+    border: 1px solid var(--dark);
+    box-shadow: 0px 5px 0px 0px var(--dark);
+    background-color: var(--contact);
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+    transform: scale(1.1);
+  }
+
+
+.member-text a {
+    color: var(--vermelho);
+}
+
+.member-section {
+    background-color: var(--contact);
+    border-radius: 4vh;
+    padding: 2vh;
+    gap: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.member-section hr {
     width: 80%;
-    padding: 0 20px;
+    margin: 5% auto 5% auto;
+    border: 0.5px solid var(--dark);
 }
-
-
-
-.text-introduction-team {
-    width: 60%;
-    height: auto;
-    margin: 5% auto 1% auto;
-}
-
-h
 
 /* Media Queries */
 @media (min-width: 768px) {
