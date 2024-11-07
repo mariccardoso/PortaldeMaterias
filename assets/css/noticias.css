@@ -116,7 +116,20 @@ width: 100%;
     background-color: #e30613;
 }
 
-retangulo7 {
+.retangulo7 {
+    width: 95rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    right: 9%;
+    position: absolute;
+    border-radius: 50px;
+    font-size: 30px;
+    color: #000;
+    background-color: #e30613;
+}
+
+.retangulo8 {
     width: 95rem;
     height: 25rem;
     display: flex;
