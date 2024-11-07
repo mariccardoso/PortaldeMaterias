@@ -232,6 +232,9 @@ margin-top: 3rem;
     color: var(--white);
 }
 
+.learn-container :hover {
+    transform: scale(1.1);
+}
 
 @media (max-width: 900px) {
     .carreiras-container {
