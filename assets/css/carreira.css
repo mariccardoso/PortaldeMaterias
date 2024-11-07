@@ -83,7 +83,7 @@
 }
 
 .card-container p, h3, h2, h1 {
-    color: var(--white);
+    color: #000000;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -183,6 +183,10 @@
     color: var(--vermelho);
 }
 
+#cardred p{
+    color: var(--white);
+}
+
 #cardred p, h2{
     color: var(--white);
 }
@@ -218,6 +222,18 @@ margin-top: 3rem;
     width: 0.0425rem;
     height: 11rem;
     background-color: #ffffff;
+}
+
+.eletro-h2 {
+    color: var(--black);
+}
+
+.h1-eletro {
+    color: var(--white);
+}
+
+.learn-container :hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 900px) {
