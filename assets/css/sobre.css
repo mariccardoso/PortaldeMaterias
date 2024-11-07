@@ -11,7 +11,7 @@
     --gap-small: 2vh;
     --font-size: 20px;
     --border-radius: 3vh;
-    --transition-speed: 0.3s;
+    --transition-speed: 0.3s; /* Velocidade da transição de cor para suavizar mudanças */
 
     /* Testes */
     --teste1: #2fff00;
@@ -40,12 +40,15 @@
     opacity: 0;
 }
 
+
+/*card: equipe*/
 .img-team {
     background-color: var(--vermelho);
     width: 100%;
     height: 90vh;
     display: flex;
     justify-content: center;
+    
 }
 
 .img-team img {
@@ -58,6 +61,50 @@
     height: 100px;
     border-radius: 50%;
 }
+
+.card-introduction {
+    background-color: #e30613;
+    border-radius: var(--border-radius);
+    width: 20%;
+    height: 10vh;
+    margin: 5% auto 5% auto;
+   
+}
+
+.title-introduction:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+    transform: scale(1.1);
+  }
+  
+
+.title-introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 20px;  
+    color: var(--grey);
+    background-color: #e30613;
+    border-radius: var(--border-radius);
+    width: 15%;
+    height: 5vh;
+    margin: 5% auto 1% auto;
+    transition: var(--transition-speed);
+}
+
+.text-team {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    font-family: Montserrat;
+    margin-left: auto;
+    margin-right:  auto;
+}
+
+
+/*card: */
 
 .team-introduction {
     background-color: #e30613;
@@ -80,37 +127,15 @@
     padding: 0 20px;
 }
 
-.card-introduction {
-    background-color: #e30613;
-    border-radius: var(--border-radius);
-    width: 60%;
-    height: 60vh;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.title-introduction {
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    font-family: Montserrat;
-    font-size: 20px;  
-    background-color: aqua;
-}
-
-.text-team {
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    align-items: center;
-    font-family: Montserrat;
-    background-color: aquamarine;
-}
 
 .text-introduction-team {
-    background-color: #06e318;
     width: 60%;
+    height: auto;
+    margin: 5% auto 1% auto;
 }
+
+h
 
 /* Media Queries */
 @media (min-width: 768px) {
