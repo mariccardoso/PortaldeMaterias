@@ -48,63 +48,6 @@
 
 
 
-/*cards da equipe*/
-.cards-members-1 {
-    display: flex;
-    background-color: #00aeff;
-    justify-content: center;
-}
-
-.cards-members-2 {
-    display: flex;
-    background-color: #e30613;
-    justify-content: center;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 25%;
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: 50px;
-    border: 1px solid var(--dark);
-    background: #FFF;
-    box-shadow: 0px 5px 0px 0px var(--dark);
-}
-
-.card-top {
-    display: flex;
-    width: 100%;
-    font-weight: 400;
-}
-
-
-
-.img-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.name-position-member {
-    font-family: Montserrat;
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 10px 0px;
-}
-
-.hrborder {
-    border: 1px solid;
-    margin-bottom: 10px;
-    background-color: #33110A;
-    width: 95%;
-}
-
-.member-description {
-    font-family: Montserrat;
-}
 
 /* Media Queries */
 @media (min-width: 768px) {
