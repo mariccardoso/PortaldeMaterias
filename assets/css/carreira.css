@@ -207,6 +207,19 @@
 margin-top: 3rem;
 }
 
+
+.divisor-card-black {
+    width: 0.0425rem;
+    height: 11rem;
+    background-color: #000000;
+}
+
+.divisor-card-white {
+    width: 0.0425rem;
+    height: 11rem;
+    background-color: #ffffff;
+}
+
 @media (max-width: 900px) {
     .carreiras-container {
         flex-direction: column;
@@ -244,6 +257,8 @@ margin-top: 3rem;
         margin-top: 1.5rem;
     }
 }
+
+
 
 /* carreiras cards 
 .section-carrers {
