@@ -70,6 +70,9 @@ body {
 
 .noticia-content {
     background-color: var(--teste1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-img {
@@ -87,6 +90,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2vh;
 }
 
 .cards img {
