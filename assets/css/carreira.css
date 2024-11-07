@@ -256,7 +256,23 @@ margin-top: 3rem;
     .footer {
         margin-top: 1.5rem;
     }
+
+    .divisor-card-black {
+        height: 0%;
+        width: 0%;
+    }
+
+    .divisor-card-white{
+        height: 0%;
+        width: 0%;
+    }
+    
+    .learn-container {
+        opacity: 0%;	
+    }
 }
+
+
 
 
 
