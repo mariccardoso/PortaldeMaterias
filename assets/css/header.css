@@ -60,10 +60,15 @@ ul.navlist {
   font-weight: 400;
   line-height: 28px;
   list-style-type: none;
+  transition: 0.4s ease;
+}
+
+.navlist li a:hover {
+  color: var(--vermelho);
+  text-decoration: underline;
 }
 
 /*Estilos para quando passar o mouse e quando o script tiver ativo*/
-.navlist li a:hover,
 .navlist li a.active {
   background: var(--gradient-color-bg);
   background-clip: text;
@@ -87,7 +92,10 @@ ul.navlist {
   font-family: "Space Grotesk", sans-serif;
 }
 
-.btn:hover,
+.btn:hover {
+  transform: scale(1.1);
+}
+
 .btn-box .d-CV:hover {
   box-shadow: var(--hover-box-shadow);
 }
@@ -99,7 +107,6 @@ ul.navlist {
   width: 30px;
   height: 30px;
   cursor: pointer; /* Muda o cursor */
-  /* background: blue; */
 }
 
 .menu-icon .bar,
@@ -127,15 +134,6 @@ ul.navlist {
   opacity: 0;
 }
 
-@media (max-width: 991px) {
-  header,
-  section,
-  footer {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-}
-
 @media (max-width: 1220px) {
   .proposal {
     display: none;
@@ -144,6 +142,12 @@ ul.navlist {
   .menu-icon::after,
   .menu-icon::before {
     display: block;
+  }
+  .logo{
+    width: 100px;
+  }
+  .btn{
+    font-size: 0.6rem;
   }
   ul.navlist {
     position: absolute;

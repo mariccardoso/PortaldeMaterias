@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Variáveis CSS para cores e tamanhos */
+:root {
+    --grey: #fff;
+    --vermelho: #e30613;
+    --dark: #191A23;
+    --black: #000;
+    --gap-large: 40px;
+    --gap-small: 20px;
+    --font-size: 20px;
+    --border-radius: 10px;
+    --transition-speed: 0.3s;
+}
+
+/* Estilos gerais */
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lading-page .noticias-content {
+    display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 2.5rem;
+width: 100%;
+}
+
+.noticias-content{
+    width: 100%;
+    display: flex;
+    height: auto;
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.cardns-section {
+    display: flex;
+    /* padding: 0rem 6.25rem; */
+    align-items: flex-start;
+    gap: 2.5rem;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardn{
+    display: flex;
+width: 38%;
+padding: 3.125rem;
+justify-content: space-between;
+align-items: center;
+
+border-radius: 2.8125rem;
+border: 1px solid var(--Dark, #191A23);
+background: var(--Grey, #F3F3F3);
+box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.cardn h3{
+    border-radius: 0.4375rem;
+    background: var(--Vermelho, #E30613);
+    color: #000;
+    /* h3 */
+    font-family: Montserrat;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.cardn a{
+    color: var(--Black, #000);
+font-family: "Space Grotesk";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.75rem; /* 140% */
+text-align: center;
+}
+.cardn-description {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 5.8125rem;
+}
+
+.cardn-img img {
+    height: 16.5625rem;
+}
+
+
+#cardnRed{
+    border-radius: 2.8125rem;
+border: 1px solid var(--dark);
+background: var(--vermelho);
+box-shadow: 0px 5px 0px 0px var(--dark);
+color: var(--grey);
+}
+
+#cardnRed h3{
+    border-radius: 0.4375rem;
+background: #FFF;
+color: #000;
+
+/* h3 */
+font-family: Montserrat;
+font-size: 1.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#cardnDark {
+    border-radius: 2.8125rem;
+border: 1px solid var(--Dark, #191A23);
+background: var(--Dark, #191A23);
+box-shadow: 0px 5px 0px 0px #191A23;
+color: var(--grey);
+}
+
+#cardnDark a{
+    color: var(--grey);
+}
+@media (max-width: 1024px) {
+    .cardns-section {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .cardn {
+        width: 100%;
+    }
+
+    .cardn h3 {
+        font-size: 1.5rem;
+    }
+
+    .cardn a {
+        font-size: 1rem;
+    }
+
+    .cardn-description {
+        gap: 2rem;
+    }
+
+    .cardn-img img {
+        height: 12rem;
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .lading-page .noticias-content {
+        gap: 1.5rem;
+    }
+
+    .cardns-section {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .noticias-content{
+        gap: 1.5rem;
+        width: 80%;
+    }
+    .cardn {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .cardn h3 {
+        font-size: 1.5rem;
+    }
+
+    .cardn a {
+        font-size: 1rem;
+    }
+
+    .cardn-description {
+        gap: 2rem;
+    }
+
+    .cardn-img img {
+        height: 12rem;
+    }
+}
+

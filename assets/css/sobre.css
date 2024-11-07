@@ -7,12 +7,13 @@
     --vermelho: #e30613;
     --dark: #191A23;
     --black: #000;
-    --gap-large: 40px;
-    --gap-small: 20px;
+    --gap-large: 4vh;
+    --gap-small: 2vh;
     --font-size: 20px;
-    --border-radius: 10px;
+    --border-radius: 3vh;
     --transition-speed: 0.3s;
 
+<<<<<<< HEAD
     /* Testes */
     --teste1: #2fff00;
     --teste2: #ff0000;
@@ -20,6 +21,10 @@
     --teste4: #00aeff;
     --teste5: #ff00b3;
 
+=======
+    /* Cores de teste */
+    --color-1: #0004ff;
+>>>>>>> 0011a8da8cede6370f1f2e949cbdff599cffaa03
 }
 
 /* Estilos gerais */
@@ -28,6 +33,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 /* Estilos para a animação de transição */
@@ -40,6 +46,7 @@
     opacity: 0;
 }
 
+<<<<<<< HEAD
 .img-team {
     background-color: var(--teste1);
     width: 100%;
@@ -47,7 +54,61 @@
 }
 
 
+=======
+.team-introduction {
+    background-color: #e30613;
+    width: 100%;
+    height: 85vh;
+    margin-bottom: 5%;
+}
 
+.team-members {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 80px;
+    background-color: var(--color-1);
+}
+
+.top-cards {
+    gap: 2rem;
+    width: 80%;
+    padding: 0 20px;
+}
+>>>>>>> 0011a8da8cede6370f1f2e949cbdff599cffaa03
+
+
+.card-introduction {
+    background-color: #e30613;
+    border-radius: var(--border-radius);
+    width: 60%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-introduction {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 20px;  
+    background-color: aqua;
+}
+
+.text-team {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    font-family: Montserrat;
+    background-color: aquamarine;
+}
+
+.text-introduction-team {
+    background-color: #06e318;
+    width: 60%;
+}
 
 /* Media Queries */
 @media (min-width: 768px) {

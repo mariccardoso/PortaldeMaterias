@@ -41,37 +41,48 @@
 .carreiras-container {
     display: inline-flex;
     height: 80rem;
-    padding: 0rem 6.25rem;
+    /*padding: 0rem 6.25rem;*/
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
     flex-shrink: 0;
 }
 
-.carreiras-container .card {
+.carreiras-container {
     display: flex;
     height: 20%;
-    padding: 4rem 3rem;
+    /*padding: 4rem 3rem;*/
     align-items: flex-start;
     gap: 4rem;
     flex-shrink: 0;
 }
 
-.carreiras-container hr{
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    padding: 4rem 3rem;
+    align-items: flex-start;
+    gap: 4rem;
+    flex-shrink: 0;
+    margin: 0 3rem;
+}
+
+.carreiras-container hr {
     width: 0.0625rem;
     height: 11rem;
-    background: #FFF;
+    /*background: #FFF;*/
 }
 
 .card-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-    background-color: #E30613;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: #E30613;*/
 }
 
-.card-container p, h2 {
+.card-container p, h3, h2, h1 {
     color: var(--white);
     font-family: Montserrat;
     font-style: normal;
@@ -100,13 +111,36 @@
 }
 
 .card-introduction {
-    background-color: yellow;
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+    flex-direction: column;
+    padding-right: 2vh;
+    font-family: "Montserrat";
+    text-align: center;
 }
 
 .card-content {
     display: flex;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     gap: 1rem;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.learn-title {
+    display: flex;
+}
+
+.text-carrer {
+    text-align: center;
+}
+
+.main-hr{
+    width: 0.0425rem;
+    height: 11rem;
+    background: #FFF;
 }
 
 #cardwhite{
@@ -114,20 +148,35 @@
     border-radius: 2.8125rem;
     background: var(--white);
     border: #E30613 0.125rem solid;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #cardred{
-    /*stlyes*/
     border-radius: 2.8125rem;
     background: var(--vermelho);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#cardblack p, h2{
+#cardblack p{
     color: var(--white);
 }
 
-#cardwhite p{
+#cardblack  h3{
+    color: var(--white);
+}
+
+#cardblack  h1{
     color: var(--vermelho);
+}
+
+#cardwhite p, h3, h2{
+    color: var(--black);
 }
 
 #cardwhite h2{
@@ -135,6 +184,10 @@
 }
 
 #cardred p, h2{
+    color: var(--white);
+}
+
+#cardred h3{
     color: var(--white);
 }
 
@@ -150,6 +203,47 @@
     color: var(--white);
 }
 
+.footer {
+margin-top: 3rem;
+}
+
+@media (max-width: 900px) {
+    .carreiras-container {
+        flex-direction: column;
+        height: auto;
+        gap: 1.5rem;
+    }
+
+    .carreiras-container hr {
+        width: 24rem;
+        height: 0.05rem;
+    }
+
+    .card {
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .card-container {
+        gap: 1rem;
+
+    }
+
+    .card-content {
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-hr {
+        height: 5rem;
+    }
+
+    .footer {
+        margin-top: 1.5rem;
+    }
+}
 
 /* carreiras cards 
 .section-carrers {

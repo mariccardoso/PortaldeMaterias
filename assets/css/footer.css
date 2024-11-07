@@ -4,6 +4,7 @@
     color: var(--grey);
     padding: 2rem 0;
     width: 100%;
+    margin-top: 5rem ;
     text-align: center;
     font-family: 'Space Grotesk', sans-serif;
 }
@@ -44,6 +45,12 @@
 
 .footer-contact p {
     margin: 0.5rem 0;
+}
+
+.footer-contact p a{
+    color: rgb(255, 132, 132);
+    text-decoration: none;
+    transition: color var(--transition-speed);
 }
 
 .footer-social a img {
