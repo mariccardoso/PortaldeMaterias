@@ -2,17 +2,28 @@
 
 /* Variáveis CSS para cores e tamanhos */
 :root {
-  --grey: #f3f3f3; /* Branco padrão */
-  --vermelho: #e30613; /* Vermelho padrão */
-  --dark: #191a23; /* Preto 01 padrão */
-  --black: #000; /* Preto 02 padrão */
-  --gap-large: 40px; /* Espaçamento grande entre os itens (por exemplo, em desktops) */
-  --gap-small: 20px; /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
-  --font-size: 20px; /* Tamanho da fonte padrão */
-  --border-radius: 10px; /* Raio da borda para bordas arredondadas */
-  --transition-speed: 0.3s; /* Velocidade da transição de cor para suavizar mudanças */
-  --contact: #89898931; /* Cor de fundo para a seção de contato */
-  --teste1: #eeff00; /* Cores de teste */
+  --grey: #f3f3f3;
+  /* Branco padrão */
+  --vermelho: #e30613;
+  /* Vermelho padrão */
+  --dark: #191a23;
+  /* Preto 01 padrão */
+  --black: #000;
+  /* Preto 02 padrão */
+  --gap-large: 40px;
+  /* Espaçamento grande entre os itens (por exemplo, em desktops) */
+  --gap-small: 20px;
+  /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
+  --font-size: 20px;
+  /* Tamanho da fonte padrão */
+  --border-radius: 10px;
+  /* Raio da borda para bordas arredondadas */
+  --transition-speed: 0.3s;
+  /* Velocidade da transição de cor para suavizar mudanças */
+  --contact: #89898931;
+  /* Cor de fundo para a seção de contato */
+  --teste1: #eeff00;
+  /* Cores de teste */
   --teste2: #ff00ee;
   --teste3: #00eeff;
   --teste4: #00ff00;
@@ -55,7 +66,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 40rem;
-  margin: 5vh 0vh 5vh 0vh;
 }
 
 .container-text {
@@ -207,7 +217,8 @@ body {
   width: 50vh;
   height: auto;
   gap: 1rem;
-  transition: var(--transition-speed); /* Adiciona transição suave */
+  transition: var(--transition-speed);
+  /* Adiciona transição suave */
   border-radius: 3vh;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
   padding: 2rem;
@@ -478,12 +489,12 @@ hgroup p {
 
 /* ---------- Estilos de responsividade ---------- */
 @media (max-width: 768px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   /* ---------- Responsividade para a seção principal ---------- */
   .container-main {
@@ -535,34 +546,45 @@ hgroup p {
   .card-item {
     width: 90%;
     height: auto;
-    margin-top: 2vh;
+    margin-top: 1vh;
   }
 
   /* Responsividade para a seção de contato - card da tabela periódica */
+  .cards-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+  }
+
+
   .cards {
-    width: 90%;
+    width: 70%;
     height: auto;
     flex-direction: column;
     padding: 20px;
+    margin-top: 55vh;
   }
 
-/* Responsividade para a seção de contato - botão de download */
-.card-buttons {
+  /* Responsividade para a seção de contato - botão de download */
+  .card-buttons {
     margin: 5vh 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+  }
 
-/* Responsividade para a seção de contato - parágrafo */
-.cards-introduction {
+  /* Responsividade para a seção de contato - parágrafo */
+  .cards-introduction {
     text-align: center;
-    width: 90%; /* Define a largura */
+    width: 90%;
+    /* Define a largura */
     margin: 0 auto;
     padding: 1rem;
-}
+  }
 
   /* Responsividade para a seção de contato - card */
   .card-contact-desenvolvedores {
@@ -571,7 +593,7 @@ hgroup p {
     flex-direction: column;
   }
 
-/* Responsividade para a seção de contato - container dos desenvolvedores */
+  /* Responsividade para a seção de contato - container dos desenvolvedores */
   .developers-container {
     flex-direction: column;
     height: auto;
@@ -586,14 +608,14 @@ hgroup p {
     padding: 5vh;
   }
 
-    /* Responsividade para a seção de contato - imagem */
+  /* Responsividade para a seção de contato - imagem */
   .section-img {
     width: 100%;
     height: auto;
     margin-top: 20px;
   }
 
-    /* Responsividade para a seção de contato - inputs */
+  /* Responsividade para a seção de contato - inputs */
   .input-dev,
   .textarea-dev,
   .button-contact {
@@ -603,6 +625,7 @@ hgroup p {
 
 /* ---------- Responsividade para tablets ---------- */
 @media (min-width: 769px) and (max-width: 1024px) {
+
   /* Responsividade para a seção principal */
   .container-main {
     flex-direction: column;
@@ -636,7 +659,8 @@ hgroup p {
     gap: 5vh;
     height: auto;
     width: 50%;
-    margin: 0 auto; /* Centraliza a seção */
+    margin: 0 auto;
+    /* Centraliza a seção */
   }
 
   .logotipos-item {
@@ -653,11 +677,12 @@ hgroup p {
 
   /* Responsividade para a seção de contato */
   .cards {
-    width: 90%;
+    width: 50%;
     height: auto;
     flex-direction: column;
     padding: 20px;
-    margin: 0 auto; /* Centraliza a seção */
+    margin: 0 auto;
+    /* Centraliza a seção */
   }
 
   .card-buttons {
@@ -680,11 +705,12 @@ hgroup p {
     width: 90%;
     height: auto;
     flex-direction: column;
-    margin: 0 auto; /* Centraliza o card */
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem; /* Adiciona padding para espaçamento interno */
+    padding: 2rem;
+    /* Adiciona padding para espaçamento interno */
   }
 
   .developers-container {
