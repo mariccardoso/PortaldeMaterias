@@ -59,7 +59,9 @@ body {
 /* ---------- Barra de navegação para as outras 11 páginas de matérias ---------- */
 .subject-nav {
   background-color: var(--contact);
-  width: 100%;
+  width: 90%;
+  border-radius: 3vh;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -215,7 +217,7 @@ body {
 }
 
 .button:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
   transform: scale(1.1);
 }
 
@@ -308,9 +310,7 @@ body {
   height: auto;
   gap: 1rem;
   transition: var(--transition-speed);
-  /* Adiciona transição suave */
   border-radius: 3vh;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
   padding: 2rem;
 }
 
@@ -341,7 +341,7 @@ body {
   height: 35vh;
   background-color: var(--contact);
   border-radius: 3vh;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -368,7 +368,7 @@ body {
 }
 
 .button-dowload:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
   transform: scale(1.1);
 }
 
@@ -408,7 +408,7 @@ body {
   width: 150vh;
   height: 100vh;
   border-radius: 3vh;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   margin-bottom: 10vh;
 }
 
@@ -495,7 +495,7 @@ hgroup p {
 }
 
 .contate-nos:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
   transform: scale(1.1);
 }
 
@@ -573,7 +573,7 @@ hgroup p {
 }
 
 .button-contact:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
   transform: scale(1.1);
 }
 
