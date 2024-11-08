@@ -57,6 +57,27 @@ body {
 }
 
 /* Estilos para a seção principal */
+.back {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--dark);
+  transition: var(--transition-speed);
+  padding-left: 2rem;
+}
+
+.back img {
+  width: 5%;
+  height: auto;
+}
+
+.back:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
 .container-main {
   display: flex;
   width: 100%;
