@@ -39,6 +39,7 @@
     align-content: center;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 5rem;
 }
 
 /* Estilos Imagem - Container */ 
@@ -140,9 +141,8 @@
 .cards {
     display: flex;
     width: 80%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .card {
@@ -156,7 +156,13 @@
     border-radius: 5%;
     width: 30rem;
     height: 20rem;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
+
 
 .subcard {
     display: flex;
@@ -179,8 +185,48 @@
 }
 
 .button-card {
-    color: #e30613;
+    color: #e30612;
     text-align: center;
     font-family: "Space Grotesk";
     font-weight: 600;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-img, .container-text {
+        width: 90%;
+    }
+
+    .container-img img {
+        height: auto;
+        width: 90%;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-text {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .subcard {
+        width: 100%;
+    }
 }
