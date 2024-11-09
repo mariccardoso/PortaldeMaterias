@@ -9,10 +9,12 @@
     --black: #000;
     --gap-large: 4vh;
     --gap-small: 2vh;
-    --font-size: 20px;
+    --font-size: 3rem;
     --border-radius: 3vh;
-    --transition-speed: 0.3s; /* Velocidade da transição de cor para suavizar mudanças */
-    --contact: #89898931; /* Cor de fundo para a seção de contato */
+    --transition-speed: 0.3s;
+    /* Velocidade da transição de cor para suavizar mudanças */
+    --contact: #89898931;
+    /* Cor de fundo para o card de cada membro */
 
     /* Testes */
     --teste1: #2fff00;
@@ -49,8 +51,6 @@
     height: 90vh;
     display: flex;
     justify-content: center;
-
-    
 }
 
 .img-team img {
@@ -59,15 +59,12 @@
     object-fit: cover;
 }
 
-
-
 .card-introduction {
     background-color: #e30613;
     border-radius: var(--border-radius);
     width: 20vh;
     height: 10vh;
     margin: 5% auto 5% auto;
-   
 }
 
 .title-introduction {
@@ -76,7 +73,7 @@
     align-items: center;
     text-align: justify;
     font-family: Montserrat;
-    font-size: 20px;  
+    font-size: var(--font-size);
     color: var(--grey);
     background-color: #e30613;
     border-radius: var(--border-radius);
@@ -89,8 +86,7 @@
 .title-introduction:hover {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
     transform: scale(1.1);
-  }
-  
+}
 
 .text-team {
     display: flex;
@@ -99,9 +95,8 @@
     width: 60%;
     font-family: Montserrat;
     margin-left: auto;
-    margin-right:  auto;
+    margin-right: auto;
 }
-
 
 /*card: membros da equipe*/
 .team-members {
@@ -111,7 +106,7 @@
     display: flex;
 }
 
-.top-cards { 
+.top-cards {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -127,7 +122,7 @@
 .member-img {
     width: 15vh;
     border-radius: 4vh;
-    border: 1px solid ;
+    border: 1px solid;
     box-shadow: 0px 3px 0px 0px var(--dark);
 }
 
@@ -156,7 +151,7 @@
 .card:hover {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
     transform: scale(1.1);
-  }
+}
 
 
 .member-text a {
@@ -182,6 +177,164 @@
 }
 
 /* Media Queries */
+@media screen and (max-width: 480px) {
+    .text-team {
+        text-align: justify;
+        width: 80%;
+        margin-top: 5%;
+    }
+    /*card: membros da equipe*/
+    .team-members {
+        margin-top: 65px;
+    }
+    .top-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .buttom-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.3rem;
+    }
+    .member-img {
+        width: 15vh;
+        border-radius: 4vh;
+        border: 1px solid;
+        box-shadow: 0px 3px 0px 0px var(--dark);
+    }
+    .card {
+        width: 42vh;        
+    }
+    .card-buttom {
+        width: 42vh;       
+    }
+    .member-section {  
+        text-align: justify;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .text-team {
+        text-align: justify;
+        width: 70%;
+        margin-top: 2%;
+    }
+    /*card: membros da equipe*/
+    .team-members {
+        margin-top: 65px;
+    }
+    .top-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .buttom-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.3rem;
+    }
+    .member-img {
+        width: 15vh;
+        border-radius: 4vh;
+        border: 1px solid;
+        box-shadow: 0px 3px 0px 0px var(--dark);
+    }
+    .card {        
+        width: 42vh;       
+    }
+    .card-buttom {
+        width: 42vh;       
+    }
+    .member-section {
+        text-align: justify;
+    }
+}
+@media (min-width: 769px) and (max-width: 980px) {
+    .top-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card {        
+        width: 38vh;       
+    }
+}
+@media (min-width: 981px) and (max-width: 1280px) {
+    .top-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card {        
+        width: 50vh;       
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1500px) {
+    .top-cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .card {        
+        width: 46vh;       
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .img-team {
+        background-color: var(--vermelho);
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title-introduction {
+        width: 25%;
+        font-size: var(--font-size)
+    }
+
+    .card-introduction {
+        background-color: #e30613;
+        border-radius: var(--border-radius);
+        width: 20vh;
+        height: 10vh;
+        margin: 5% auto 5% auto;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .img-team {
+        background-color: var(--vermelho);
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title-introduction {
+        width: 25%;
+        font-size: var(--font-size)
+    }
+
+    .card-introduction {
+        background-color: #e30613;
+        border-radius: var(--border-radius);
+        width: 20vh;
+        height: 10vh;
+        margin: 5% auto 5% auto;
+    }
+}
+
 @media (min-width: 768px) {
     .navigation-bar {
         padding: 0 40px;
@@ -201,8 +354,25 @@
         align-items: center;
     }
 
-    .title-sobrenos {
+    .img-team {
+        background-color: var(--vermelho);
+        width: 100;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title-introduction {
         width: 25%;
+        font-size: 15px;
+    }
+
+    .card-introduction {
+        background-color: #e30613;
+        border-radius: var(--border-radius);
+        width: 15vh;
+        height: 5vh;
+        margin: 5% auto 5% auto;
     }
 
     .top-cards,
@@ -227,8 +397,9 @@
         line-height: 60px;
     }
 
-    .title-sobrenos {
+    .title-introduction {
         width: 20%;
+        font-size: var(--font-size);
     }
 
     .top-cards,
