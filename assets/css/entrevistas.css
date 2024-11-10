@@ -1,37 +1,198 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-/* Variáveis CSS para cores e tamanhos */
 :root {
-    --grey: #fff;
+    --grey: #f3f3f3;
+    /* Branco padrão */
     --vermelho: #e30613;
-    --dark: #191A23;
+    /* Vermelho padrão */
+    --dark: #191a23;
+    /* Preto 01 padrão */
     --black: #000;
+    /* Preto 02 padrão */
     --gap-large: 40px;
+    /* Espaçamento grande entre os itens (por exemplo, em desktops) */
     --gap-small: 20px;
+    /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
     --font-size: 20px;
+    /* Tamanho da fonte padrão */
     --border-radius: 10px;
+    /* Raio da borda para bordas arredondadas */
     --transition-speed: 0.3s;
+    /* Velocidade da transição de cor para suavizar mudanças */
+    --contact: #89898931;
+    /* Cor de fundo para a seção de contato */
+    --teste1: #eeff00;
+    /* Cores de teste */
+    --teste2: #ff00ee;
+    --teste3: #00eeff;
+    --teste4: #00ff00;
 }
 
-/* Estilos gerais */
-* {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
+.entrevistas{
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
 }
 
-/* Estilos para a animação de transição */
-.fade-out {
-    opacity: 1;
-    transition: opacity 0.5s ease-out;
+.entrevistado-section{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 3.5rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.fade-out-active {
-    opacity: 0;
+.entrevistado-banner{
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2.8125rem;
+    border: 1px solid var(--dark, #191a23);
+    background: url(../img/entrevistados/entrevistas-background/background.png);
+    background-position: center;
 }
 
-/* Configurações da Main */
-.landing-page {
-    margin-right: 120px;
+
+
+.entrevistado-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 60%;
+    margin: 3rem;
+}
+
+.entrevistado-description h1{
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--grey, #f3f3f3);
+}
+
+.entrevistado-description p{
+    font-size: 1.25rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    color: var(--grey, #f3f3f3);
+}
+
+.entrevistado-img{
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+}
+
+.entrevistado-img img {
+    height: 18em;
+}
+
+.videos{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.entrevista-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border-radius: 2.8125rem;
+    border: 1px solid var(--dark, #191a23);
+    background: var(--grey, #f3f3f3);
+}
+
+.entrevista-card iframe{
+    width: 100%;
+    height: 13rem;
+    border-radius: 2.8125rem 2.8125rem 0 0;
+}
+
+.video-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 90%;
+    margin: 3rem;
+}
+
+.video-description h1{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--dark, #191a23);
+}
+
+.video-description p{
+    font-size: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    color: var(--dark, #191a23);
+}
+
+@media (max-width: 768px) {
+    .entrevistas {
+        gap: 5rem;
+    }
+
+    .entrevistado-section {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .entrevistado-banner {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .entrevistado-description {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin: 1.5rem;
+    }
+
+    .entrevistado-img {
+        width: 100%;
+    }
+
+    .entrevistado-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .videos {
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .entrevista-card {
+        width: 85%;
+    }
+
+    .entrevista-card iframe {
+        height: 12rem;
+    }
+
+    .video-description {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: 1.5rem;
+    }
 }
