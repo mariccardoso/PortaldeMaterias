@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,28 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="../../assets/css/noticias.css">
+    <link rel="stylesheet" href="/assets/css/noticias-page.css">
     <link rel="stylesheet" href="../../assets/css/header.css">
     <link rel="stylesheet" href="../../assets/css/banners.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 
     <link rel="shortcut icon" type="imagex/png" href="https://www.sp.senai.br/favicon.ico">
 
 </head>
 
 <body class="fade-out">
-    <main class="lading-page">
+    <main class="landing-page">
         <div class="overlay"></div>
         <header>
             <a href="https://www.sp.senai.br/" target="_blank"><img src="/assets/img/logo-senai.png" class="logo"></a>
             <ul class="navlist">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/carreira.html">Carreiras</a></li>
-                <li><a href="/pages/dica.html">Dicas</a></li>
-                <li><a href="/pages/sobre.html">Sobre Nós</a></li>
-                <li><a href="/pages/noticia.html">Noticias</a></li>
-                <li><a href="/pages/simulado.html">Simulados</a></li>
-                <li><a href="/pages/entevista.html">Entrevistas</a></li>
+                <li><a href="../../index.html" class="active">Home</a></li>
+                <li><a href="../../pages/carreira.html">Carreiras</a></li>
+                <li><a href="../../pages/dica.html">Dicas</a></li>
+                <li><a href="../../pages/sobre.html">Sobre Nós</a></li>
+                <li><a href="../../pages/noticia.html">Noticias</a></li>
+                <li><a href="../../pages/simulado.html">Simulados</a></li>
+                <li><a href="../../pages/entevista.html">Entrevistas</a></li>
             </ul>
             <div class="right-header">
                 <a href="/index.html" class="btn">Entre em contato <i class='bx bx-message-dots'></i> </a>
@@ -39,27 +41,103 @@
 
         <section class="banner-introduction">
             <div class="banner-introduction-container">
-                <h1>Noticia Title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, quis.</p>
+                <h1>Nanotecnologia no Tratamento de Câncer</h1>
+                <p>Pesquisadores exploram o uso de nanopartículas para administrar medicamentos diretamente em células
+                    cancerígenas, reduzindo os efeitos colaterais e melhorando a eficácia do tratamento.
+                </p>
             </div>
             <div class="banner-introduction-img">
                 <img src="/assets/img/banners/banner-img.png" alt="Banner Introduction">
             </div>
         </section>
-        <div class="retangulo9">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Aut vel repellendus inventore! Eligendi velit possimus natus praesentium laborum suscipit ex aliquid quis reiciendis nobis at corrupti aliquam est, cum quaerat.
-            </p>
-        </div>
+
+        <!-- Conteúdo da página -->
+        <section class="noticia-content">
+            <div class="container-card">
+                <div class="titulo-subtitulo">
+                    <a href="" target="_blank"> A tecnologia promete transformar a oncologia e aumentar as taxas de
+                        sobrevivência ao câncer.</a>
+                    <h4>Um pouco mais sobre:</h4>
+                </div>
+                <section class="firstcontent"></section>
+                <div class="texto-noticias">
+                    <p>: Com os avanços química, foi possível utilizar medicamentos mais precisos e mais potentes,
+                        turbinando o tratamento de Câncer.</p>
+                    <p>Esses medicamentos foram desenvolvidos afim de melhorar o tratamento da doença, gastando menos
+                        dinheiro, e menos remédios.</p>
+                    <section class="imgs-content">
+                        <img src="https://s5.static.brasilescola.uol.com.br/enem/2024/11/quimica-enem-2024-prova.jpg"
+                            alt="">
+                        <img src="https://s5.static.brasilescola.uol.com.br/enem/2024/11/quimica-enem-2024-prova.jpg"
+                            alt="">
+                    </section>
+
+                    <div class="text-news">
+                        <h3>Nanotecnologias no tratamento</h3>
+                        <p>Confira abaixo alguns fatos sobre </p>
+                        <ul>
+                            <li><span> Tratamento Personalizado</span> A nanotecnologia permite criar tratamentos
+                                específicos para as necessidades de cada paciente.</li>
+
+                            <li> <span> Avanços na Nanomedicina</span> O uso de nanopartículas que conseguem liberar
+                                medicamentos de forma direcionada nas células doentes.</li>
+
+                            <li> <span>Redução de Efeitos Colaterais</span> Destaca que, com a nanotecnologia, o
+                                tratamento afeta menos as células saudáveis, reduzindo efeitos adversos.
+                            </li>
+
+                            <li> <span>Nanotecnologia e Química</span>
+                                A química está por trás do desenvolvimento de nanopartículas terapêuticas. Já que para
+                                modificar partículas precisa ter químicos experientes, para não dar algo errado e acabar
+                                piorando.</li>
+
+                            <li> <span>O Futuro da Oncologia</span> Explora as possibilidades de novos tratamentos de
+                                câncer com nanotecnologia e sua acessibilidade futura. Esse é o futuro dos tratamentos recentes, não só de câncer, mas de qualquer doença.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        </section>
+
+        <!-- Rodapé da página -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="https://www.sp.senai.br/" target="_blank">
+                        <img src="/assets/img/logo-senai.png" alt="Logo do SENAI" />
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/pages/carreira.html">Carreiras</a></li>
+                        <li><a href="/pages/dica.html">Dicas</a></li>
+                        <li><a href="/pages/sobre.html">Sobre Nós</a></li>
+                        <li><a href="/pages/noticia.html">Noticias</a></li>
+                        <li><a href="/pages/simulado.html">Simulados</a></li>
+                        <li><a href="/pages/entevista.html">Entrevistas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <p>Contato: <a href="mailto:contato@senai.br">contato@senai.br</a></p>
+                    <p>Telefone: (19) 3829-7800</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/school/senaisp/" target="_blank"><img
+                            src="/assets/img/linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.facebook.com/senaisaopaulo" target="_blank"><img src="/assets/img/face.png"
+                            alt="Facebook" /></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SENAI. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </main>
-
-
-
-
-
 
     <script src="../../assets/js/menu_Java.js"></script>
     <script src="/assets/js/animation-pages.js"></script>
 </body>
+
 </html>
