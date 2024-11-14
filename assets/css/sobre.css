@@ -91,11 +91,15 @@
 .text-team {
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
     width: 60%;
     font-family: Montserrat;
     margin-left: auto;
     margin-right: auto;
+}
+
+.member-description {
+    text-align: justify;
 }
 
 /*card: membros da equipe*/
@@ -183,34 +187,41 @@
         width: 80%;
         margin-top: 5%;
     }
+
     /*card: membros da equipe*/
     .team-members {
         margin-top: 65px;
     }
+
     .top-cards {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     .buttom-cards {
         flex-direction: column;
         align-items: center;
         gap: 1.3rem;
     }
+
     .member-img {
         width: 15vh;
         border-radius: 4vh;
         border: 1px solid;
         box-shadow: 0px 3px 0px 0px var(--dark);
     }
+
     .card {
-        width: 42vh;        
+        width: 42vh;
     }
+
     .card-buttom {
-        width: 42vh;       
+        width: 42vh;
     }
-    .member-section {  
+
+    .member-section {
         text-align: justify;
     }
 }
@@ -221,7 +232,7 @@
         width: 100%;
         height: auto;
     }
-    
+
     .img-team img {
         width: 100%;
         height: auto;
@@ -232,43 +243,51 @@
         width: 70%;
         margin-top: 2%;
     }
+
     /*card: membros da equipe*/
     .team-members {
         margin-top: 65px;
     }
+
     .top-cards {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     .buttom-cards {
         flex-direction: column;
         align-items: center;
         gap: 1.3rem;
     }
+
     .member-img {
         width: 15vh;
         border-radius: 4vh;
         border: 1px solid;
         box-shadow: 0px 3px 0px 0px var(--dark);
     }
-    .card {        
-        width: 80%;       
+
+    .card {
+        width: 80%;
     }
+
     .card-buttom {
-        width:80%;       
+        width: 80%;
     }
+
     .member-section {
         text-align: justify;
     }
 }
+
 @media (min-width: 769px) and (max-width: 980px) {
     .img-team {
         width: 100%;
         height: auto;
     }
-    
+
     .img-team img {
         width: 100%;
         height: auto;
@@ -280,10 +299,13 @@
         flex-direction: column;
         justify-content: center;
     }
-    .card {        
-        width: 80%;       
-    }
+
+    .card {
+        width: 80%;
+    
 }
+
+
 @media (min-width: 981px) and (max-width: 1280px) {
     .top-cards {
         width: 100%;
@@ -291,8 +313,13 @@
         flex-direction: column;
         justify-content: center;
     }
-    .card {        
-        width: 50vh;       
+
+    .card {
+        width: 50vh;
+    }
+
+    .card-buttom {
+        width: 50vh;
     }
 }
 
@@ -302,8 +329,9 @@
         display: flex;
         justify-content: center;
     }
-    .card {        
-        width: 46vh;       
+
+    .card {
+        width: 46vh;
     }
 }
 
@@ -328,6 +356,7 @@
         height: 10vh;
         margin: 5% auto 5% auto;
     }
+
 }
 
 
@@ -354,7 +383,7 @@
         margin: 5% auto 5% auto;
     }
 
-    .card{
+    .card {
         width: 80%;
     }
 }
@@ -405,7 +434,8 @@
         gap: 5rem;
         padding: 0 5rem;
     }
-    .card{
+
+    .card {
         width: 80%;
     }
 }
