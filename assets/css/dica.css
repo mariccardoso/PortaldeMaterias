@@ -130,7 +130,7 @@
     font-family: Montserrat;
     font-size: 1.125rem; /* 18px convertidos para rem */
     text-align: justify;
-    width: 40%;
+    width: 80%;
 }
 
 .conteudo .entrevistas{
@@ -139,8 +139,13 @@
     height: 100%;
 }
 .iframe-dev{
-    width: 60%;
-    min-height: 23rem;
+    width: 70%;
+    min-height: 24rem;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
 }
 .dica.ativa {
     border-radius: 2.81rem;
