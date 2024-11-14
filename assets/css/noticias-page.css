@@ -90,6 +90,12 @@
     text-align: justify;                       
 }
 
+.texto-noticias .imgs-content img {
+    width: 48%; 
+    height: auto;
+    border-radius: 18px;
+}
+
 .titulo-subtitulo a {
     padding: 20px 35px;
     border-radius: 18px;

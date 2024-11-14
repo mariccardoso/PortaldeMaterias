@@ -98,6 +98,11 @@ gap: 5.8125rem;
     height: 16.5625rem;
 }
 
+.texto-noticias .imgs-content img {
+    width: 48%;
+    height: auto;
+    border-radius: 18px;
+}
 
 #cardRed{
     border-radius: 2.8125rem;
@@ -131,6 +136,9 @@ color: var(--grey);
 #cardDark a{
     color: var(--grey);
 }
+
+
+
 @media (max-width: 1024px) {
     .cards-section {
         flex-direction: column;
@@ -190,6 +198,8 @@ color: var(--grey);
     .card-img img {
         height: 12rem;
     }
+
+  
 
     
 }
