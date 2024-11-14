@@ -217,6 +217,16 @@
 
 
 @media screen and (max-width: 768px) {
+    .img-team {
+        width: 100%;
+        height: auto;
+    }
+    
+    .img-team img {
+        width: 100%;
+        height: auto;
+    }
+
     .text-team {
         text-align: justify;
         width: 70%;
@@ -244,16 +254,26 @@
         box-shadow: 0px 3px 0px 0px var(--dark);
     }
     .card {        
-        width: 42vh;       
+        width: 80%;       
     }
     .card-buttom {
-        width: 42vh;       
+        width:80%;       
     }
     .member-section {
         text-align: justify;
     }
 }
 @media (min-width: 769px) and (max-width: 980px) {
+    .img-team {
+        width: 100%;
+        height: auto;
+    }
+    
+    .img-team img {
+        width: 100%;
+        height: auto;
+    }
+
     .top-cards {
         width: 100%;
         display: flex;
@@ -261,7 +281,7 @@
         justify-content: center;
     }
     .card {        
-        width: 38vh;       
+        width: 80%;       
     }
 }
 @media (min-width: 981px) and (max-width: 1280px) {
@@ -333,6 +353,10 @@
         height: 10vh;
         margin: 5% auto 5% auto;
     }
+
+    .card{
+        width: 80%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -380,6 +404,9 @@
         flex-direction: row;
         gap: 5rem;
         padding: 0 5rem;
+    }
+    .card{
+        width: 80%;
     }
 }
 
