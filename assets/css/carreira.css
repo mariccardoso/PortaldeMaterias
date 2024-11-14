@@ -128,13 +128,17 @@
     align-items: flex-start;
 }
 
+.eletro-h2 h2 {
+    color: var(--grey);
+}
 
 .learn-title {
     display: flex;
 }
 
 .text-carrer {
-    text-align: center;
+    width: 80%;
+    text-align: justify;
 }
 
 .main-hr{
@@ -225,7 +229,7 @@ margin-top: 3rem;
 }
 
 .eletro-h2 {
-    color: var(--black);
+    color: var(--grey);
 }
 
 .h1-eletro {
