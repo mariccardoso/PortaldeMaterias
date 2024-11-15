@@ -58,7 +58,6 @@ body {
 
 /* ---------- Barra de navegação para as outras 11 páginas de matérias ---------- */
 .subject-nav {
-  background-color: var(--grey);
   width: 90%;
   border-radius: 3vh;
   /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55); */
@@ -68,7 +67,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  margin-top: 15vh;
+  margin: 15vh;
 }
 
 .subject-nav h2 {
@@ -230,6 +229,7 @@ body {
   font-family: Montserrat;
   font-size: 61px;
   font-weight: 500;
+  text-align: left;
   align-self: stretch;
 }
 
