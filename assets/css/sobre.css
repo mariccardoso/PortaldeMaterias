@@ -193,8 +193,8 @@
 
 .card__thumb {
     flex-shrink: 0;
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
 }
 
@@ -221,11 +221,12 @@
     padding: 0 2em 2em;
     margin: 0;
     color: var(--dark);
-    font-family: "MockFlowFont";
+    font-family: "Montserrat";
+    font-size: 0.8rem;
     display: -webkit-box;
     width: 100%;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 9;
     overflow: hidden;
 }
 
@@ -236,8 +237,7 @@
     }
 
     .card-introduction {
-        width: 30vh;
-        height: 15vh;
+        width: 80%;
     }
 
     .title-introduction {
@@ -253,7 +253,7 @@
     .cards {
         flex-direction: column;
         height: auto;
-        margin: 2rem 2vw;
+        margin: 2rem 12vw;
     }
 
     .card {

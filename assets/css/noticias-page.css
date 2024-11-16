@@ -8,7 +8,7 @@
     --font-size: 20px; /* Tamanho da fonte padrão */
     --border-radius: 10px; /* Raio da borda para bordas arredondadas */
     --transition-speed: 0.3s; /* Velocidade da transição de cor para suavizar mudanças */
-    --contact: #89898931; /* Cor de fundo para a seção de contato */
+    --contact: #81818131; /* Cor de fundo para a seção de contato */
     --teste1: #eeff00; /* Cores de teste */
     --teste2: #ff00ee;
     --teste3: #00eeff;
@@ -140,4 +140,36 @@
 
 .text-news ul li span {
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .noticia-content {
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+
+    .texto-noticias .imgs-content {
+        flex-direction: column;
+    }
+
+    .texto-noticias .imgs-content img {
+        width: 100%;
+    }
+
+    .titulo-subtitulo a {
+        padding: 15px 25px;
+        font-size: 1.5rem;
+    }
+
+    .titulo-subtitulo h4 {
+        font-size: 1.2rem;
+    }
+
+    .texto-noticias p {
+        font-size: 1.1rem;
+    }
+
+    .text-news {
+        font-size: 1.1rem;
+    }
 }

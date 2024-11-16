@@ -33,6 +33,7 @@
 
 /* Configurações da Main */
 .lading-page {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,7 +116,6 @@
     align-items: center;
     /* width: 100%; */
     flex-direction: column;
-    padding-right: 2vh;
     font-family: "Montserrat";
     text-align: center;
 }
@@ -134,7 +134,9 @@
 }
 
 .text-carrer {
-    text-align: center;
+    text-align: justify;
+    width: 95%;
+    word-spacing: 0.1rem;
 }
 
 .main-hr{
@@ -224,10 +226,6 @@ margin-top: 3rem;
     background-color: #ffffff;
 }
 
-.eletro-h2 {
-    color: var(--black);
-}
-
 .h1-eletro {
     color: var(--white);
 }
@@ -241,6 +239,9 @@ margin-top: 3rem;
         flex-direction: column;
         height: auto;
         gap: 1.5rem;
+        width: 80%;
+        align-items: center;
+        font-size: 15px;
     }
 
     .carreiras-container hr {
@@ -251,6 +252,7 @@ margin-top: 3rem;
     .card {
         padding: 2rem 1.5rem;
         gap: 2rem;
+        width: 100%;
     }
 
     .card-container {
@@ -258,6 +260,15 @@ margin-top: 3rem;
 
     }
 
+    .text-carrer {
+        text-align: justify;
+        width: 100%;
+    }
+
+    .card-introduction {
+        gap: 1rem;
+        font-size: 1rem;
+    }
     .card-content {
         flex-direction: column;
         gap: 1.5rem;
@@ -286,6 +297,7 @@ margin-top: 3rem;
     .learn-container {
         opacity: 0%;	
     }
+
 }
 
 
