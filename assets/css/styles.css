@@ -596,7 +596,7 @@ hgroup p {
   /* Responsividade para a seção principal */
   .container-text,
   .container-img {
-    width: 100%;
+    width: 90%;
     align-items: center;
     text-align: center;
   }
@@ -612,6 +612,7 @@ hgroup p {
   /* Responsividade para a seção principal - Título */
   .section-title {
     font-size: 2rem;
+    text-align: center;
   }
 
   /* Responsividade para a seção principal - Texto de introdução */
