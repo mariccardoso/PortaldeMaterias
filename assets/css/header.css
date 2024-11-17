@@ -28,8 +28,9 @@ header {
   justify-content: space-around;
   z-index: 100;
   transition: 0.3s;
-  background: whitesmoke;
+  background: rgba(245, 245, 245, 0.342);
   box-shadow: 0px 23px 26px -10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 /* Meu nome (Logo)*/
