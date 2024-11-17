@@ -157,7 +157,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 40rem;
-  margin-top: 8vh;
+  margin-top: 8rem;
 }
 
 .container-text {
@@ -335,7 +335,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10vh;
-  margin-top: 15vh;
 }
 
 .cards {
@@ -408,7 +407,7 @@ body {
   display: flex;
   background-color: var(--contact);
   width: 150vh;
-  height: 100vh;
+  height: 60rem;
   border-radius: 3vh;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   margin-bottom: 10vh;
@@ -457,6 +456,7 @@ hgroup {
   justify-content: center;
   text-align: center;
   gap: 0.5rem;
+  padding: 1.5rem;
   margin-top: 5vh;
 }
 
@@ -515,13 +515,25 @@ hgroup p {
   margin-bottom: 3vh;
 }
 
-.section-content p {
+.section-content label {
   font-family: Montserrat;
   font-size: 1rem;
   font-weight: 400;
   color: var(--dark);
 }
 
+form {
+  width: 100%;
+  max-width: 30rem;
+  max-height: 80vh;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+}
 .section-img {
   width: 40%;
   height: 100%;
