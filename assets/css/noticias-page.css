@@ -132,7 +132,7 @@
 
 .text-news ul{
     margin-left: 5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .text-news ul li {
     list-style-type: disc;
@@ -172,6 +172,9 @@
 
     .text-news {
         font-size: 1.1rem;
-
+    }
+     
+    .text-news  ul{ 
+        margin-left: 2rem;
     }
 }
