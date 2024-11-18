@@ -143,6 +143,28 @@
     font-weight: bold;
 }
 
+
+/* Card de Redirecionamento */
+
+
+button {
+    background-color: var(--vermelho);
+    border: none; 
+    height: 6vh;
+    padding: 5px 15px;
+    border-radius: 8px;
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    transition: var(--transition-speed);
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
+    transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
     .noticia-content {
         flex-direction: column;
