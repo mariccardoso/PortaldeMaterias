@@ -176,6 +176,7 @@ color: var(--grey);
     .noticias-content{
         gap: 1.5rem;
         width: 80%;
+        width: 95%;
     }
     .card {
         width: 100%;
@@ -197,9 +198,5 @@ color: var(--grey);
     .card-img img {
         height: 12rem;
     }
-
-  
-
-    
 }
 
