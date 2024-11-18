@@ -58,11 +58,10 @@ body {
 
 /* ---------- Barra de navegação para as outras 11 páginas de matérias ---------- */
 .subject-nav {
-  background-color: var(--contact);
   width: 90%;
   border-radius: 3vh;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
-  height: 30vh;
+  /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55); */
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,7 +74,6 @@ body {
   border: none;
   padding: 20px 35px;
   align-items: flex-start;
-  gap: 10px;
   border-radius: 14px;
   background: var(--vermelho);
   color: var(--grey);
@@ -97,7 +95,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
   height: 100%;
 }
@@ -110,6 +108,7 @@ body {
   list-style: none;
   font-family: Montserrat;
   font-weight: 500;
+  font-size: 1.2rem;
   transition: var(--transition-speed);
 }
 
@@ -127,7 +126,7 @@ body {
   color: var(--vermelho);
 }
 
-/* Estilos para a seção principal */
+/* ---------- Estilos para a seção principal ---------- */
 .back {
   width: 100%;
   display: flex;
@@ -158,6 +157,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 40rem;
+  margin-top: 8rem;
 }
 
 .container-text {
@@ -169,6 +169,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
+  text-align: justify;
 }
 
 .section-title a {
@@ -195,7 +196,7 @@ body {
   height: auto;
 }
 
-/* Estilos para botões */
+/* ----- Estilos para botões ----- */
 .button {
   border: none;
   padding: 20px 35px;
@@ -221,13 +222,14 @@ body {
   transform: scale(1.1);
 }
 
-/* Estilos para títulos e textos */
+/* ----- Estilos para títulos e textos ----- */
 .section-title {
   margin-top: 25px;
   color: var(--dark);
   font-family: Montserrat;
   font-size: 61px;
   font-weight: 500;
+  text-align: left;
   align-self: stretch;
 }
 
@@ -241,14 +243,14 @@ body {
   width: 700px;
 }
 
-/* Estilos para a seção de logotipos */
+/* ---------- Estilos para a seção de logotipos ---------- */
 .logotipos {
   display: flex;
   flex-direction: column;
   padding: 10vh;
   align-items: center;
   gap: 1rem;
-  margin-top: 5rem;
+  margin-top: 1vh;
   background-color: #fff;
   width: 90%;
   height: 60%;
@@ -333,12 +335,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10vh;
-  margin-top: 15vh;
 }
 
 .cards {
   width: 80%;
-  height: 35vh;
+  height: 45vh;
   background-color: var(--contact);
   border-radius: 3vh;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -406,7 +407,7 @@ body {
   display: flex;
   background-color: var(--contact);
   width: 150vh;
-  height: 100vh;
+  height: 60rem;
   border-radius: 3vh;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   margin-bottom: 10vh;
@@ -455,6 +456,7 @@ hgroup {
   justify-content: center;
   text-align: center;
   gap: 0.5rem;
+  padding: 1.5rem;
   margin-top: 5vh;
 }
 
@@ -513,13 +515,25 @@ hgroup p {
   margin-bottom: 3vh;
 }
 
-.section-content p {
+.section-content label {
   font-family: Montserrat;
   font-size: 1rem;
   font-weight: 400;
   color: var(--dark);
 }
 
+form {
+  width: 100%;
+  max-width: 30rem;
+  max-height: 80vh;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+}
 .section-img {
   width: 40%;
   height: 100%;
@@ -594,7 +608,7 @@ hgroup p {
   /* Responsividade para a seção principal */
   .container-text,
   .container-img {
-    width: 100%;
+    width: 90%;
     align-items: center;
     text-align: center;
   }
@@ -610,6 +624,7 @@ hgroup p {
   /* Responsividade para a seção principal - Título */
   .section-title {
     font-size: 2rem;
+    text-align: center;
   }
 
   /* Responsividade para a seção principal - Texto de introdução */

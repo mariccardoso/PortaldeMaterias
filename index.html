@@ -1,341 +1,279 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Portal de Matérias</title>
 
-    <!-- Importação das páginas de estilo (CSS) -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <!-- Importação do ícone do SENAI -->
-    <link
-      rel="shortcut icon"
-      type="imagex/png"
-      href="https://www.sp.senai.br/favicon.ico"
-    />
-  </head>
-  <body class="fade-out">
-    <!------------ Cabeçalho da página ------------>
-    <header>
-      <!-- Logo do SENAI -->
-      <a href="https://www.sp.senai.br/" target="_blank">
-        <img
-          src="/assets/img/logo-senai.png"
-          class="logo"
-          alt="Logo do SENAI"
-        />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Portal de Matérias</title>
+
+  <!-- Importação das páginas de estilo (CSS) -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Importação do ícone do SENAI -->
+  <link rel="shortcut icon" type="imagex/png" href="https://www.sp.senai.br/favicon.ico" />
+</head>
+
+<body class="fade-out">
+  <!------------ Cabeçalho da página ------------>
+  <header>
+    <!-- Logo do SENAI -->
+    <a href="https://www.sp.senai.br/" target="_blank">
+      <img src="/assets/img/logo-senai.png" class="logo" alt="Logo do SENAI" />
+    </a>
+
+    <!------------ Menu de navegação ------------>
+    <ul class="navlist">
+      <li><a href="index.html" id="nav-home">Início</a></li>
+      <li><a href="pages/carreira.html" id="nav-carreiras">Carreiras</a></li>
+      <li><a href="pages/dica.html" id="nav-dicas">Dicas</a></li>
+      <li><a href="pages/sobre.html" id="nav-sobre">Sobre Nós</a></li>
+      <li><a href="pages/noticia.html" id="nav-noticias">Noticias</a></li>
+      <li><a href="pages/simulado.html" id="nav-simulados">Simulados</a></li>
+      <li>
+        <a href="pages/entevista.html" id="nav-entrevistas">Entrevistas</a>
+      </li>
+    </ul>
+
+    <!-- Botão de contato -->
+    <div class="right-header">
+      <a href="index.html" class="btn" id="btn-entre-em-contato">
+        Entre em contato <i class="bx bx-message-dots"></i>
       </a>
 
-      <!------------ Menu de navegação ------------>
-      <ul class="navlist">
-        <li><a href="index.html" id="nav-home">Início</a></li>
-        <li><a href="pages/carreira.html" id="nav-carreiras">Carreiras</a></li>
-        <li><a href="pages/dica.html" id="nav-dicas">Dicas</a></li>
-        <li><a href="pages/sobre.html" id="nav-sobre">Sobre Nós</a></li>
-        <li><a href="pages/noticia.html" id="nav-noticias">Noticias</a></li>
-        <li><a href="pages/simulado.html" id="nav-simulados">Simulados</a></li>
-        <li>
-          <a href="pages/entevista.html" id="nav-entrevistas">Entrevistas</a>
-        </li>
-      </ul>
+      <!-- Ícone do menu mobile -->
+      <section class="menu-icon">
+        <button class="bar"></button>
+      </section>
+    </div>
+  </header>
+  <!------------ Fim do cabeçalho ------------>
 
-      <!-- Botão de contato -->
-      <div class="right-header">
-        <a href="index.html" class="btn" id="btn-entre-em-contato">
-          Entre em contato <i class="bx bx-message-dots"></i>
+  <!------------ Seção principal da página ------------>
+  <section class="container-main animate_animated animate_bounceIn">
+    <!-- Texto de boas-vindas -->
+    <div class="container-text">
+      <a class="back" href="#">
+        <img src="/assets/img/left-arrow.png" alt="Voltar" />
+        <h4>Voltar ao portal principal</h4>
+      </a>
+      <h1 class="section-title">Bem-vindo ao Portal de <a href="https://brasilescola.uol.com.br/quimica"
+          target="_blank">Química</a></h1>
+      <p class="section-text">
+        Explore o fascinante mundo da química! Aqui, você encontrará conteúdos
+        sobre reações, elementos, compostos e muito mais. Prepare-se para
+        aprender e experimentar o universo dos átomos e moléculas de uma
+        maneira dinâmica e interativa.
+      </p>
+
+      <!-- Botão de acesso às notícias -->
+      <a href="https://www.cnnbrasil.com.br/tudo-sobre/quimica/" target="_blank">
+        <button href="https://www.cnnbrasil.com.br/tudo-sobre/quimica/" class="button">Veja as notícias do
+          momento</button>
+      </a>
+    </div>
+
+    <!-- Imagem ilustrativa -->
+    <div class="container-img">
+      <img src="./assets/img/main-img.png" alt="material quimico borbulhando" class="home-illustration" />
+    </div>
+  </section>
+  <!------------ Fim da seção principal ------------>
+
+  <!------------ Barra de navegação para as outras 11 páginas de matérias ------------>
+  <nav class="subject-nav">
+    <!-- Título da barra de navegação -->
+    <h2>Outras páginas do Portal</h2>
+
+    <!-- Lista de links para as outras páginas de matérias -->
+    <ul>
+      <li><a href="#">Matemática</a></li>
+      <li><a href="#">Português</a></li>
+      <li><a href="#">História</a></li>
+      <li><a href="#">Geografia</a></li>
+      <li><a href="#">Biologia</a></li>
+      <li><a href="#">Física</a></li>
+      <li><a href="#">Inglês</a></li>
+      <li><a href="#">Filosofia</a></li>
+      <li><a href="#">Sociologia</a></li>
+      <li><a href="#">Educação Física e Artes</a></li>
+    </ul>
+  </nav>
+  <!------------ Fim da barra de navegação para as outras 11 páginas de matérias ------------>
+
+  <!------------ Seção de conteúdo ------------>
+  <section class="logotipos cards-section">
+    <!-- Título e descrição da seção -->
+    <div class="logotipos-introduction animate_animated animate_bounceInUp ">
+      <a href="https://www.todamateria.com.br/materiais-laboratorio/" target="_blank">
+        <h1 class="button">Ferramentas de Química</h1>
+      </a>
+      <p class="section-text">
+        Aqui estão algumas ferramentas muito úteis para estudar e se organizar
+      </p>
+    </div>
+
+    <!-- Itens de logotipos -->
+    <div class="logotipos-item animate_animated animate_bounceInUp">
+      <div class="card-item">
+        <a href="https://www.omnicalculator.com/" target="_blank">
+          <img src="./assets/img/logos/ominiCalculator.png" alt="ominiCalculator" class="logotipo" />
         </a>
-
-        <!-- Ícone do menu mobile -->
-        <section class="menu-icon">
-          <button class="bar"></button>
-        </section>
+        <p>Calculadoras para matemática e ciências.</p>
       </div>
-    </header>
-    <!------------ Fim do cabeçalho ------------>
 
-    <!------------ Seção principal da página ------------>
-    <section class="container-main animate__animated animate__bounceIn">
-      <!-- Texto de boas-vindas -->
-      <div class="container-text">
-        <a class="back" href="#">
-          <img src="/assets/img/left-arrow.png" alt="Voltar" />
-          <h4>Voltar ao portal principal</h4>
+      <div class="card-item">
+        <a href="https://ptable.com/?lang=pt#Propriedades" target="_blank">
+          <img src="./assets/img/logos/ptable.png" alt="ptable" class="logotipo" />
         </a>
-        <h1 class="section-title">Bem-vindo ao Portal de <a href="https://brasilescola.uol.com.br/quimica" target="_blank"
-          >Química</a></h1>
-        <p class="section-text">
-          Explore o fascinante mundo da química! Aqui, você encontrará conteúdos
-          sobre reações, elementos, compostos e muito mais. Prepare-se para
-          aprender e experimentar o universo dos átomos e moléculas de uma
-          maneira dinâmica e interativa.
-        </p>
-
-        <!-- Botão de acesso às notícias -->
-         <a href="https://www.cnnbrasil.com.br/tudo-sobre/quimica/" target="_blank">
-          <button href="https://www.cnnbrasil.com.br/tudo-sobre/quimica/" class="button">Veja as notícias do momento</button>
-         </a>
+        <p>Tabela periódica interativa com dados químicos.</p>
       </div>
 
-      <!-- Imagem ilustrativa -->
-      <div class="container-img">
-        <img
-          src="./assets/img/main-img.png"
-          alt="material quimico borbulhando"
-          class="home-illustration"
-        />
-      </div>
-    </section>
-    <!------------ Fim da seção principal ------------>
-
-    <!------------ Barra de navegação para as outras 11 páginas de matérias ------------>
-    <nav class="subject-nav">
-      <!-- Título da barra de navegação -->
-      <h2>Outras páginas do Portal</h2>
-
-      <!-- Lista de links para as outras páginas de matérias -->
-      <ul>
-        <li><a href="#">Matemática</a></li>
-        <li><a href="#">Português</a></li>
-        <li><a href="#">História</a></li>
-        <li><a href="#">Geografia</a></li>
-        <li><a href="#">Biologia</a></li>
-        <li><a href="#">Física</a></li>
-        <li><a href="#">Inglês</a></li>
-        <li><a href="#">Filosofia</a></li>
-        <li><a href="#">Sociologia</a></li>
-        <li><a href="#">Educação Física e Artes</a></li>
-      </ul>
-    </nav>
-    <!------------ Fim da barra de navegação para as outras 11 páginas de matérias ------------>
-
-    <!------------ Seção de conteúdo ------------>
-    <section class="logotipos">
-      <!-- Título e descrição da seção -->
-      <div class="logotipos-introduction animate__animated animate__bounceInUp ">
-        <a href="https://www.todamateria.com.br/materiais-laboratorio/" target="_blank">
-          <h1 class="button">Ferramentas de Química</h1>
+      <div class="card-item">
+        <a href="https://pt.symbolab.com/" target="_blank">
+          <img src="./assets/img/logos/symbolab.png" alt="symbolab" class="logotipo" />
         </a>
-        <p class="section-text">
-          Aqui estão algumas ferramentas muito úteis para estudar e se organizar
-        </p>
+        <p>Solucionador de equações matemáticas.</p>
       </div>
 
-      <!-- Itens de logotipos -->
-      <div class="logotipos-item animate__animated animate__bounceInUp">
-        <div class="card-item">
-          <a href="https://www.omnicalculator.com/" target="_blank">
-            <img
-              src="./assets/img/logos/ominiCalculator.png"
-              alt="ominiCalculator"
-              class="logotipo"
-            />
-          </a>
-          <p>Calculadoras para matemática e ciências.</p>
-        </div>
-
-        <div class="card-item">
-          <a href="https://ptable.com/?lang=pt#Propriedades" target="_blank">
-            <img
-              src="./assets/img/logos/ptable.png"
-              alt="ptable"
-              class="logotipo"
-            />
-          </a>
-          <p>Tabela periódica interativa com dados químicos.</p>
-        </div>
-
-        <div class="card-item">
-          <a href="https://pt.symbolab.com/" target="_blank">
-            <img
-              src="./assets/img/logos/symbolab.png"
-              alt="symbolab"
-              class="logotipo"
-            />
-          </a>
-          <p>Solucionador de equações matemáticas.</p>
-        </div>
-
-        <div class="card-item">
-          <a href="https://www.notion.so/pt" target="_blank">
-            <img
-              src="./assets/img/logos/notion.png"
-              alt="notion"
-              class="logotipo"
-            />
-          </a>
-          <p>Ferramenta de produtividade e organização.</p>
-        </div>
-
-        <div class="card-item">
-          <a href="https://www.google.com/" target="_blank">
-            <img
-              src="./assets/img/logos/google.png"
-              alt="google"
-              class="logotipo"
-            />
-          </a>
-          <p>Busca e serviços online.</p>
-        </div>
-
-        <div class="card-item">
-          <a href="https://quizlet.com/br" target="_blank">
-            <img
-              src="./assets/img/logos/quizlet.png"
-              alt="quizlet"
-              class="logotipo"
-            />
-          </a>
-          <p>Flashcards e recursos de aprendizado.</p>
-        </div>
+      <div class="card-item">
+        <a href="https://www.notion.so/pt" target="_blank">
+          <img src="./assets/img/logos/notion.png" alt="notion" class="logotipo" />
+        </a>
+        <p>Ferramenta de produtividade e organização.</p>
       </div>
-    </section>
 
-    <!------------ Seção de cartões ------------>
-    <section class="cards">
-      <article class="card-buttons">
-        <div class="developers-container">
-          <h2 class="button-developers">PDF:</h2>
-          <p class="developers-a">Tabela Periódica</p>
-        </div>
-        <hgroup>
-          <p class="cards-introduction">
-            Baixe agora a versão em PDF da Tabela Periódica e tenha este valioso
-            recurso sempre à mão para suas pesquisas e estudos.
-          </p>
-        </hgroup>
-        <a
-          href="assets/pdf/tabela-periodica.pdf"
-          class="button-dowload"
-          download
-          >Baixar</a
-        >
-      </article>
-      <img
-        src="assets/img/poisons.png"
-        alt="Vários potes de veneno"
-        class="card-image"
-      />
-    </section>
+      <div class="card-item">
+        <a href="https://www.google.com/" target="_blank">
+          <img src="./assets/img/logos/google.png" alt="google" class="logotipo" />
+        </a>
+        <p>Busca e serviços online.</p>
+      </div>
 
-    <!------------ Sessão de contato ------------>
-    <section class="cards-section" id="contate-nos">
+      <div class="card-item">
+        <a href="https://quizlet.com/br" target="_blank">
+          <img src="./assets/img/logos/quizlet.png" alt="quizlet" class="logotipo" />
+        </a>
+        <p>Flashcards e recursos de aprendizado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!------------ Seção de cartões ------------>
+  <section class="cards">
+    <article class="card-buttons">
+      <div class="developers-container">
+        <h2 class="button-developers">PDF:</h2>
+        <p class="developers-a">Tabela Periódica</p>
+      </div>
       <hgroup>
-        <div class="contate-nos">
-          <h2 id="contate-nos">Contato</h2>
-        </div>
-        <h3>
-          Fale conosco ou com o
-          <a href="https://www.sp.senai.br/" target="_blank"
-            >SENAI<img src="assets/img/arrow.png" alt="Seta"
-          /></a>
-        </h3>
-        <p>Entre em contato com os desenvolvedores do Portal de Química!</p>
-        <p>Tem alguma dúvida, sugestão ou crítica? Fale conosco!</p>
+        <p class="cards-introduction">
+          Baixe agora a versão em PDF da Tabela Periódica e tenha este valioso
+          recurso sempre à mão para suas pesquisas e estudos.
+        </p>
       </hgroup>
+      <a href="assets/pdf/tabela-periodica.pdf" class="button-dowload" download>Baixar</a>
+    </article>
+    <img src="assets/img/poisons.png" alt="Vários potes de veneno" class="card-image" />
+  </section>
 
-      <!-- Div de Contato com os Desenvolvedores -->
-      <div class="card-contact-desenvolvedores">
-        <section class="section-content">
-          <div class="developers-container">
-            <h1 class="button-developers">Contato:</h1>
-            <a class="developers-a" href="pages/sobre.html">desenvolvedores</a>
-          </div>
-          <p>Seu nome</p>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            placeholder="Nome Completo"
-            required
-            maxlength="100"
-            class="input-dev"
-          />
-          <p>Seu e-mail*</p>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="seuemail@exemplo.com"
-            class="input-dev"
-          />
-          <p>Sua Mensagem*</p>
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            placeholder="Sua mensagem"
-            required
-            class="textarea-dev"
-          ></textarea>
-          <button class="button-contact" type="submit">Enviar mensagem</button>
-        </section>
-
-        <section class="section-img">
-          <img
-            src="assets/img/contact-ilustration.png"
-            alt="Imagem Ilustrativa"
-            class="img-section-cards"
-          />
-        </section>
+  <!------------ Sessão de contato ------------>
+  <section class="cards-section" id="contate-nos">
+    <hgroup>
+      <div class="contate-nos">
+        <h2 id="contate-nos">Contato</h2>
       </div>
-    </section>
+      <h3>
+        Fale conosco ou com o
+        <a href="https://www.sp.senai.br/" target="_blank">SENAI<img src="assets/img/arrow.png" alt="Seta" /></a>
+      </h3>
+      <p>Entre em contato com os desenvolvedores do Portal de Química!</p>
+      <p>Tem alguma dúvida, sugestão ou crítica? Fale conosco!</p>
+    </hgroup>
 
-    <!-- Rodapé da página -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <a href="https://www.sp.senai.br/" target="_blank">
-            <img src="/assets/img/logo-senai.png" alt="Logo do SENAI" />
-          </a>
+    <!-- Div de Contato com os Desenvolvedores -->
+    <div class="card-contact-desenvolvedores">
+      <section class="section-content">
+        <div class="developers-container">
+          <h1 class="button-developers">Contato:</h1>
+          <a class="developers-a" href="pages/sobre.html">desenvolvedores</a>
         </div>
-        <div class="footer-links">
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="pages/carreira.html">Carreiras</a></li>
-            <li><a href="pages/dica.html">Dicas</a></li>
-            <li><a href="pages/sobre.html">Sobre Nós</a></li>
-            <li><a href="pages/noticia.html">Noticias</a></li>
-            <li><a href="pages/simulado.html">Simulados</a></li>
-            <li><a href="pages/entevista.html">Entrevistas</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <p>Contato: <a href="mailto:contato@senai.br">contato@senai.br</a></p>
-          <p>Telefone: (19) 3829-7800</p>
-        </div>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/school/senaisp/" target="_blank"
-            ><img src="assets/img/linkedin.png" alt="LinkedIn"
-          /></a>
-          <a href="https://www.facebook.com/senaisaopaulo" target="_blank"
-            ><img src="assets/img/face.png" alt="Facebook"
-          /></a>
-        </div>
+        <form action="https://formsubmit.co/marianacardoso.tds2.senai@gmail.com" method="POST" data-form>
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Nome Completo" required maxlength="100"
+            class="input-dev" />
+
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" class="input-dev" />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required class="textarea-dev"></textarea>
+          
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://portal-de-materias.vercel.app/pages/carreira.html">
+          <button class="button-contact" type="submit" data-button>Enviar mensagem</button>
+        </form>
+
+      </section>
+
+      <section class="section-img">
+        <img src="assets/img/contact-ilustration.png" alt="Imagem Ilustrativa" class="img-section-cards" />
+      </section>
+    </div>
+  </section>
+
+  <!-- Rodapé da página -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a href="https://www.sp.senai.br/" target="_blank">
+          <img src="/assets/img/logo-senai.png" alt="Logo do SENAI" />
+        </a>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2023 SENAI. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="pages/carreira.html">Carreiras</a></li>
+          <li><a href="pages/dica.html">Dicas</a></li>
+          <li><a href="pages/sobre.html">Sobre Nós</a></li>
+          <li><a href="pages/noticia.html">Noticias</a></li>
+          <li><a href="pages/simulado.html">Simulados</a></li>
+          <li><a href="pages/entevista.html">Entrevistas</a></li>
+        </ul>
       </div>
-    </footer>
+      <div class="footer-contact">
+        <p>Contato: <a href="mailto:contato@senai.br">contato@senai.br</a></p>
+        <p>Telefone: (19) 3829-7800</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/school/senaisp/" target="_blank"><img src="assets/img/linkedin.png"
+            alt="LinkedIn" /></a>
+        <a href="https://www.facebook.com/senaisaopaulo" target="_blank"><img src="assets/img/face.png"
+            alt="Facebook" /></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 SENAI. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-    <!-- Scripts -->
-    <script src="./assets/js/menu_Java.js"></script>
-    <script src="assets/js/animation-pages.js"></script>
+  <!-- Scripts -->
+  <script src="./assets/js/menu_Java.js"></script>
+  <script src="assets/js/animation-pages.js"></script>
 
-    <!-- Script (unico desta página) para rolar até a seção de contato -->
-    <script>
-      document
-        .getElementById("btn-entre-em-contato")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          document
-            .getElementById("contate-nos")
-            .scrollIntoView({ behavior: "smooth" });
-        });
-    </script>
-  </body>
+  <!-- Script (unico desta página) para rolar até a seção de contato -->
+  <script>
+    document
+      .getElementById("btn-entre-em-contato")
+      .addEventListener("click", function (event) {
+        event.preventDefault();
+        document
+          .getElementById("contate-nos")
+          .scrollIntoView({ behavior: "smooth" });
+      });
+  </script>
+</body>
+
 </html>

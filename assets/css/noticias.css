@@ -67,7 +67,7 @@
     color: #000;
     /* h3 */
     font-family: Montserrat;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -75,6 +75,7 @@
 
 .card-title {
     font-size: medium;
+    width: 100%;
 }
 
 .card a {
@@ -100,12 +101,18 @@
     height: 17rem;
 }
 
+.texto-noticias .imgs-content img {
+    width: 48%;
+    height: auto;
+    border-radius: 18px;
+}
 
 #cardRed {
     border-radius: 2.8125rem;
     background: var(--vermelho);
     color: var(--grey);
 }
+
 
 #cardRed h3 {
     background: #FFF;
@@ -185,6 +192,4 @@
     .card-img img {
         height: 60%;
     }
-
-
 }
