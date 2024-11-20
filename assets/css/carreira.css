@@ -128,15 +128,18 @@
     align-items: flex-start;
 }
 
+.eletro-h2 h2 {
+    color: var(--grey);
+}
 
 .learn-title {
     display: flex;
 }
 
 .text-carrer {
+    width: 80%;
     text-align: justify;
-    width: 95%;
-    word-spacing: 0.1rem;
+
 }
 
 .main-hr{
@@ -224,6 +227,10 @@ margin-top: 3rem;
     width: 0.0425rem;
     height: 11rem;
     background-color: #ffffff;
+}
+
+.eletro-h2 {
+    color: var(--grey);
 }
 
 .h1-eletro {
