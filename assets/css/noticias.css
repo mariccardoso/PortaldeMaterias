@@ -169,6 +169,7 @@
     .noticias-content {
         gap: 1.5rem;
         width: 80%;
+        width: 95%;
     }
 
     .card {
@@ -193,3 +194,4 @@
         height: 60%;
     }
 }
+
