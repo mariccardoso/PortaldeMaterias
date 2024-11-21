@@ -60,7 +60,7 @@
 .titulo-subtitulo a {
     font-family: Montserrat;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--dark);
     padding: 15px 5px;
 }
@@ -68,7 +68,7 @@
 .titulo-subtitulo h4 {
     font-family: Montserrat;
     font-size: 1.6rem;
-    color: var(--vermelho);
+    color: var(--dark);
     font-weight: bold;
 }
 
@@ -191,7 +191,7 @@ button:hover {
 
     .titulo-subtitulo h4 {
         text-align: center;
-
+    }
 @media (max-width: 768px) {
     .noticia-content {
         flex-direction: column;
@@ -265,7 +265,7 @@ button:hover {
 
     .text-news ul {
         margin-left: 2rem;
-
+    
     .titulo-subtitulo a {
         padding: 15px 25px;
         font-size: 1.5rem;
@@ -287,4 +287,6 @@ button:hover {
     .text-news  ul{ 
         margin-left: 2rem;
     }
+    }
+}
 }
