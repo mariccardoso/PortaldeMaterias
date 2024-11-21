@@ -67,7 +67,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  margin-top: 5rem;
+  margin-top: 25rem;
+  margin-bottom: 15rem;
   gap: 2.9rem;
 }
 
@@ -244,6 +245,32 @@ body {
   line-height: normal;
   width: 100%;
 }
+
+
+.cards-materias-bottom {
+  display: flex;
+  background-color: #00eeff;
+}
+
+.cards-materias-top {
+  display: flex;
+  background-color:#00ff00;
+}
+
+.materia img {
+  width: 30%;
+  text-align: center;
+}
+
+.materia h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.materia  p {
+  text-align: center;
+}
+
 
 /* ---------- Estilos para a seção de logotipos ---------- */
 .logotipos {
@@ -506,7 +533,7 @@ hgroup p {
 
 .section-content {
   width: 60%;
-  height: 85.7%;
+  height: 80%;
   border-radius: 3vh 0vh 0vh 3vh;
   padding: 5vh 15vh 5vh 15vh;
   display: flex;
@@ -536,6 +563,7 @@ input,
 textarea,
 button {
   display: block;
+  margin-top: 5%;
 }
 .section-img {
   width: 40%;
@@ -563,7 +591,7 @@ button {
 
 .textarea-dev {
   width: 60%;
-  height: 40vh;
+  height: 25vh;
   border-radius: 2vh;
   border: 1px solid black;
   margin-top: 1vh;
@@ -574,7 +602,7 @@ button {
 
 .button-contact {
   width: 60%;
-  height: 10vh;
+  height: 8vh;
   border-radius: 2vh;
   background-color: var(--black);
   color: var(--grey);
