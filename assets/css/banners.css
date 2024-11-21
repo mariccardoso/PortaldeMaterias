@@ -45,10 +45,10 @@
     align-items: center;
     padding: 3rem 0;
     gap: 2rem;
-    margin: 2rem;
     width: 95%;
     height: 25rem;
     margin: 5rem;
+    margin-top: 8%;
 
     border-radius: 3.5rem;
     background-image: url(../img/banners/banner-img-background.png);

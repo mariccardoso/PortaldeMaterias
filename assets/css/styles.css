@@ -533,7 +533,7 @@ hgroup p {
 
 .section-content {
   width: 60%;
-  height: 85.7%;
+  height: 80%;
   border-radius: 3vh 0vh 0vh 3vh;
   padding: 5vh 15vh 5vh 15vh;
   display: flex;
@@ -563,6 +563,7 @@ input,
 textarea,
 button {
   display: block;
+  margin-top: 5%;
 }
 .section-img {
   width: 40%;
@@ -590,7 +591,7 @@ button {
 
 .textarea-dev {
   width: 60%;
-  height: 40vh;
+  height: 25vh;
   border-radius: 2vh;
   border: 1px solid black;
   margin-top: 1vh;
@@ -601,7 +602,7 @@ button {
 
 .button-contact {
   width: 60%;
-  height: 10vh;
+  height: 8vh;
   border-radius: 2vh;
   background-color: var(--black);
   color: var(--grey);
