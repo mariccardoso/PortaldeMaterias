@@ -67,7 +67,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  margin-top: 5rem;
+  margin-top: 25rem;
+  margin-bottom: 15rem;
   gap: 2.9rem;
 }
 
@@ -244,6 +245,32 @@ body {
   line-height: normal;
   width: 100%;
 }
+
+
+.cards-materias-bottom {
+  display: flex;
+  background-color: #00eeff;
+}
+
+.cards-materias-top {
+  display: flex;
+  background-color:#00ff00;
+}
+
+.materia img {
+  width: 30%;
+  text-align: center;
+}
+
+.materia h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.materia  p {
+  text-align: center;
+}
+
 
 /* ---------- Estilos para a seção de logotipos ---------- */
 .logotipos {
