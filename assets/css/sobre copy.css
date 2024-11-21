@@ -199,7 +199,7 @@
   
   .card__status {
     font-size: .8em;
-    color: #D7BDCA;
+    color: #444344;
   }
   
   .card__description {
@@ -207,6 +207,7 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+    color: #000;
   }    
 
 .card-bottom{
