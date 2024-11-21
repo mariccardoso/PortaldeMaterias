@@ -86,19 +86,102 @@
     <!-- Título da barra de navegação -->
     <h2>Outras páginas do Portal</h2>
 
-    <!-- Lista de links para as outras páginas de matérias -->
-    <ul>
-      <li><a href="#">Matemática</a></li>
-      <li><a href="#">Português</a></li>
-      <li><a href="#">História</a></li>
-      <li><a href="#">Geografia</a></li>
-      <li><a href="#">Biologia</a></li>
-      <li><a href="#">Física</a></li>
-      <li><a href="#">Inglês</a></li>
-      <li><a href="#">Filosofia</a></li>
-      <li><a href="#">Sociologia</a></li>
-      <li><a href="#">Educação Física e Artes</a></li>
-    </ul>
+      <!-- Lista de links para as outras páginas de matérias -->
+    <section class="cards-materias-top">
+      <article class="materia">
+        <a href="#">
+          <img src="/assets/img/img-materias/simboloMatematica.png" alt="esquadro">
+          <h3>Matemática</h3>
+        </a>
+        <p>Explore o universo dos números e suas aplicações práticas.</p>
+      </article>
+
+      <article class="materia">
+        <a href="#">
+          <img src="/assets/img/img-materias/simboloPortugues.png" alt="livro">
+          <h3>Português</h3>
+        </a>
+        <p>Aprofunde seus conhecimentos em gramática, interpretação de textos e redação.</p>
+      </article>
+
+
+      <article class="materia">
+        <a href="#">
+          <img src="/assets/img/img-materias/simboloHistoria (2).png" alt="pergaminho">
+          <h3>História</h3>
+        </a>
+        <p>Reviva os grandes momentos da humanidade! Conheça os principais eventos, personagens e transformações que
+          moldaram o mundo como o conhecemos.
+        </p>
+      </article>
+
+      <article class="materia">
+        <a href="#">
+          <img src="/assets/img/img-materias/simboloGeografia.png" alt="Globo">
+          <h3>Geografia</h3>
+        </a>
+        <p>Entenda os fenômenos naturais, sociais e econômicos que impactam o planeta.</p>
+      </article>
+
+      <article class="materia">
+        <a href="#">
+          <img src="/assets/img/img-materias/simboloBiologia.png" alt="DNA">
+          <h3>Biologia</h3>
+        </a>
+        <p>Descubra como a vida funciona em todas as suas formas. Explore temas como evolução, genética, ecologia e a
+          relação entre os seres vivos</p>
+      </article>
+    </section>
+
+    <section class="cards-materias-bottom">
+      <article class="materia">
+        <a href="#">
+          <img src="/assets/img/img-materias/simboloFisica.png" alt="foguete">
+          <h3>Física</h3>
+        </a>
+        <p>Desvende as leis que regem o universo, desde a gravidade até o eletromagnetismo. Entenda como a ciência
+          explica os fenômenos naturais do dia a dia.</p>
+      </article>
+
+      <article class="materia">
+        <a href="#">
+          <img src="/assets/img/img-materias/simboloIngles.png" alt="foguete">
+          <h3>Inglês</h3>
+        </a>
+        <p>Domine a língua mais falada no mundo! Aprenda gramática, vocabulário e habilidades de leitura, escrita e
+          conversação para se conectar globalmente.
+        </p>
+      </article>
+
+      <article class="materia">
+        <a href="#">
+          <img src="/assets/img/img-materias/simboloFilosofia.png" alt="foguete">
+          <h3>Filosofias</h3>
+        </a>
+        <p>Estude os pensamentos de grandes filósofos e desenvolva sua capacidade crítica e argumentativa.
+        </p>
+      </article>
+
+      <article class="materia">
+        <a href="#">
+          <img src="/assets/img/img-materias/simboloSociologia.png" alt="foguete">
+          <h3>Sociologia</h3>
+        </a>
+        <p>Compreenda as estruturas sociais e os fatores que moldam as relações humanas. Discuta temas como
+          desigualdade, cultura e dinâmica social.
+        </p>
+      </article>
+
+      <article class="materia">
+        <a href="#">
+          <img src="/assets/img/img-materias/simboloEFeartes.png" alt="foguete">
+          <h3>Educação Física e Artes</h3>
+        </a>
+        <p>Compreenda as estruturas sociais e os fatores que moldam as relações humanas. Discuta temas como
+          desigualdade, cultura e dinâmica social.
+        </p>
+      </article>
+    </section>
   </nav>
   <!------------ Fim da barra de navegação para as outras 11 páginas de matérias ------------>
 
@@ -210,7 +293,7 @@
 
           <label for="mensagem">Mensagem</label>
           <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required class="textarea-dev"></textarea>
-          
+
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_next" value="https://portal-de-materias.vercel.app/pages/carreira.html">
           <button class="button-contact" type="submit" data-button>Enviar mensagem</button>
