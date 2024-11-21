@@ -87,6 +87,7 @@
     line-height: 1.75rem;
     /* 140% */
     text-align: center;
+    height: 15rem;
 }
 
 .card-description {
@@ -98,7 +99,7 @@
 }
 
 .card-img img {
-    height: 17rem;
+    height: 50%;
 }
 
 .texto-noticias .imgs-content img {
