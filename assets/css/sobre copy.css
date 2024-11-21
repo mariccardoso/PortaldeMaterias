@@ -46,7 +46,6 @@
 
 /*card: conheça a equipe*/
 .img-team {
-    background-color: var(--vermelho);
     width: 100%;
     height: 90vh;
     display: flex;
@@ -57,6 +56,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    margin-top: 5rem;
 }
 
 .card-introduction {
@@ -199,7 +199,7 @@
   
   .card__status {
     font-size: .8em;
-    color: #D7BDCA;
+    color: #444344;
   }
   
   .card__description {
@@ -207,9 +207,21 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+    color: #000;
   }    
 
 .card-bottom{
     width: 60%;
     justify-items: center;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+
+  .img-team img {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+  margin-top: 5rem;
+  }
 }
