@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Variáveis CSS para cores e tamanhos */
+:root {
+    --grey: #fff;
+    --vermelho: #e30613;
+    --dark: #191A23;
+    --black: #000;
+    --gap-large: 40px;
+    --gap-small: 20px;
+    --font-size: 20px;
+    --border-radius: 10px;
+    --transition-speed: 0.3s;
+}
+
+/* Estilos gerais */
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para a animação de transição */
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-out-active {
+    opacity: 0;
+}
+
+/* Estilos container */
+.container {
+    display: flex;
+    max-width: 75rem;
+    margin: auto;
+    flex-direction: column;
+    background: white;
+    padding: 10rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Montserrat";
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+/* Estilos de introdução */
+div#quiz-form {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.question {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--dark);
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.question label{
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.title-dica {
+    color: var(--grey);
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    background: var(--vermelho);
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.container-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    margin: 4rem 0;
+    align-items: center;
+}
+
+
+.container-title h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--vermelho);
+}
+
+
+.divisor-section {
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+}
+
+hr.divisor {
+    width: 22rem; 
+    border: 0; 
+    height: 4px;
+    background-color: var(--vermelho); 
+    margin: 0;  
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: var(--vermelho);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--vermelho);
+}
+
+.h3-questions{
+    margin: 1rem 0;
+}
+
+.p-question {
+    margin: 1% auto 1% auto;
+}
+
+.img-questions {
+    width: 50%;
+}
