@@ -163,7 +163,7 @@
     background-color: var(--surface-color);
     transform: translateY(-100%);
     transition: .2s ease-in-out;
-  }
+  } 
   
   .card__arc {
     width: 80px;
@@ -231,5 +231,11 @@
 .img-team img {
     width: 100%;
     height: auto;
+}
+
+.title-introduction {
+  width: 50%;
+  height: 8vh;
+  font-size: 0.9rem;
 }
 }
