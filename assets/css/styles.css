@@ -195,7 +195,7 @@ body {
 
 .container-main {
   display: flex;
-  width: 100%;
+  width: 90%;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
@@ -232,7 +232,7 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 

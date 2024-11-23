@@ -50,8 +50,9 @@
 
 .card {
     display: flex;
-    width: 38%;
-    padding: 3.125rem;
+    width: 40%;
+    height: 18rem;
+    padding: 2rem;
     justify-content: space-between;
     align-items: center;
 
@@ -87,7 +88,6 @@
     line-height: 1.75rem;
     /* 140% */
     text-align: center;
-    height: 15rem;
 }
 
 .card-description {
@@ -95,7 +95,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 5.8125rem;
+    gap: 5rem;
 }
 
 .card-img img {
