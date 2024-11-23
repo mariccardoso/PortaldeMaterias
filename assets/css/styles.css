@@ -161,11 +161,10 @@ transition: var(--transition-speed);
   align-items: center;
   color: var(--dark);
   transition: var(--transition-speed);
-  padding-left: 2rem;
 }
 
 .back img {
-  width: 5%;
+  width: 3%;
   height: auto;
 }
 
@@ -183,7 +182,7 @@ transition: var(--transition-speed);
   justify-content: center;
   align-items: center;
   height: 40rem;
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 .container-text {
@@ -194,7 +193,7 @@ transition: var(--transition-speed);
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1rem;
   text-align: justify;
 }
 
@@ -618,8 +617,9 @@ button {
   transform: scale(1.1);
 }
 
-/* ---------- Estilos de responsividade ---------- */
+/* ---------- Estilos de responsividade - celulares ---------- */
 @media (max-width: 768px) {
+
   body {
     display: flex;
     flex-direction: column;
@@ -629,15 +629,36 @@ button {
 
   /* ---------- Responsividade para a seção principal ---------- */
   .container-main {
+    margin-top: -3vh;
     flex-direction: column;
+    font-size: 1.5vh;
+    width: 80%;
+    height: 110vh;
   }
 
+  .container-main p {
+    font-size: 2vh;
+  }
+
+  .back {
+    width: 70%;
+    margin-left: -12vh;
+  }
+  
+  .back img {
+    width: 4%;
+    height: auto;
+
+  }
   /* Responsividade para a seção principal */
   .container-text,
   .container-img {
     width: 90%;
+    height: 50vh;
     align-items: center;
     text-align: center;
+    margin-top: 40vh;
+    gap: 4rem;
   }
 
   /* Responsividade para as imagens (remoção delas) */
@@ -656,7 +677,7 @@ button {
 
   /* Responsividade para a seção principal - Texto de introdução */
   .section-text {
-    width: 90%;
+    width: 30vh;
     font-size: 1rem;
   }
 
@@ -701,6 +722,7 @@ button {
     width: 100%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   /* Responsividade para a seção de logotipos - Cards das ferramentas */
@@ -708,6 +730,13 @@ button {
     width: 90%;
     height: auto;
     margin-top: 1vh;
+    margin-left: -2vh;
+  }
+
+  .card-item p {
+    background-color: var(--contact);
+    border-radius: 1vh;
+    padding: 1.5vh;
   }
 
   /* Responsividade para a seção de contato - card da tabela periódica */
@@ -719,12 +748,17 @@ button {
     gap: 10vh;
   }
 
-
   .cards {
-    width: 70%;
-    height: auto;
+    border-radius: 0;
+    width: 100%;
+    height: 60vh;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
+    gap: 1vh;
+  }
+
+  .developers-container {
+    width: 100%;
   }
 
   /* Responsividade para a seção de contato - botão de download */
@@ -784,13 +818,21 @@ button {
 }
 
 /* ---------- Responsividade para tablets ---------- */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) {
 
   /* Responsividade para a seção principal */
   .container-main {
     flex-direction: column;
     margin-top: 1vh;
     height: 80rem;
+    margin-top: 10vh;
+    width: 80%;
+    margin: 10vh;
+  }
+
+  .back {
+    width: 70%;
+    margin-left: -12vh;
   }
 
   .container-text,
@@ -835,15 +877,12 @@ button {
     font-size: 1.5rem;
   }
 
-
-
   /* Responsividade para a seção de logotipos */
   .logotipos {
     gap: 5vh;
     height: auto;
     width: 50%;
     margin: 0 auto;
-    /* Centraliza a seção */
   }
 
   .logotipos-item {
