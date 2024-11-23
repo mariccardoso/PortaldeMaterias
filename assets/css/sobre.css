@@ -63,7 +63,7 @@
     margin-top: 7rem;
 }
 
-.card-introduction {
+.conhecendo-equipe h2 {
     background-color: #e30613;
     border-radius: var(--border-radius);
     width: 20vh;
@@ -71,7 +71,7 @@
     margin: 5% auto 5% auto;
 }
 
-.title-introduction {
+.conhecendo-equipe h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,11 +239,11 @@
         height: 50vh;
     }
 
-    .card-introduction {
-        width: 80%;
+    .conhecendo-equipe {
+        width: 50%;
     }
 
-    .title-introduction {
+    .conhecendo-equipe h2 {
         width: 30vh;
         height: 8vh;
         font-size: 2rem;
@@ -261,6 +261,7 @@
 
     .card {
         margin-bottom: 2rem;
+        width: 2rem;
     }
 
     .card__header {

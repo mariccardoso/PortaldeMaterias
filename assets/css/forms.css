@@ -36,10 +36,9 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    padding: 3rem;
     gap: 2rem;
     width: 95%;
-    height: 25rem;
+    height: 30rem;
     margin: 3rem;
 
     border-radius: 3.5rem;
@@ -77,7 +76,7 @@
 
 @media (max-width: 768px) {
     .container {
-        margin-top: 4rem;
+        margin-top: 10rem;
     }
 
     .card-enviado {
@@ -99,7 +98,7 @@
 
 @media (max-width: 480px) {
     .container {
-        margin-top: 2rem;
+        margin-top: 10rem;
     }
 
     .card-enviado {
