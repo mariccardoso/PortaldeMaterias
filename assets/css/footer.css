@@ -41,6 +41,7 @@
 
 .footer-links ul li a:hover {
     color: var(--vermelho);
+    display: flex;
 }
 
 .footer-contact p {
