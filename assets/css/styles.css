@@ -63,8 +63,19 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 2.5rem;
   margin-top: 6rem;
+  gap: 2rem;
+  margin: 20vh;
+}
+
+.subject-nav p {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--dark);
+  width: 50%;
+  text-align: center;
 }
 
 .subject-nav h2 {
@@ -78,7 +89,7 @@ body {
   font-family: "Space Grotesk";
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 28px;
   transition: var(--transition-speed);
   display: flex;
@@ -191,7 +202,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 40rem;
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 .container-text {
@@ -284,14 +295,15 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-top: 1vh;
+  margin-top: 5vh;
   background-color: #fff;
   width: 90%;
   height: 60%;
+  margin-bottom: 20vh;
 }
 
 .logotipo {
-  width: 100%;
+  width: 50%;
 }
 
 .logotipos-introduction {
@@ -302,7 +314,6 @@ body {
   align-items: center;
   text-align: center;
   gap: 1.5rem;
-  background-color: #fff;
   width: 80%;
 }
 
@@ -328,8 +339,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
-  background-color: #fff;
+  gap: 3rem;
   width: 100%;
 }
 
@@ -337,32 +347,41 @@ body {
 .card-item {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 30vh;
+  transition: transform var(--transition-speed);
+}
+
+.card-item a {
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #fff;
-  margin-top: 5vh;
-  width: 40vh;
-  height: auto;
-  gap: 1rem;
-  transition: var(--transition-speed);
-  border-radius: 3vh;
-  padding: 2rem;
+  flex-direction: column;
+  gap: 2vh;
 }
 
 .card-item:hover {
   transform: scale(1.1);
 }
 
-.card-item p {
-  background-color: #fff;
+.card-item a p{
   font-family: Montserrat;
+  width: 80%;
   font-size: 2.5vh;
-  width: 100%;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10vh;
+
+  background-color: var(--contact);
+  border-radius: 2vh;
+  padding: 1.5vh;
+  font-weight: 450;
+  color: var(--dark);
 }
 
 /* Estilos para a seção de cartões */
@@ -373,7 +392,7 @@ body {
 }
 
 .cards {
-  width: 90%;
+  width: 70%;
   height: 45vh;
   background-color: var(--contact);
   border-radius: 3vh;
@@ -384,6 +403,7 @@ body {
   font-size: 1rem;
   padding: 50px;
   margin-top: 20vh;
+  margin-bottom: 20vh;
 }
 
 .button-dowload {
@@ -442,7 +462,7 @@ body {
   display: flex;
   background-color: var(--contact);
   width: 150vh;
-  height: 60rem;
+  height: 35rem;
   border-radius: 3vh;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   margin-bottom: 10vh;
@@ -538,7 +558,7 @@ hgroup p {
 
 .section-content {
   width: 60%;
-  height: 80%;
+  height: 89.5%;
   border-radius: 3vh 0vh 0vh 3vh;
   padding: 5vh 15vh 5vh 15vh;
   display: flex;
@@ -548,12 +568,13 @@ hgroup p {
 /* Espaçamento entre os inputs */
 .section-content .input-dev {
   margin-bottom: 3vh;
+  color: var(--black);
 }
 
 .section-content label {
   font-family: Montserrat;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--dark);
 }
 
@@ -570,6 +591,7 @@ button {
   display: block;
   margin-top: 5%;
 }
+
 .section-img {
   width: 40%;
   height: 100%;
@@ -587,7 +609,7 @@ button {
   width: 60%;
   height: 7vh;
   border-radius: 1vh;
-  border: 1px solid black;
+  border: 2px solid black;
   margin-top: 1vh;
   padding-left: 3vh;
   font-size: 0.8rem;
@@ -597,7 +619,7 @@ button {
   width: 60%;
   height: 25vh;
   border-radius: 2vh;
-  border: 1px solid black;
+  border: 2px solid black;
   margin-top: 1vh;
   padding-left: 3vh;
   padding-top: 7px;
