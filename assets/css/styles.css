@@ -59,17 +59,12 @@ body {
 /* ---------- Barra de navegação para as outras 11 páginas de matérias ---------- */
 .subject-nav {
   width: 90%;
-  border-radius: 3vh;
-  /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55); */
-  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  margin-top: 25rem;
-  margin-bottom: 15rem;
-  gap: 2.9rem;
+  margin-top: 6rem;
 }
 
 .subject-nav h2 {
@@ -127,6 +122,34 @@ body {
 .subject-nav ul li a:hover {
   text-decoration: underline;
   color: var(--vermelho);
+}
+.materias-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.3rem;
+  width: 100% !important; 
+  margin-top: 5vh;
+}
+
+.card-item-materias{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20rem;
+  height: auto;
+  gap: 1rem;
+
+  &:hover {
+    transform: scale(1.2);
+transition: var(--transition-speed);
+  }
+}
+.card-item-materias img {
+  width: 30%;
 }
 
 /* ---------- Estilos para a seção principal ---------- */
@@ -247,36 +270,10 @@ body {
 }
 
 
-.cards-materias-bottom {
-  display: flex;
-  background-color: #00eeff;
-}
-
-.cards-materias-top {
-  display: flex;
-  background-color:#00ff00;
-}
-
-.materia img {
-  width: 30%;
-  text-align: center;
-}
-
-.materia h3 {
-  display: flex;
-  justify-content: center;
-}
-
-.materia  p {
-  text-align: center;
-}
-
-
 /* ---------- Estilos para a seção de logotipos ---------- */
 .logotipos {
   display: flex;
   flex-direction: column;
-  padding: 10vh;
   align-items: center;
   gap: 1rem;
   margin-top: 1vh;
@@ -338,7 +335,7 @@ body {
   text-align: center;
   background-color: #fff;
   margin-top: 5vh;
-  width: 50vh;
+  width: 40vh;
   height: auto;
   gap: 1rem;
   transition: var(--transition-speed);
@@ -575,8 +572,7 @@ button {
 
 .img-section-cards {
   display: flex;
-  width: 120%;
-  margin-left: 17vh;
+  width: 100%;
 }
 
 .input-dev {
@@ -668,7 +664,6 @@ button {
   .subject-nav {
     height: auto;
     padding: 1rem;
-    gap: 2rem;
   }
 
   .subject-nav h2 {
@@ -685,10 +680,19 @@ button {
     font-size: 1rem;
   }
 
+  .materias-items{
+    flex-wrap: wrap;
+  }
+
+
+  .card-item-materias{
+    width: 30%;
+  }
+
+
   /* ---------- Responsividade para a seção de logotipos ---------- */
   .logotipos {
     gap: 5vh;
-    height: 150vh;
     width: 50%;
   }
 
@@ -721,7 +725,6 @@ button {
     height: auto;
     flex-direction: column;
     padding: 20px;
-    margin-top: 55vh;
   }
 
   /* Responsividade para a seção de contato - botão de download */
@@ -831,6 +834,8 @@ button {
   .subject-nav ul li {
     font-size: 1.5rem;
   }
+
+
 
   /* Responsividade para a seção de logotipos */
   .logotipos {
