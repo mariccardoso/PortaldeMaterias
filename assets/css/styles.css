@@ -462,7 +462,7 @@ body {
   display: flex;
   background-color: var(--contact);
   width: 150vh;
-  height: 35rem;
+  height: auto;
   border-radius: 3vh;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   margin-bottom: 10vh;
@@ -558,7 +558,7 @@ hgroup p {
 
 .section-content {
   width: 60%;
-  height: 89.5%;
+  height: auto;
   border-radius: 3vh 0vh 0vh 3vh;
   padding: 5vh 15vh 5vh 15vh;
   display: flex;
@@ -594,7 +594,7 @@ button {
 
 .section-img {
   width: 40%;
-  height: 100%;
+  height: auto;
   border-radius: 0vh 3vh 3vh 0vh;
   display: flex;
   align-items: center;
