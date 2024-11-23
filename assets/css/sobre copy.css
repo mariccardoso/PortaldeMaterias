@@ -3,233 +3,259 @@
 
 /* Variáveis CSS para cores e tamanhos */
 :root {
-    --grey: #fff;
-    --vermelho: #e30613;
-    --dark: #191A23;
-    --black: #000;
-    --gap-large: 4vh;
-    --gap-small: 2vh;
-    --font-size: 3rem;
-    --border-radius: 3vh;
-    --transition-speed: 0.3s;
-    /* Velocidade da transição de cor para suavizar mudanças */
-    --contact: #89898931;
-    /* Cor de fundo para o card de cada membro */
+  --grey: #fff;
+  --vermelho: #e30613;
+  --dark: #191A23;
+  --black: #000;
+  --gap-large: 4vh;
+  --gap-small: 2vh;
+  --font-size: 3rem;
+  --border-radius: 3vh;
+  --transition-speed: 0.3s;
+  /* Velocidade da transição de cor para suavizar mudanças */
+  --contact: #89898931;
+  /* Cor de fundo para o card de cada membro */
 
-    /* Testes */
-    --teste1: #2fff00;
-    --teste2: #ff0000;
-    --teste3: #2f00ff;
-    --teste4: #00aeff;
-    --teste5: #ff00b3;
+  /* Testes */
+  --teste1: #2fff00;
+  --teste2: #ff0000;
+  --teste3: #2f00ff;
+  --teste4: #00aeff;
+  --teste5: #ff00b3;
 }
 
 /* Estilos gerais */
 * {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat';
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
 }
 
 /* Estilos para a animação de transição */
 .fade-out {
-    opacity: 1;
-    transition: opacity 0.5s ease-out;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
 }
 
 .fade-out-active {
-    opacity: 0;
+  opacity: 0;
 }
 
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /*card: conheça a equipe*/
 .img-team {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
 }
 
 .img-team img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-top: 5rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 5rem;
 }
 
-.card-introduction {
-    background-color: #e30613;
-    border-radius: var(--border-radius);
-    width: 20vh;
-    height: 10vh;
-    margin: 5% auto 5% auto;
+.conhecendo-equipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  font-family: Montserrat;
+  margin-top: 3rem;
 }
 
-.title-introduction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    font-family: Montserrat;
-    font-size: var(--font-size);
-    color: var(--grey);
-    background-color: #e30613;
-    border-radius: var(--border-radius);
-    width: 25vh;
-    height: 6vh;
-    margin: 5% auto 1% auto;
-    transition: var(--transition-speed);
+.conhecendo-equipe h2 {
+  background-color: #e30613;
+  border-radius: var(--border-radius);
+  color: var(--grey);
+  padding: 0.5rem;
+  margin: 5% auto 1.5% auto;
+}
+
+.conhecendo-equipe p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  font-family: Montserrat;
 }
 
 .title-introduction:hover {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
-    transform: scale(1.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+  transform: scale(1.1);
 }
 
 .text-team {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 60%;
-    font-family: Montserrat;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  font-family: Montserrat;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Estilos para o card de cada membro */
 
 :root {
-    --surface-color: #fff;
-    --curve: 40;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Noto Sans JP', sans-serif;
-    background-color: #fef8f8;
-  }
-  
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 4rem 5vw;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  .card {
-    position: relative;
-    display: block;
-    height: 100%;  
-    border-radius: calc(var(--curve) * 1px);
-    overflow: hidden;
-    text-decoration: none;
-  }
-  
-  .card__image {      
-    width: 100%;
-    height: auto;
-  }
-  
-  .card__overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;      
-    border-radius: calc(var(--curve) * 1px);    
-    background-color: var(--surface-color);      
-    transform: translateY(100%);
-    transition: .2s ease-in-out;
-  }
-  
-  .card:hover .card__overlay {
-    transform: translateY(0);
-  }
-  
-  .card__header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    padding: 2em;
-    border-radius: calc(var(--curve) * 1px) 0 0 0;    
-    background-color: var(--surface-color);
-    transform: translateY(-100%);
-    transition: .2s ease-in-out;
-  }
-  
-  .card__arc {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    bottom: 100%;
-    right: 0;      
-    z-index: 1;
-  }
-  
-  .card__arc path {
-    fill: var(--surface-color);
-    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-  }       
-  
-  .card:hover .card__header {
-    transform: translateY(0);
-  }
-  
-  .card__thumb {
-    flex-shrink: 0;
-    width: 50px;
-    height: 50px;      
-    border-radius: 50%;      
-  }
-  
-  .card__title {
-    font-size: 1em;
-    margin: 0 0 .3em;
-    color: #6A515E;
-  }
-  
-  
-  .card__status {
-    font-size: .8em;
-    color: #444344;
-  }
-  
-  .card__description {
-    padding: 0 2em 2em; 
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-    color: #000;
-  }    
+  --surface-color: #fff;
+  --curve: 40;
+}
 
-.card-bottom{
-    width: 60%;
-    justify-items: center;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 80%;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+
+.card__status {
+  font-size: .8em;
+  color: #444344;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  color: #000;
+}
+
+.card-bottom {
+  width: 60%;
+  justify-items: center;
 }
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
   .img-team img {
-  width: 100%;
-  height: 50rem;
-  object-fit: cover;
-  margin-top: 5rem;
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    margin-top: 5rem;
   }
+
   .img-team {
     width: 100%;
     height: auto;
-}
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, max(20rem));
+    width: auto;
+  }
 
-.img-team img {
+  .conhecendo-equipe p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+    font-family: Montserrat;
+  }
+
+  .img-team img {
     width: 100%;
     height: auto;
-}
+  }
 }
