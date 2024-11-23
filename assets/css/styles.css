@@ -123,6 +123,7 @@ body {
   text-decoration: underline;
   color: var(--vermelho);
 }
+
 .materias-items{
   display: flex;
   flex-direction: row;
@@ -132,7 +133,14 @@ body {
   margin-top: 5vh;
 }
 
-.card-item-materias{
+.materias-items a {
+  color: var(--dark);
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card-item-materias {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -142,12 +150,13 @@ body {
   width: 20rem;
   height: auto;
   gap: 1rem;
-
-  &:hover {
-    transform: scale(1.2);
-transition: var(--transition-speed);
-  }
+  transition: transform var(--transition-speed); /* Adiciona a transição para o efeito de hover e saída */
 }
+
+.card-item-materias:hover {
+  transform: scale(1.2); /* Aumenta o card ao passar o mouse */
+}
+
 .card-item-materias img {
   width: 30%;
 }
