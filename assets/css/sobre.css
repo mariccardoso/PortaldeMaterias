@@ -48,11 +48,11 @@
 
 /*card: conheça a equipe*/
 .img-team {
-    margin-top: 18vh;
     background-color: var(--vermelho);
     width: 100%;
-    height: 90vh;
+    height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -60,7 +60,6 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    margin-top: 7rem;
 }
 
 .conhecendo-equipe h2 {

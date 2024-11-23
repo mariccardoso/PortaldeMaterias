@@ -67,8 +67,7 @@
     font-family: Montserrat;
 }
 
-
-.dica{
+.dica {
     display: flex;
     width: 85%;
     background-color: #e30613;
@@ -77,14 +76,16 @@
     gap: 0.65rem;
     margin-top: 2rem;
     padding: 2.5rem 3.75rem;
-    transition: all 0.5s linear;
-
-
-    /*stlyes*/
-    border: 0.0625rem solid #191A23; /* 1px convertidos para rem */
+    transition: transform 0.5s ease-in-out;
+    border: 1px solid #191A23;
     background: var(--grey);
-    box-shadow: 0 0.31rem 0 0 #191A23; /* 5px convertidos para rem */
-    border-radius: 2.81rem; /* 45px convertidos para rem */
+    box-shadow: 0 0.31rem 0 0 #191A23; 
+    border-radius: 2.81rem;
+    cursor: pointer;
+}
+
+.dica.hover {
+    transform: translateY(-8vh);
 }
 
 .titulo {

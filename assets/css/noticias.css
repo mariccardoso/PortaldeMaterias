@@ -55,11 +55,15 @@
     padding: 2rem;
     justify-content: space-between;
     align-items: center;
-
+    transition: transform 0.5s;
     border-radius: 2.8125rem;
     border: 1px solid var(--Dark, #191A23);
     background: var(--Grey, #F3F3F3);
     box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.card:hover {
+    transform: translateY(-8vh);
 }
 
 .card h3 {
@@ -76,7 +80,8 @@
 
 .card-title {
     font-size: medium;
-    width: 100%;
+    width: 80%;
+    padding: 1rem;
 }
 
 .card a {
@@ -132,11 +137,12 @@
 @media (max-width: 1024px) {
     .cards-section {
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 10rem;
+        margin-top: 10vh;
     }
 
     .card {
-        width: 100%;
+        width: 70%;
     }
 
     .card h3 {
@@ -157,7 +163,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 120px) {
     .lading-page .noticias-content {
         gap: 1.5rem;
     }
