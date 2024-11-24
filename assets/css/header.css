@@ -137,6 +137,9 @@ ul.navlist {
 }
 
 @media (max-width: 1220px) {
+  header{
+    background-color: #f3f3f3;
+  }
   .proposal {
     display: none;
   }

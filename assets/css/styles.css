@@ -662,7 +662,7 @@ button {
 
   /* ---------- Responsividade para a seção principal ---------- */
   .container-main {
-    margin-top: -3vh;
+    margin-top: 3rem;
     flex-direction: column;
     font-size: 1.5vh;
     width: 80%;
@@ -721,8 +721,14 @@ button {
   }
 
   .subject-nav h2 {
-    font-size: 1.5rem;
-    width: 60%;
+    font-size: 1.3rem;
+    width: 80%;
+    padding: 0.8rem;
+  }
+
+  .subject-nav p {
+    font-size: 1rem;
+    width: 80%;
   }
 
   .subject-nav ul {
@@ -736,6 +742,7 @@ button {
 
   .materias-items{
     flex-wrap: wrap;
+    gap: 1.1rem;
   }
 
 
@@ -766,10 +773,8 @@ button {
     margin-left: -2vh;
   }
 
-  .card-item p {
-    background-color: var(--contact);
-    border-radius: 1vh;
-    padding: 2vh;
+  .card-item a p {
+    font-size: 1rem;
   }
 
   /* Responsividade para a seção de contato - card da tabela periódica */
@@ -803,6 +808,10 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .card-buttons hgroup p {
+    width: 80%;
   }
 
   /* Responsividade para a seção de contato - parágrafo */
