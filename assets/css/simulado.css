@@ -152,10 +152,10 @@
     flex-direction: column;
     align-items: center;
     gap: -6rem;
+    transition: ease .5s;
     
     &:hover{
-        transition: ease .5s;
-        transform: scale(1.1);
+        transform: translateY(-5vh);
     }
 }
 
