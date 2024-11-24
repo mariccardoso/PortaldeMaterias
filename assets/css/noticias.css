@@ -33,7 +33,7 @@
     width: 100%;
     display: flex;
     height: auto;
-    gap: 5rem;
+    gap: 2.5rem;
     flex-direction: column;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .card:hover {
-    transform: translateY(-8vh);
+    transform: translateY(-4vh);
 }
 
 .card h3 {
@@ -137,16 +137,19 @@
 @media (max-width: 1024px) {
     .cards-section {
         flex-direction: column;
-        gap: 10rem;
-        margin-top: 10vh;
     }
 
     .card {
         width: 70%;
+        height: 15rem;
     }
 
     .card h3 {
         font-size: 1.5rem;
+    }
+
+    .card-title {
+        padding: 0.5rem;
     }
 
     .card a {
@@ -158,7 +161,6 @@
     }
 
     .card-img img {
-        height: 12rem;
         width: 100%;
     }
 }
