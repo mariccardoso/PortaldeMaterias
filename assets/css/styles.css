@@ -643,6 +643,7 @@ button {
   border: none;
   margin-top: 4vh;
   transition: var(--transition-speed);
+  margin-left: 6%;
 }
 
 .button-contact:hover {

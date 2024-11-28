@@ -238,7 +238,12 @@ margin-top: 3rem;
 }
 
 .learn-container :hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.learn-title {
+    transition: 1s;
 }
 
 @media (max-width: 900px) {
