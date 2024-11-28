@@ -1,10 +1,12 @@
+
+
+<h1> PORTAL DE QUIMICA <img src="./assets/img/main-img.png" height="30px"> <img src="./assets/img/logo-senai.png" height="30px"></h1>
+
 <p align="center">
   <a href="">
     <img src="./assets/img/Cover.png" width="100%;">
   </a>
 </p>
-
-<h1> PORTAL DE QUIMICA <img src="./assets/img/main-img.png" height="30px"> <img src="./assets/img/logo-senai.png" height="30px"></h1>
 
 ### Sobre o Projeto
 
