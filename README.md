@@ -6,6 +6,8 @@
 
 <h1> PORTAL DE QUIMICA <img src="./assets/img/main-img.png" height="30px"></h1>
 
+![Badge de Status do Projeto](https://img.shields.io/badge/Status-Finalizado-red)
+
 <p align="center">
   <a href="">
     <img src="./assets/img/Cover.png" width="100%;">
