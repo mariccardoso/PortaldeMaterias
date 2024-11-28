@@ -68,13 +68,13 @@ function checkAnswers() {
       feedbackElement.textContent = 'Parabéns! Seu desempenho mostra um bom domínio dos conteúdos, mas ainda há pequenos ajustes que podem te levar à excelência.';
       feedbackElement.className = 'performance-feedback good';
     } else if (percentage >= 40) {
-      feedbackElement.textContent = 'Você já possui uma base sólida, mas ainda há espaço para evolução. Alguns conceitos podem estar confusos ou incompletos.';
-      feedbackElement.className = 'performance-feedback average';
+        feedbackElement.textContent = 'Você já possui uma base sólida, mas ainda há espaço para evolução. Alguns conceitos podem estar confusos ou incompletos.';
+        feedbackElement.className = 'performance-feedback average';
     } else {
-      feedbackElement.textContent = 'Você está no começo da jornada e tem muito espaço para crescer! Seu resultado mostra que é importante revisar os conceitos básicos e fortalecer os fundamentos.';
-      feedbackElement.className = 'performance-feedback poor';
+        feedbackElement.textContent = 'Você está no começo da jornada e tem muito espaço para crescer! Seu resultado mostra que é importante revisar os conceitos básicos e fortalecer os fundamentos.';
+        feedbackElement.className = 'performance-feedback poor';
     }
-  }
+    }
   
   function updateCharts(correct, incorrect) {
     const insightsSection = document.getElementById('insights');
