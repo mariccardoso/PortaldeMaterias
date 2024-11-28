@@ -58,7 +58,7 @@ dedicados a transformar o aprendizado em uma experiência mais acessível e envo
     <tr>
       <td align="center" valign="top" width="15%"><a href="https://www.linkedin.com/in/samuelbrag4/"><img src="https://avatars.githubusercontent.com/u/158165702?v=4" width="200px;" alt="Ives van Hoorne"/><br /><sub><b>Samuel Braga</b></sub></a><br /></td>
       <td align="center" valign="top" width="15%"><a href="https://www.linkedin.com/in/mariana-cardoso-507bba244/"><img src="https://avatars.githubusercontent.com/u/158165810?v=4" width="200px;" alt="Jeff Allen"/><br /><sub><b>Mariana Cardoso</b></sub></a><br /></td>
-      <td align="center" valign="top" width="15%"><a href="https://www.linkedin.com/in/vitor-sampaio-152839241/"><img src="./assets/img/integrantes/vitor.png" width="200px;" height="150px" alt="Donavon West"/><br /><sub><b>Vitor Sampaio</b></sub></a><br /></td>
+      <td align="center" valign="top" width="15%"><a href="https://www.linkedin.com/in/vitor-sampaio-152839241/"><img src="https://avatars.githubusercontent.com/u/162587800?v=4" width="200px;" alt="Donavon West"/><br /><sub><b>Vitor Sampaio</b></sub></a><br /></td>
     </tr>
     <tr>
       <td align="center" valign="top" width="15%"><a href="https://www.linkedin.com/in/maria-eduarda-reis-pereira-0756542b1/"><img src="https://avatars.githubusercontent.com/u/158165914?v=4" width="200px;" alt="Ives van Hoorne"/><br /><sub><b>Maria Eduarda Reis</b></sub></a><br /></td>
