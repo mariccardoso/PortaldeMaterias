@@ -146,17 +146,16 @@
 
 
 /* Card de Redirecionamento */
-
-
 button {
     background-color: var(--vermelho);
     border: none; 
-    height: 6vh;
+    height: 10vh;
+    width: 35rem;
     padding: 5px 15px;
-    border-radius: 8px;
+    border-radius: 20px;
     color: var(--grey);
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 600;
     margin-top: 2rem;
     transition: var(--transition-speed);
 }
