@@ -8,6 +8,16 @@
   </a>
 </p>
 
+### Experimente o Portal de Química 🌟
+
+Confira uma prévia do site abaixo:
+
+[🔗 Acesse o Preview Interativo](https://portal-de-materias.vercel.app/preview.html)
+
+🔗 **Acesse o site completo clicando aqui:**  
+[👉 Portal de Química](https://portal-de-materias.vercel.app/)
+
+
 ### Sobre o Projeto
 
 O Portal de Matérias - Química é um mini-site focado na disciplina de Química, parte de um portal maior que reúne conteúdos educativos para estudantes do Ensino Médio. O objetivo é oferecer recursos interativos e acessíveis, promovendo o aprendizado e ajudando os alunos a se prepararem para vestibulares e carreiras.

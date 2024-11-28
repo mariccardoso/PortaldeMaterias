@@ -377,7 +377,6 @@ body {
   text-align: center;
   height: 10vh;
 
-  background-color: var(--contact);
   border-radius: 2vh;
   padding: 1.5vh;
   font-weight: 450;
@@ -629,7 +628,7 @@ button {
 }
 
 .button-contact {
-  width: 60%;
+  width: 70%;
   height: 8vh;
   border-radius: 2vh;
   background-color: var(--black);
@@ -643,7 +642,7 @@ button {
   border: none;
   margin-top: 4vh;
   transition: var(--transition-speed);
-  margin-left: 6%;
+  padding: 1vh;
 }
 
 .button-contact:hover {
