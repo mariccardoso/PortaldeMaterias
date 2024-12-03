@@ -155,7 +155,7 @@
     transition: ease .5s;
     
     &:hover{
-        transform: translateY(-5vh);
+        transform: translateY(-3vh);
     }
 }
 
@@ -231,5 +231,45 @@
 
     .subcard {
         width: 70%;
+    }
+}
+
+/* Responsividade para tablets */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-img, .container-text {
+        width: 80%;
+    }
+
+    .container-img img {
+        height: auto;
+        width: 80%;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+
+    .section-text {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-card {
+        width: 80%;
+        height: auto;
+    }
+
+    .subcard {
+        width: 60%;
     }
 }
