@@ -68,6 +68,7 @@ ul.navlist {
 .navlist li a:hover {
   color: var(--vermelho);
   text-decoration: underline;
+  transform: scale(1.1);
 }
 
 /*Estilos para quando passar o mouse e quando o script tiver ativo*/

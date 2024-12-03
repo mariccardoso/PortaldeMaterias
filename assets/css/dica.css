@@ -12,9 +12,9 @@
     /*Preto 01 padrão*/
 
     --black: #000
-    /*Preto 02 padrão*/
+        /*Preto 02 padrão*/
 
-    --gap-large: 2.5rem;
+        --gap-large: 2.5rem;
     /* Espaçamento grande entre os itens (por exemplo, em desktops) */
 
     --gap-small: 1.2rem;
@@ -37,7 +37,7 @@
     padding: 0;
 }
 
-.container{
+.container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -45,16 +45,17 @@
 }
 
 .introduction {
-    width: 60%; /* pedir ajuda para o thigas*/
+    width: 60%;
+    /* pedir ajuda para o thigas*/
     display: flex;
     gap: 5rem;
     margin-left: 8rem;
 }
 
-.title-dica{
+.title-dica {
     color: var(--grey);
     font-family: "Montserrat";
-    font-size: 2rem; 
+    font-size: 2rem;
     font-weight: 500;
     text-align: center;
     background: var(--vermelho);
@@ -79,13 +80,13 @@
     transition: transform 0.5s ease-in-out;
     border: 1px solid #191A23;
     background: var(--grey);
-    box-shadow: 0 0.31rem 0 0 #191A23; 
+    box-shadow: 0 0.31rem 0 0 #191A23;
     border-radius: 2.81rem;
     cursor: pointer;
 }
 
-.dica.hover {
-    transform: translateY(-8vh);
+.dica:hover {
+    transform: scale(1.05);
 }
 
 .titulo {
@@ -95,51 +96,60 @@
     align-items: center;
 
     /*stlyes*/
-    font-size: 1.25rem; /* 20px convertidos para rem */
+    font-size: 1.25rem;
+    /* 20px convertidos para rem */
     cursor: pointer;
     margin-bottom: 3rem;
-    
+
 }
 
 .numero {
     color: #000;
     font-family: "Space Grotesk";
-    font-size: 2rem; /* 60px convertidos para rem */
+    font-size: 2rem;
+    /* 60px convertidos para rem */
     font-weight: bolder;
 }
 
 .texto-titulo {
-    margin-left: 0.625rem; /* 10px convertidos para rem */
+    margin-left: 0.625rem;
+    /* 10px convertidos para rem */
     color: #000;
     font-family: "Space Grotesk";
-    font-size: 1.875rem; /* 30px convertidos para rem */
+    font-size: 1.875rem;
+    /* 30px convertidos para rem */
     font-weight: bold;
 }
 
 .icone {
-    font-size: 1.5rem; /* 24px convertidos para rem */
+    font-size: 1.5rem;
+    /* 24px convertidos para rem */
     background-color: #faf6f6;
     border-radius: 50%;
-    padding: 0.30rem 0.60rem; /* 5px 10px convertidos para rem */
+    padding: 0.30rem 0.60rem;
+    /* 5px 10px convertidos para rem */
     cursor: pointer;
     transition: background-color var(--transition-speed) ease;
 }
 
 .conteudo p {
-    font-size: 1rem; /* 16px convertidos para rem */
+    font-size: 1rem;
+    /* 16px convertidos para rem */
     color: var(--grey);
     font-family: Montserrat;
-    font-size: 1.4rem; /* 18px convertidos para rem */
+    font-size: 1.4rem;
+    /* 18px convertidos para rem */
     text-align: justify;
     width: 80%;
 }
 
-.conteudo .entrevistas{
+.conteudo .entrevistas {
     display: flex;
     width: 100%;
     height: 100%;
 }
-.iframe-dev{
+
+.iframe-dev {
     width: 70%;
     min-height: 24rem;
 }
@@ -148,6 +158,7 @@ iframe {
     width: 100%;
     height: 90%;
 }
+
 .dica.ativa {
     border-radius: 2.81rem;
     border: 0.06rem solid #191A23;
@@ -157,7 +168,8 @@ iframe {
     height: 100%;
 }
 
-.dica.ativa .texto-titulo, .dica.ativa .numero {
+.dica.ativa .texto-titulo,
+.dica.ativa .numero {
     color: var(--grey);
 }
 
@@ -168,8 +180,10 @@ iframe {
 
 .dica.ativa .conteudo {
     display: flex;
-    gap: 1.8rem; /* 30px convertidos para rem */
+    gap: 1.8rem;
+    /* 30px convertidos para rem */
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .introduction {
         width: 80%;
@@ -225,6 +239,7 @@ iframe {
         gap: 1.5rem;
     }
 }
+
 @media (max-width: 768px) {
     .introduction {
         width: 90%;
@@ -271,7 +286,7 @@ iframe {
         min-height: 12rem;
     }
 
-    iframe{
+    iframe {
         width: 100%;
         height: 12.5rem;
     }

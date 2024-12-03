@@ -61,8 +61,6 @@
     background-position: center;
 }
 
-
-
 .entrevistado-description{
     display: flex;
     flex-direction: column;
@@ -105,7 +103,7 @@
     gap: 3.5rem;
 }
 
-.entrevista-card{
+.entrevista-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,6 +112,11 @@
     height: 30rem;
     border-radius: 2.8125rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s;
+}
+
+.entrevista-card:hover {
+    transform: translateY(-15px);
 }
 
 .entrevista-card iframe{
